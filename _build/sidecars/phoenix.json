@@ -1,0 +1,30 @@
+{
+ "tagline": "A sun-drenched desert downtown of murals, museums and big-league games, at its best from October to April.",
+ "events": [
+  {
+   "when": "Monthly",
+   "name": "First Friday",
+   "desc": "Galleries and studios along Roosevelt Row and Grand Avenue open their doors on the first Friday evening of each month."
+  },
+  {
+   "when": "Late February",
+   "name": "Arizona Matsuri",
+   "desc": "A weekend festival of Japanese culture in Margaret T. Hance Park, with taiko drumming, food and crafts."
+  },
+  {
+   "when": "March",
+   "name": "Art Detour",
+   "desc": "A long-running celebration of the city's arts scene, with open studios, gallery shows and performances."
+  },
+  {
+   "when": "Autumn",
+   "name": "Arizona State Fair",
+   "desc": "Rides, livestock shows, fair food and concerts at the state fairgrounds just north-west of downtown."
+  }
+ ],
+ "video": {
+  "id": "cavmilxcPjs",
+  "title": "DOWNTOWN PHOENIX ARIZONA AUTUMN 4K WALKING TOUR",
+  "channel": "Time Travel Walk"
+ }
+}
