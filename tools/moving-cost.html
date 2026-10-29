@@ -1,0 +1,61 @@
+---
+layout: default
+title: "Moving Cost Estimator: What a Downtown Move Really Costs"
+description: "Add up movers, deposits, first month's rent, overlap rent, storage and set-up for a downtown move, and see the cash you need on moving day."
+section: tools
+calc: true
+updated: "2026-10-29"
+faq:
+  - q: "Why are downtown moves often more expensive?"
+    a: "Elevator bookings, loading-dock time limits, parking permits for the truck and longer carries from the street all add crew hours. Many buildings also require movers to provide an insurance certificate."
+  - q: "How many moving quotes should I get?"
+    a: "At least three written quotes based on an in-person or video survey. Be wary of very low phone estimates and of any mover asking for a large cash deposit."
+  - q: "Is a security deposit a cost?"
+    a: "It is cash you need up front but should get back at the end of the tenancy, minus any lawful deductions. The estimator shows it separately so you can see your true cost."
+---
+<header class="page-head line-strip line-l"><div class="wrap">
+ {% include crumbs.html label="Moving cost estimator" %}
+ <span class="tag"><span class="bullet l" aria-hidden="true">L</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Moving cost estimator</h1>
+ <p class="lede">The truck is the easy part. Add deposits, overlap rent, storage and set-up to see the real cash a downtown move takes.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="tool">
+<form class="card form" id="mv-form" onsubmit="return false">
+ <fieldset class="field"><legend>Movers</legend><div class="row"><div class="field"><label for="mv-crew">Crew size</label><input id="mv-crew" type="number" min="1" max="10" value="3"></div><div class="field"><label for="mv-hours">Hours</label><input id="mv-hours" type="number" min="1" max="48" value="6"></div></div>
+ <div class="row"><div class="field"><label for="mv-rate">Rate per mover per hour</label><input id="mv-rate" type="number" min="0" value="55"></div><div class="field"><label for="mv-materials">Packing materials</label><input id="mv-materials" type="number" min="0" value="250"></div></div></fieldset>
+ <fieldset class="field"><legend>The new place</legend><div class="row"><div class="field"><label for="mv-rent">Monthly rent</label><input id="mv-rent" type="number" min="0" step="50" value="2400" data-param="budget"></div><div class="field"><label for="mv-deposit">Deposit (months)</label><input id="mv-deposit" type="number" min="0" max="12" step="0.5" value="1"></div></div>
+ <div class="row"><div class="field"><label for="mv-overlap">Days of overlapping rent</label><input id="mv-overlap" type="number" min="0" max="120" value="10"></div><div class="field"><label for="mv-fees">Agent, application or admin fees</label><input id="mv-fees" type="number" min="0" value="150"></div></div></fieldset>
+ <fieldset class="field"><legend>Set-up</legend><div class="row"><div class="field"><label for="mv-connect">Utilities and internet set-up</label><input id="mv-connect" type="number" min="0" value="150"></div><div class="field"><label for="mv-furnish">Furniture and essentials</label><input id="mv-furnish" type="number" min="0" step="50" value="1200"></div></div>
+ <div class="row"><div class="field"><label for="mv-storage">Storage per month</label><input id="mv-storage" type="number" min="0" value="0"></div><div class="field"><label for="mv-storagem">Months of storage</label><input id="mv-storagem" type="number" min="0" max="36" value="0"></div></div>
+ <div class="field"><label for="mv-travel">Travel, cleaning and time off</label><input id="mv-travel" type="number" min="0" value="300"></div></fieldset>
+</form>
+<div class="result" aria-live="polite">
+ <p class="muted">Cash needed for the move</p>
+ <div class="big" id="mv-main">—</div>
+ <table><tbody>
+  <tr><td>Movers</td><td id="mv-movers">—</td></tr>
+  <tr><td>Deposit (refundable)</td><td id="mv-dep">—</td></tr>
+  <tr><td>First month's rent</td><td id="mv-first">—</td></tr>
+  <tr><td>Overlap rent</td><td id="mv-ov">—</td></tr>
+  <tr><td>Set-up and materials</td><td id="mv-setup">—</td></tr>
+  <tr><td>Storage</td><td id="mv-stor">—</td></tr>
+  <tr><td>Travel and fees</td><td id="mv-tf">—</td></tr>
+  <tr><td>True cost (excluding deposit)</td><td id="mv-net">—</td></tr>
+ </tbody></table>
+ <div class="verdict" id="mv-verdict"></div>
+ <a class="btn teal" id="mv-cta" style="margin-top:1rem" href="/get-matched.html?need=home">Get matched with agents and movers</a>
+</div></div>
+{% include ad.html %}
+<div class="prose" style="margin-top:2rem">
+<h2>Where downtown moves go over budget</h2>
+<p>Crew hours are the swing factor. In a tower, movers may wait for a service elevator, work within a booked window and carry from a loading dock rather than the front door. Each delay is billed. Book the elevator and dock early, send your mover the building's rules, and ask whether a parking permit is needed for the truck on the street.</p>
+<p><strong>Overlap rent</strong> is the other hidden cost. Few leases line up to the day, and paying two rents for a week or two gives you time to clean, repair and hand back the old place properly — which protects your deposit.</p>
+<h2>Cutting the bill</h2>
+<ul><li>Move mid-month and mid-week, when crews are easier to book.</li><li>Sell or donate furniture that will not fit a smaller downtown floor plan before you pay to move it.</li><li>Pack books, kitchenware and decorations yourself; leave fragile and heavy items to the crew.</li><li>Ask landlords about move-in incentives in buildings with vacancies.</li></ul>
+<p>Planning the whole move? Use <a href="/live/downtown-move-checklist.html">the downtown move checklist</a> and, if a job is behind it, <a href="/live/relocating-downtown-for-a-new-job.html">relocating downtown for a new job</a>.</p>
+</div>
+{% include faq.html %}
+<p class="small muted" style="margin-top:1.4rem">Estimates for planning only. Read our <a href="/disclaimer.html">disclaimer</a>.</p>
+</div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Moving cost estimator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"url":"https://down.town/tools/moving-cost.html"}</script>
