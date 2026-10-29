@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% assign c = site.data.cities | where: "slug", page.city | first %}
+<section class="city-hero space-hero">
+ <div class="wrap">
+  {% include crumbs.html label=c.name %}
+  <span class="tag" style="color:#dfe4ee"><span class="bullet s" aria-hidden="true">S</span> Find Space · {{ c.region }}</span>
+  <h1 style="margin-top:.6rem">Office &amp; commercial space in downtown {{ c.name }}</h1>
+  <p class="lede">Where to look, how leases work in {{ c.country }}, and how to get matched with tenant-side brokers, coworking operators and venues — free.</p>
+  <div class="facts"><span><b>{{ c.district }}</b>, {{ c.country }}</span><span>Business climate <b>{{ c.s.business }}</b>/10</span><span>Updated <time datetime="{{ page.updated }}">{{ page.updated | date: "%B %Y" }}</time></span></div>
+  <div class="share">
+   <a class="btn violet sm" href="/get-matched.html?need=office&amp;city={{ c.slug }}">Find office space</a>
+   <a class="btn ghost sm on-dark" href="/get-matched.html?need=retail&amp;city={{ c.slug }}">Retail or restaurant</a>
+   <a class="btn ghost sm on-dark" href="/get-matched.html?need=venue&amp;city={{ c.slug }}">Event venue</a>
+   <a class="btn ghost sm on-dark" href="/explore/{{ c.slug }}.html">City guide</a>
+  </div>
+ </div>
+ <div class="skyline" data-sky="{{ c.slug }}-space" data-tall="{{ c.tall | default: 2 | plus: 1 }}" data-w="1200" data-h="150" data-base="#2f2a4a" data-d="0.26"></div>
+</section>
+<div class="wrap article-grid">
+ <article>
+  <div class="space-quick">
+   <a href="/get-matched.html?need=office&amp;city={{ c.slug }}"><b>Office</b><span>Lease, sublease, HQ</span></a>
+   <a href="/get-matched.html?need=flex&amp;city={{ c.slug }}"><b>Coworking</b><span>Desks to suites</span></a>
+   <a href="/get-matched.html?need=retail&amp;city={{ c.slug }}"><b>Retail</b><span>Shops &amp; kitchens</span></a>
+   <a href="/get-matched.html?need=venue&amp;city={{ c.slug }}"><b>Venues</b><span>Meetings to galas</span></a>
+  </div>
+{{ content }}
+  <div class="howwe notice"><b>How this works.</b> Down.Town is not a broker or landlord. When you send a request we review it by hand and introduce you to up to three independent partners who fit your size, budget and timing. Partners pay us a referral fee only if you choose to work with them; in most markets the landlord pays the tenant broker's commission. <a href="/partners.html">About our partner network</a>.</div>
+  {% include faq.html %}
+  {% include more-cities.html slug=c.slug base="space" %}
+ </article>
+ <aside class="rail" aria-label="Space tools">
+  <div class="card toc"><h3 style="font-size:1rem">On this page</h3><div id="toc"></div></div>
+  <div class="rail-sticky">
+   {% include rail-lead.html need="office" %}
+   {% include tool-card.html tool="coworking-vs-lease" %}
+   {% include ad.html slot="sidebar" %}
+  </div>
+ </aside>
+</div>

@@ -1,0 +1,1123 @@
+[
+ {
+  "slug": "new-york",
+  "name": "New York",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Lower Manhattan",
+  "lat": 40.7075,
+  "lng": -74.0113,
+  "index": 82,
+  "s": {
+   "walk": 10,
+   "transit": 10,
+   "food": 9,
+   "night": 7,
+   "culture": 9,
+   "family": 7,
+   "business": 10,
+   "value": 2
+  },
+  "country": "United States",
+  "tagline": "The original skyscraper downtown, rebuilt around parks, ferries and a 24-hour mix of offices and homes.",
+  "pair": "chicago",
+  "tall": 3,
+  "video": {
+   "id": "fX9iOK7A4Uk",
+   "title": "New York Walking Tour 4K — Financial District NYC",
+   "channel": "olfocus"
+  },
+  "events": [
+   {
+    "when": "June",
+    "name": "Tribeca Festival",
+    "desc": "A major film, music and storytelling festival that fills downtown screens and streets."
+   },
+   {
+    "when": "June",
+    "name": "River To River Festival",
+    "desc": "Free performances and public art across Lower Manhattan's parks and plazas."
+   },
+   {
+    "when": "Late Nov–Dec",
+    "name": "Holiday lights and markets",
+    "desc": "Seasonal installations and pop-up markets across the plazas and the Seaport."
+   }
+  ]
+ },
+ {
+  "slug": "chicago",
+  "name": "Chicago",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "The Loop",
+  "lat": 41.8817,
+  "lng": -87.6278,
+  "index": 83,
+  "s": {
+   "walk": 9,
+   "transit": 9,
+   "food": 9,
+   "night": 7,
+   "culture": 10,
+   "family": 8,
+   "business": 9,
+   "value": 5
+  },
+  "country": "United States",
+  "tagline": "An architecture museum you can walk through, wrapped by elevated trains, a riverwalk and a lakefront park.",
+  "pair": "new-york",
+  "tall": 2,
+  "video": {
+   "id": "910MD4AIUho",
+   "title": "Downtown Chicago Walking Tour - The Chicago Loop",
+   "channel": "LOMAS POV"
+  },
+  "events": [
+   {
+    "when": "June",
+    "name": "Chicago Blues Festival",
+    "desc": "Free blues performances in Millennium Park."
+   },
+   {
+    "when": "Late July / early Aug",
+    "name": "Lollapalooza",
+    "desc": "A multi-day music festival that takes over Grant Park."
+   },
+   {
+    "when": "October",
+    "name": "Chicago Marathon",
+    "desc": "Starts and finishes in Grant Park and loops through the neighbourhoods."
+   }
+  ]
+ },
+ {
+  "slug": "toronto",
+  "name": "Toronto",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown Toronto",
+  "lat": 43.6487,
+  "lng": -79.3817,
+  "index": 78,
+  "s": {
+   "walk": 9,
+   "transit": 8,
+   "food": 9,
+   "night": 8,
+   "culture": 8,
+   "family": 7,
+   "business": 9,
+   "value": 4
+  },
+  "country": "Canada",
+  "tagline": "Canada's business capital, stacked with condo towers, underground walkways and a lake ferry to the islands.",
+  "pair": "new-york",
+  "tall": 4,
+  "video": {
+   "id": "64Om0kLHs2w",
+   "title": "Saturday on Yonge Street in Downtown Toronto Walk (June 2022)",
+   "channel": "Johnny Strides"
+  },
+  "events": [
+   {
+    "when": "June",
+    "name": "Pride Toronto",
+    "desc": "One of the largest Pride celebrations in the world, centred on the Church-Wellesley Village."
+   },
+   {
+    "when": "September",
+    "name": "Toronto International Film Festival",
+    "desc": "A major film festival that fills the Entertainment District with premieres."
+   },
+   {
+    "when": "Early October",
+    "name": "Nuit Blanche",
+    "desc": "An overnight festival of contemporary art installations across the city."
+   }
+  ]
+ },
+ {
+  "slug": "montreal",
+  "name": "Montréal",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Centre-ville & Vieux-Montréal",
+  "lat": 45.5017,
+  "lng": -73.5673,
+  "index": 80,
+  "s": {
+   "walk": 9,
+   "transit": 8,
+   "food": 9,
+   "night": 9,
+   "culture": 9,
+   "family": 7,
+   "business": 7,
+   "value": 6
+  },
+  "country": "Canada",
+  "tagline": "A bilingual festival city where a mountain park, a historic port and an underground city share one downtown.",
+  "pair": "new-york",
+  "tall": 1,
+  "video": {
+   "id": "xnY14rPwTno",
+   "title": "Downtown Montreal Walking Tour 4K",
+   "channel": "Elena Walks"
+  },
+  "events": [
+   {
+    "when": "Late June–early July",
+    "name": "Montréal International Jazz Festival",
+    "desc": "Hundreds of shows, many free and outdoors, in the Quartier des spectacles."
+   },
+   {
+    "when": "July",
+    "name": "Just for Laughs",
+    "desc": "A large comedy festival with indoor shows and outdoor events."
+   },
+   {
+    "when": "Feb–March",
+    "name": "Montréal en Lumière",
+    "desc": "A winter festival of food, light installations and an all-night arts event."
+   }
+  ]
+ },
+ {
+  "slug": "vancouver",
+  "name": "Vancouver",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown Peninsula",
+  "lat": 49.2827,
+  "lng": -123.1207,
+  "index": 71,
+  "s": {
+   "walk": 9,
+   "transit": 8,
+   "food": 8,
+   "night": 6,
+   "culture": 7,
+   "family": 8,
+   "business": 7,
+   "value": 3
+  },
+  "country": "Canada",
+  "tagline": "Glass towers on a peninsula ringed by seawall, mountains and harbour — a model for high-density living.",
+  "pair": "new-york",
+  "tall": 4,
+  "events": [
+   {
+    "when": "Late July–early Aug",
+    "name": "Celebration of Light",
+    "desc": "An international fireworks competition over English Bay."
+   },
+   {
+    "when": "Early August",
+    "name": "Vancouver Pride Parade",
+    "desc": "A large Pride parade through downtown and the West End."
+   },
+   {
+    "when": "Sept–Oct",
+    "name": "Vancouver International Film Festival",
+    "desc": "A major film festival with screenings across downtown."
+   }
+  ]
+ },
+ {
+  "slug": "san-francisco",
+  "name": "San Francisco",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Financial District, Union Square & SoMa",
+  "lat": 37.7946,
+  "lng": -122.3999,
+  "index": 76,
+  "s": {
+   "walk": 9,
+   "transit": 9,
+   "food": 10,
+   "night": 7,
+   "culture": 8,
+   "family": 6,
+   "business": 9,
+   "value": 2
+  },
+  "country": "United States",
+  "tagline": "Cable cars, a ferry-building food hall and a rooftop park — a compact downtown reinventing itself after remote work.",
+  "pair": "new-york",
+  "tall": 2,
+  "events": [
+   {
+    "when": "May",
+    "name": "Bay to Breakers",
+    "desc": "A costumed footrace from near the Embarcadero to Ocean Beach."
+   },
+   {
+    "when": "Late June",
+    "name": "San Francisco Pride",
+    "desc": "One of the largest Pride parades in the U.S., along Market Street."
+   },
+   {
+    "when": "Autumn",
+    "name": "Major tech conferences",
+    "desc": "Big industry conferences at the Moscone Center fill downtown hotels."
+   }
+  ]
+ },
+ {
+  "slug": "seattle",
+  "name": "Seattle",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown Seattle",
+  "lat": 47.6062,
+  "lng": -122.3321,
+  "index": 76,
+  "s": {
+   "walk": 9,
+   "transit": 8,
+   "food": 8,
+   "night": 7,
+   "culture": 8,
+   "family": 7,
+   "business": 9,
+   "value": 4
+  },
+  "country": "United States",
+  "tagline": "A market, a waterfront park and ferry rides to the islands, set between big-tech campuses and the Sound.",
+  "pair": "new-york",
+  "tall": 3,
+  "events": [
+   {
+    "when": "May–June",
+    "name": "Seattle International Film Festival",
+    "desc": "A long-running film festival with screenings across the city."
+   },
+   {
+    "when": "Late June",
+    "name": "Seattle Pride Parade",
+    "desc": "A large Pride parade through downtown."
+   },
+   {
+    "when": "Labor Day weekend",
+    "name": "Bumbershoot",
+    "desc": "A music and arts festival at Seattle Center."
+   }
+  ]
+ },
+ {
+  "slug": "boston",
+  "name": "Boston",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown & Financial District",
+  "lat": 42.3555,
+  "lng": -71.0605,
+  "index": 75,
+  "s": {
+   "walk": 10,
+   "transit": 8,
+   "food": 8,
+   "night": 6,
+   "culture": 9,
+   "family": 7,
+   "business": 8,
+   "value": 3
+  },
+  "country": "United States",
+  "tagline": "Colonial history and a modern harbourfront in a downtown small enough to cross on foot in 20 minutes.",
+  "pair": "new-york",
+  "tall": 1,
+  "events": [
+   {
+    "when": "April",
+    "name": "Boston Marathon",
+    "desc": "The world's oldest annual marathon finishes on Boylston Street."
+   },
+   {
+    "when": "July 4",
+    "name": "Independence Day on the Esplanade",
+    "desc": "A concert and fireworks along the Charles River."
+   },
+   {
+    "when": "December 31",
+    "name": "First Night",
+    "desc": "A New Year's Eve celebration with arts events and fireworks."
+   }
+  ]
+ },
+ {
+  "slug": "washington-dc",
+  "name": "Washington, D.C.",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown & Penn Quarter",
+  "lat": 38.899,
+  "lng": -77.028,
+  "index": 76,
+  "s": {
+   "walk": 9,
+   "transit": 8,
+   "food": 8,
+   "night": 6,
+   "culture": 10,
+   "family": 8,
+   "business": 8,
+   "value": 3
+  },
+  "country": "United States",
+  "tagline": "Free national museums, monumental avenues and a skyline kept low by law.",
+  "pair": "new-york",
+  "tall": 1,
+  "events": [
+   {
+    "when": "March–April",
+    "name": "National Cherry Blossom Festival",
+    "desc": "Weeks of events as the Tidal Basin's cherry trees bloom."
+   },
+   {
+    "when": "Late June–early July",
+    "name": "Smithsonian Folklife Festival",
+    "desc": "A free festival of cultural traditions on the National Mall."
+   },
+   {
+    "when": "July 4",
+    "name": "Independence Day",
+    "desc": "A parade and fireworks over the National Mall."
+   }
+  ]
+ },
+ {
+  "slug": "austin",
+  "name": "Austin",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown Austin",
+  "lat": 30.2672,
+  "lng": -97.7431,
+  "index": 68,
+  "s": {
+   "walk": 7,
+   "transit": 5,
+   "food": 8,
+   "night": 9,
+   "culture": 7,
+   "family": 6,
+   "business": 8,
+   "value": 5
+  },
+  "country": "United States",
+  "tagline": "A live-music capital with a state capitol, a lake trail and a bridge full of bats.",
+  "pair": "new-york",
+  "tall": 2,
+  "events": [
+   {
+    "when": "March",
+    "name": "SXSW",
+    "desc": "A large conference and festival of music, film and technology across downtown."
+   },
+   {
+    "when": "October",
+    "name": "Austin City Limits Music Festival",
+    "desc": "A two-weekend music festival in Zilker Park."
+   },
+   {
+    "when": "Autumn",
+    "name": "Formula 1 race weekend",
+    "desc": "The U.S. Grand Prix at a circuit outside the city fills downtown hotels."
+   }
+  ]
+ },
+ {
+  "slug": "denver",
+  "name": "Denver",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown & LoDo",
+  "lat": 39.749,
+  "lng": -104.995,
+  "index": 69,
+  "s": {
+   "walk": 8,
+   "transit": 7,
+   "food": 7,
+   "night": 7,
+   "culture": 7,
+   "family": 7,
+   "business": 7,
+   "value": 5
+  },
+  "country": "United States",
+  "tagline": "A restored railway station, brick warehouse districts and Rocky Mountain views from a mile-high downtown.",
+  "pair": "new-york",
+  "tall": 2,
+  "events": [
+   {
+    "when": "Autumn",
+    "name": "Great American Beer Festival",
+    "desc": "A large beer festival at the Colorado Convention Center."
+   },
+   {
+    "when": "Late Nov–Dec",
+    "name": "Denver Christkindlmarket",
+    "desc": "A German-style holiday market downtown."
+   },
+   {
+    "when": "Summer",
+    "name": "Baseball season at Coors Field",
+    "desc": "Game days fill LoDo's bars and restaurants."
+   }
+  ]
+ },
+ {
+  "slug": "miami",
+  "name": "Miami",
+  "region": "North America",
+  "rslug": "north-america",
+  "district": "Downtown & Brickell",
+  "lat": 25.7743,
+  "lng": -80.1937,
+  "index": 67,
+  "s": {
+   "walk": 7,
+   "transit": 6,
+   "food": 8,
+   "night": 9,
+   "culture": 7,
+   "family": 6,
+   "business": 8,
+   "value": 3
+  },
+  "country": "United States",
+  "tagline": "A bilingual, bayfront financial district with a free elevated train and an art scene to the north.",
+  "pair": "new-york",
+  "tall": 4,
+  "events": [
+   {
+    "when": "March",
+    "name": "Ultra Music Festival",
+    "desc": "A large electronic music festival in Bayfront Park."
+   },
+   {
+    "when": "December",
+    "name": "Miami Art Week",
+    "desc": "Art fairs across Miami Beach, downtown and Wynwood."
+   },
+   {
+    "when": "Winter",
+    "name": "Peak visitor season",
+    "desc": "Snowbirds and tourists fill restaurants and hotels."
+   }
+  ]
+ },
+ {
+  "slug": "london",
+  "name": "London",
+  "region": "Europe",
+  "rslug": "europe",
+  "district": "The City & West End",
+  "lat": 51.5138,
+  "lng": -0.0984,
+  "index": 85,
+  "s": {
+   "walk": 10,
+   "transit": 10,
+   "food": 9,
+   "night": 9,
+   "culture": 10,
+   "family": 7,
+   "business": 10,
+   "value": 2
+  },
+  "country": "United Kingdom",
+  "tagline": "Two downtowns in one: a medieval square mile of finance and a West End of theatres, galleries and shops.",
+  "pair": "paris",
+  "tall": 3,
+  "video": {
+   "id": "lMZa6qndrsQ",
+   "title": "London's Square Mile: An Immersive Summer Walk 4K HDR",
+   "channel": "Tour London"
+  },
+  "events": [
+   {
+    "when": "April",
+    "name": "London Marathon",
+    "desc": "A mass marathon ending on The Mall."
+   },
+   {
+    "when": "November",
+    "name": "Lord Mayor's Show",
+    "desc": "A centuries-old procession through the City."
+   },
+   {
+    "when": "Summer",
+    "name": "Outdoor theatre and festivals",
+    "desc": "Open-air performances along the South Bank."
+   }
+  ]
+ },
+ {
+  "slug": "paris",
+  "name": "Paris",
+  "region": "Europe",
+  "rslug": "europe",
+  "district": "Paris Centre",
+  "lat": 48.86,
+  "lng": 2.347,
+  "index": 84,
+  "s": {
+   "walk": 10,
+   "transit": 10,
+   "food": 10,
+   "night": 8,
+   "culture": 10,
+   "family": 7,
+   "business": 8,
+   "value": 3
+  },
+  "country": "France",
+  "tagline": "Islands, quays and arcades at the historic centre of the city, now reclaimed for walkers and cyclists.",
+  "pair": "london",
+  "tall": 1,
+  "events": [
+   {
+    "when": "June 21",
+    "name": "Fête de la Musique",
+    "desc": "Free music on streets across the city."
+   },
+   {
+    "when": "July–August",
+    "name": "Paris Plages",
+    "desc": "Seasonal beach-style spaces along the Seine."
+   },
+   {
+    "when": "July 14",
+    "name": "Bastille Day",
+    "desc": "Parade, celebrations and fireworks across Paris."
+   }
+  ]
+ },
+ {
+  "slug": "berlin",
+  "name": "Berlin",
+  "region": "Europe",
+  "rslug": "europe",
+  "district": "Mitte",
+  "lat": 52.52,
+  "lng": 13.405,
+  "index": 86,
+  "s": {
+   "walk": 9,
+   "transit": 10,
+   "food": 8,
+   "night": 10,
+   "culture": 10,
+   "family": 7,
+   "business": 8,
+   "value": 6
+  },
+  "country": "Germany",
+  "tagline": "A reunified centre where history, museums and nightlife share the same few square kilometres.",
+  "pair": "london",
+  "tall": 1,
+  "events": [
+   {
+    "when": "February",
+    "name": "Berlinale",
+    "desc": "A major international film festival."
+   },
+   {
+    "when": "September",
+    "name": "Berlin Marathon",
+    "desc": "A fast marathon course through the city."
+   },
+   {
+    "when": "October",
+    "name": "Festival of Lights",
+    "desc": "Projection art on landmarks."
+   }
+  ]
+ },
+ {
+  "slug": "amsterdam",
+  "name": "Amsterdam",
+  "region": "Europe",
+  "rslug": "europe",
+  "district": "Centrum",
+  "lat": 52.3731,
+  "lng": 4.8922,
+  "index": 80,
+  "s": {
+   "walk": 10,
+   "transit": 9,
+   "food": 8,
+   "night": 9,
+   "culture": 9,
+   "family": 8,
+   "business": 8,
+   "value": 3
+  },
+  "country": "Netherlands",
+  "tagline": "A UNESCO-listed canal ring where bicycles outnumber cars and the free ferries cross to the north.",
+  "pair": "london",
+  "tall": 1,
+  "events": [
+   {
+    "when": "April 27",
+    "name": "King's Day",
+    "desc": "A city-wide street party and free market."
+   },
+   {
+    "when": "Early August",
+    "name": "Pride Amsterdam",
+    "desc": "Canal Parade and celebrations."
+   },
+   {
+    "when": "Dec–Jan",
+    "name": "Amsterdam Light Festival",
+    "desc": "Light art along the canals."
+   }
+  ]
+ },
+ {
+  "slug": "barcelona",
+  "name": "Barcelona",
+  "region": "Europe",
+  "rslug": "europe",
+  "district": "Ciutat Vella & Eixample",
+  "lat": 41.3851,
+  "lng": 2.1734,
+  "index": 84,
+  "s": {
+   "walk": 10,
+   "transit": 9,
+   "food": 10,
+   "night": 9,
+   "culture": 9,
+   "family": 8,
+   "business": 7,
+   "value": 5
+  },
+  "country": "Spain",
+  "tagline": "Gothic lanes, a modernist grid and superblocks reclaiming streets from cars, a short walk from the beach.",
+  "pair": "london",
+  "tall": 1,
+  "video": {
+   "id": "ZORzsubQA_M",
+   "title": "Superblocks: How Barcelona is taking city streets back from cars",
+   "channel": "Vox"
+  },
+  "events": [
+   {
+    "when": "April 23",
+    "name": "Sant Jordi",
+    "desc": "A day of books and roses."
+   },
+   {
+    "when": "Late Sept",
+    "name": "La Mercè",
+    "desc": "The city's festival with human towers and fireworks."
+   },
+   {
+    "when": "Late May–June",
+    "name": "Primavera Sound",
+    "desc": "A major music festival."
+   }
+  ]
+ },
+ {
+  "slug": "tokyo",
+  "name": "Tokyo",
+  "region": "Asia-Pacific",
+  "rslug": "asia-pacific",
+  "district": "Marunouchi, Ginza & Shinjuku",
+  "lat": 35.6812,
+  "lng": 139.7671,
+  "index": 88,
+  "s": {
+   "walk": 9,
+   "transit": 10,
+   "food": 10,
+   "night": 9,
+   "culture": 9,
+   "family": 9,
+   "business": 9,
+   "value": 5
+  },
+  "country": "Japan",
+  "tagline": "Several downtowns stitched together by the world's most punctual rail network — calm by day, neon by night.",
+  "pair": "singapore",
+  "tall": 4,
+  "video": {
+   "id": "9EKl4TGX0zw",
+   "title": "Tokyo Walking Tour - Shinjuku Streets [4K 60fps]",
+   "channel": "Acerting Art"
+  },
+  "events": [
+   {
+    "when": "Late March–April",
+    "name": "Cherry-blossom season",
+    "desc": "Picnics under the trees along the palace moat at Chidorigafuchi and in Shinjuku Gyoen."
+   },
+   {
+    "when": "Late July",
+    "name": "Sumida River Fireworks",
+    "desc": "One of Tokyo's largest summer fireworks festivals, in the east of the city."
+   },
+   {
+    "when": "November",
+    "name": "Autumn colour",
+    "desc": "Ginkgo-lined avenues and garden maples turn gold and red."
+   }
+  ]
+ },
+ {
+  "slug": "singapore",
+  "name": "Singapore",
+  "region": "Asia-Pacific",
+  "rslug": "asia-pacific",
+  "district": "Downtown Core & CBD",
+  "lat": 1.283,
+  "lng": 103.851,
+  "index": 82,
+  "s": {
+   "walk": 8,
+   "transit": 10,
+   "food": 10,
+   "night": 7,
+   "culture": 8,
+   "family": 9,
+   "business": 10,
+   "value": 3
+  },
+  "country": "Singapore",
+  "tagline": "A garden city-state where the financial district meets the bay, hawker centres and colonial avenues.",
+  "pair": "tokyo",
+  "tall": 4,
+  "video": {
+   "id": "ygNKnw9-LLI",
+   "title": "Singapore's Central Business District (CBD) Downtown Core Walking Tour",
+   "channel": "ferwasthere"
+  },
+  "events": [
+   {
+    "when": "Jan–Feb",
+    "name": "Chinese New Year",
+    "desc": "Street light-ups and festive markets fill Chinatown."
+   },
+   {
+    "when": "August 9",
+    "name": "National Day",
+    "desc": "A parade, flypasts and fireworks around Marina Bay."
+   },
+   {
+    "when": "Sept–Oct",
+    "name": "Grand Prix night race",
+    "desc": "Formula 1 on a floodlit street circuit around the bay."
+   }
+  ]
+ },
+ {
+  "slug": "hong-kong",
+  "name": "Hong Kong",
+  "region": "Asia-Pacific",
+  "rslug": "asia-pacific",
+  "district": "Central",
+  "lat": 22.281,
+  "lng": 114.158,
+  "index": 82,
+  "s": {
+   "walk": 9,
+   "transit": 10,
+   "food": 10,
+   "night": 9,
+   "culture": 8,
+   "family": 7,
+   "business": 10,
+   "value": 2
+  },
+  "country": "China",
+  "tagline": "A vertical downtown of ferries, trams and hillside escalators squeezed between the harbour and the Peak.",
+  "pair": "tokyo",
+  "tall": 4,
+  "video": {
+   "id": "Y6j4nxSokJc",
+   "title": "Hong Kong CENTRAL District Walk Tour in 4K",
+   "channel": "Patrik Travel"
+  },
+  "events": [
+   {
+    "when": "Jan–Feb",
+    "name": "Lunar New Year",
+    "desc": "A night parade and harbour fireworks."
+   },
+   {
+    "when": "March",
+    "name": "Art Basel Hong Kong",
+    "desc": "A major international art fair at the harbourfront convention centre."
+   },
+   {
+    "when": "Around June",
+    "name": "Dragon Boat Festival",
+    "desc": "Paddle races across the territory's harbours and bays."
+   }
+  ]
+ },
+ {
+  "slug": "sydney",
+  "name": "Sydney",
+  "region": "Asia-Pacific",
+  "rslug": "asia-pacific",
+  "district": "Sydney CBD",
+  "lat": -33.8688,
+  "lng": 151.2093,
+  "index": 74,
+  "s": {
+   "walk": 8,
+   "transit": 8,
+   "food": 8,
+   "night": 7,
+   "culture": 8,
+   "family": 8,
+   "business": 9,
+   "value": 3
+  },
+  "country": "Australia",
+  "tagline": "A harbour downtown of ferries, sandstone laneways and an opera house, newly threaded with light rail and metro.",
+  "pair": "tokyo",
+  "tall": 3,
+  "video": {
+   "id": "M0b-E9wL-H4",
+   "title": "SYDNEY 4k Walking Tour - Sydney CBD during the morning rush hour",
+   "channel": "Guidebook Traveller"
+  },
+  "events": [
+   {
+    "when": "Late May–June",
+    "name": "Vivid Sydney",
+    "desc": "A festival of light projections, music and ideas around the harbour."
+   },
+   {
+    "when": "December 31",
+    "name": "New Year's Eve fireworks",
+    "desc": "Fireworks over the bridge and harbour draw huge crowds."
+   },
+   {
+    "when": "January",
+    "name": "Sydney Festival",
+    "desc": "A summer arts festival with many free events."
+   }
+  ]
+ },
+ {
+  "slug": "melbourne",
+  "name": "Melbourne",
+  "region": "Asia-Pacific",
+  "rslug": "asia-pacific",
+  "district": "Melbourne CBD",
+  "lat": -37.8136,
+  "lng": 144.9631,
+  "index": 80,
+  "s": {
+   "walk": 9,
+   "transit": 9,
+   "food": 9,
+   "night": 8,
+   "culture": 9,
+   "family": 8,
+   "business": 8,
+   "value": 4
+  },
+  "country": "Australia",
+  "tagline": "A street-grid CBD of laneway cafés, street art and free trams, built around coffee and culture.",
+  "pair": "tokyo",
+  "tall": 3,
+  "events": [
+   {
+    "when": "January",
+    "name": "Australian Open",
+    "desc": "A tennis Grand Slam at Melbourne Park, walking distance from the CBD."
+   },
+   {
+    "when": "March–April",
+    "name": "Melbourne International Comedy Festival",
+    "desc": "A large comedy festival across the city."
+   },
+   {
+    "when": "Early November",
+    "name": "Melbourne Cup",
+    "desc": "A famous horse race that brings the city to a stop."
+   }
+  ]
+ },
+ {
+  "slug": "dubai",
+  "name": "Dubai",
+  "region": "Middle East & Africa",
+  "rslug": "middle-east-africa",
+  "district": "City centre around Burj Khalifa, DIFC & Old Dubai",
+  "lat": 25.1972,
+  "lng": 55.2744,
+  "index": 69,
+  "s": {
+   "walk": 5,
+   "transit": 7,
+   "food": 8,
+   "night": 8,
+   "culture": 6,
+   "family": 8,
+   "business": 10,
+   "value": 4
+  },
+  "country": "United Arab Emirates",
+  "tagline": "The world's tallest tower, a financial free zone and old trading creeks — a desert city with two centres.",
+  "pair": "cape-town",
+  "tall": 4,
+  "video": {
+   "id": "sRELQX6Alzs",
+   "title": "Dubai City Center Walking Tour 4K",
+   "channel": "Travel Algorithm"
+  },
+  "events": [
+   {
+    "when": "Dec–Jan",
+    "name": "Dubai Shopping Festival",
+    "desc": "Sales, entertainment and fireworks across the city."
+   },
+   {
+    "when": "December 31",
+    "name": "New Year's Eve",
+    "desc": "Fireworks at the Burj Khalifa."
+   },
+   {
+    "when": "Varies (lunar calendar)",
+    "name": "Ramadan",
+    "desc": "A month of fasting with evening iftar gatherings."
+   }
+  ]
+ },
+ {
+  "slug": "mumbai",
+  "name": "Mumbai",
+  "region": "South Asia",
+  "rslug": "south-asia",
+  "district": "Fort, Colaba & Nariman Point",
+  "lat": 18.9322,
+  "lng": 72.8347,
+  "index": 74,
+  "s": {
+   "walk": 7,
+   "transit": 7,
+   "food": 9,
+   "night": 7,
+   "culture": 9,
+   "family": 6,
+   "business": 9,
+   "value": 5
+  },
+  "country": "India",
+  "tagline": "India's financial capital, where Victorian Gothic stations and Art Deco seafronts frame a nonstop city.",
+  "pair": "tokyo",
+  "tall": 3,
+  "events": [
+   {
+    "when": "February",
+    "name": "Kala Ghoda Arts Festival",
+    "desc": "An arts festival in the precinct."
+   },
+   {
+    "when": "Aug–Sept",
+    "name": "Ganesh Chaturthi",
+    "desc": "A major festival with processions to the sea."
+   },
+   {
+    "when": "Oct–Nov",
+    "name": "Diwali",
+    "desc": "The festival of lights."
+   }
+  ]
+ },
+ {
+  "slug": "mexico-city",
+  "name": "Mexico City",
+  "region": "Latin America",
+  "rslug": "latin-america",
+  "district": "Centro Histórico",
+  "lat": 19.4326,
+  "lng": -99.1332,
+  "index": 83,
+  "s": {
+   "walk": 8,
+   "transit": 8,
+   "food": 10,
+   "night": 8,
+   "culture": 10,
+   "family": 7,
+   "business": 7,
+   "value": 8
+  },
+  "country": "Mexico",
+  "tagline": "A UNESCO-listed historic centre built on an Aztec capital, with grand plazas, murals and car-free streets.",
+  "pair": "tokyo",
+  "tall": 2,
+  "events": [
+   {
+    "when": "Late Oct–Nov 2",
+    "name": "Day of the Dead",
+    "desc": "Altars, marigolds and a large parade through the centre."
+   },
+   {
+    "when": "Night of Sept 15",
+    "name": "Independence celebrations",
+    "desc": "The Grito de Independencia fills the Zócalo."
+   },
+   {
+    "when": "Spring",
+    "name": "Festival del Centro Histórico",
+    "desc": "Concerts, theatre and art across historic venues."
+   }
+  ]
+ },
+ {
+  "slug": "cape-town",
+  "name": "Cape Town",
+  "region": "Middle East & Africa",
+  "rslug": "middle-east-africa",
+  "district": "City Bowl",
+  "lat": -33.9249,
+  "lng": 18.4241,
+  "index": 71,
+  "s": {
+   "walk": 7,
+   "transit": 6,
+   "food": 8,
+   "night": 7,
+   "culture": 8,
+   "family": 7,
+   "business": 6,
+   "value": 8
+  },
+  "country": "South Africa",
+  "tagline": "A downtown cradled by Table Mountain, with a colourful heritage quarter and a working waterfront.",
+  "pair": "dubai",
+  "tall": 2,
+  "events": [
+   {
+    "when": "January 2",
+    "name": "Tweede Nuwe Jaar",
+    "desc": "Minstrel carnival."
+   },
+   {
+    "when": "March",
+    "name": "Cape Town Cycle Tour",
+    "desc": "A mass cycling event."
+   },
+   {
+    "when": "Monthly",
+    "name": "First Thursdays",
+    "desc": "Galleries open late."
+   }
+  ]
+ }
+]

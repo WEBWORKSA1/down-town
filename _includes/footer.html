@@ -1,0 +1,46 @@
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="/">Down<span class="stop" aria-hidden="true"></span>Town</a>
+        <p class="disclose">An independent guide to the world's city centres: how to explore them, live in them and find space to work, sell and gather in them. Down.Town is not affiliated with any city, government, business improvement district or organisation whose name contains the word "downtown". <a href="/trademark.html">Trademark &amp; copyright notice</a>.</p>
+        <p class="disclose"><b>How we earn:</b> advertising (Google AdSense), sponsorships, featured listings, reader support and referral fees from partners when you choose to work with one after a free introduction. Partners never pay for editorial coverage. <a href="/editorial-policy.html">Editorial policy</a>.</p>
+      </div>
+      <div><h4><span class="bullet e">E</span>Explore</h4><ul>
+        <li><a href="/explore/">All {{ site.data.cities | size }} city guides</a></li>
+        <li><a href="/rankings.html">Down.Town Index</a></li>
+        <li><a href="/events.html">Events calendar</a></li>
+        <li><a href="/videos.html">Walking-tour videos</a></li>
+        <li><a href="/journal.html">Journal</a></li></ul></div>
+      <div><h4><span class="bullet l">L</span>Live</h4><ul>
+        <li><a href="/live/">Living downtown</a></li>
+        <li><a href="/tools/downtown-match.html">Find your downtown</a></li>
+        <li><a href="/tools/rent-budget.html">Rent budget calculator</a></li>
+        <li><a href="/tools/moving-cost.html">Moving cost estimator</a></li>
+        <li><a href="/get-matched.html?need=home">Moving help</a></li></ul></div>
+      <div><h4><span class="bullet s">S</span>Find Space</h4><ul>
+        <li><a href="/space/">Office, retail &amp; venues</a></li>
+        <li><a href="/tools/office-space.html">Office space calculator</a></li>
+        <li><a href="/tools/coworking-vs-lease.html">Coworking vs lease</a></li>
+        <li><a href="/tools/venue-budget.html">Event venue budget</a></li>
+        <li><a href="/get-matched.html?need=office">Find office space</a></li></ul></div>
+      <div><h4>Down.Town</h4><ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/partners.html">Partner network</a></li>
+        <li><a href="/advertise.html">Advertise &amp; sponsor</a></li>
+        <li><a href="/careers.html">Careers &amp; contributors</a></li>
+        <li><a href="/contests.html">Contests</a></li>
+        <li><a href="/support.html">Support us</a></li>
+        <li><a href="{{ site.owner_contact }}" target="_blank" rel="noopener">Buy or partner on this domain</a></li></ul></div>
+    </div>
+    <div class="foot-cities" aria-label="All downtown guides">
+      <h4>Downtown guides</h4>
+      <p>{% for c in site.data.cities %}<a href="/explore/{{ c.slug }}.html">{{ c.name }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span> {% endunless %}{% endfor %}</p>
+    </div>
+    <div class="foot-legal">
+      <span>&copy; <span data-year>2026</span> Down.Town. Original content; all rights reserved. <a href="https://www.google.com/preferences/source?q=down.town" target="_blank" rel="noopener">Add Down.Town as a preferred source on Google</a></span>
+      <span><a href="/privacy.html">Privacy</a> &nbsp; <a href="/cookies.html">Cookies</a> &nbsp; <a href="/terms.html">Terms</a> &nbsp; <a href="/disclaimer.html">Disclaimer</a> &nbsp; <a href="/editorial-policy.html">Editorial policy</a> &nbsp; <a href="/contest-rules.html">Contest rules</a> &nbsp; <a href="/accessibility.html">Accessibility</a> &nbsp; <a href="/sitemap.html">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
