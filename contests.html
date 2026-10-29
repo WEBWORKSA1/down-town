@@ -1,72 +1,186 @@
 ---
-layout: "default"
-title: "Downtown Lens Photo Contest and Best Block Awards"
-description: "Enter Downtown Lens, the free photo contest for city centres with cash prizes, and nominate independent businesses for the Best Block Awards."
-root: ""
-canon: "contests.html"
-section: "contests"
+layout: default
+title: "Contests: Downtown Lens Photo Contest and Best Block Awards"
+description: "Enter Downtown Lens, the free photo contest for city centres in five categories, or nominate the best block in your downtown for the Best Block Awards."
+section: about
+updated: "2026-10-29"
+faq:
+  - q: "Is it free to enter?"
+    a: "Yes. No purchase or payment is necessary to enter Downtown Lens or to nominate a block for the Best Block Awards, and buying anything from a sponsor will not improve your chances."
+  - q: "Who owns my photo?"
+    a: "You do. You keep the copyright and grant Down.Town a non-exclusive licence to display your entry, with credit, for the contest and its promotion."
+  - q: "Can I enter from outside Canada?"
+    a: "Yes. Both contests are open to adults worldwide, except where they are prohibited or restricted by law. Winners who live in Canada must correctly answer a skill-testing question before a prize is awarded."
+  - q: "What are the prizes?"
+    a: "Prizes are funded by sponsors. Season 1 prize values will be announced on this page as sponsors confirm them, before judging begins. Winning entries are published on Down.Town with credit."
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Contests</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Contests"}]}</script>
- <h1>Downtown Lens: the photo contest for city centres</h1>
- <p class="lede">Season 1 runs December 1, 2026 to February 28, 2027. Five categories, cash prizes, publication across Down.Town — and free to enter.</p>
- <div class="share"><a class="btn amber" href="#enter">Enter Downtown Lens</a><a class="btn ghost" href="#rules">Read the rules</a></div>
+ {% include crumbs.html label="Contests" %}
+ <span class="tag"><span class="bullet e" aria-hidden="true">E</span> Contests · Season 1</span>
+ <h1 style="margin-top:.6rem">Two contests for people who love their downtown</h1>
+ <p class="lede">Downtown Lens is a photo contest for city centres in five categories. The Best Block Awards ask readers to nominate the best block in their downtown. Both are free, and both are judged on merit by a panel.</p>
+ <div class="trust" style="margin-top:1rem"><span>Free to enter</span><span>No purchase necessary</span><span>Judged on skill by a panel</span><span>You keep your copyright</span><span>Open to adults 18+</span></div>
+ <div class="share"><a class="btn amber" href="#enter">Enter Downtown Lens</a><a class="btn ghost" href="#nominate">Nominate a block</a><a class="btn ghost" href="/contest-rules.html">Official rules</a></div>
 </div></header>
-<section class="sec tight"><div class="wrap">
- <div class="stat-row"><div class="stat"><b>US$500</b><span>Grand prize + cover feature</span></div><div class="stat" style="--lc:var(--teal)"><b>5 × US$100</b><span>Category winners</span></div><div class="stat" style="--lc:var(--cobalt)"><b>US$100</b><span>Community Choice</span></div><div class="stat" style="--lc:var(--red)"><b>Free</b><span>Up to 5 entries per person</span></div></div>
- <h2 style="margin-top:2.2rem">Categories</h2>
- <div class="grid g3"><div class="card"><h3>Skyline After Dark</h3><p class="muted small">City lights, blue hour and reflections.</p></div><div class="card"><h3>Street Life</h3><p class="muted small">People, markets and moments — with permission from identifiable subjects.</p></div><div class="card"><h3>Storefronts & Signs</h3><p class="muted small">Independent shops, neon, typography and windows.</p></div><div class="card"><h3>Green Downtown</h3><p class="muted small">Parks, rooftops, waterfronts and street trees.</p></div><div class="card"><h3>On the Move</h3><p class="muted small">Trains, trams, bikes, ferries and the people riding them.</p></div><div class="card" style="border-style:dashed"><h3>Sponsor a category</h3><p class="muted small">Add your prize and a judge's seat. <a href="advertise.html">Contest sponsorship</a>.</p></div></div>
- <h2 style="margin-top:2.2rem">How it works</h2>
- <ol class="stations line-e" style="list-style:none">
-  <li><b>Shoot</b><p>Photograph any downtown or city centre in the world. Photos must be your own and taken within the last two years.</p></li>
-  <li><b>Submit</b><p>Send a share link (Google Drive, Dropbox, Flickr or your portfolio) with the form below, by February 28, 2027.</p></li>
-  <li><b>Judging</b><p>Editors shortlist entries in March 2027, judging composition, originality, technical quality and sense of place.</p></li>
-  <li><b>Community vote</b><p>Readers vote for Community Choice from the shortlist.</p></li>
-  <li><b>Winners</b><p>Announced in April 2027 on this page and in the Downtown Dispatch.</p></li>
- </ol>
-</div></section>
-<section class="sec tight alt" id="enter"><div class="wrap split">
- <form class="card form" data-form="Downtown Lens entry" data-redirect="thank-you.html">
-  <h3>Enter Season 1</h3>
-  <div class="row"><div class="field"><label for="ct-name">Full name</label><input id="ct-name" name="name" required autocomplete="name"></div>
-  <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required autocomplete="email"></div></div>
-  <div class="row"><div class="field"><label for="ct-cat">Category</label><select id="ct-cat" name="category" required><option>Skyline After Dark</option><option>Street Life</option><option>Storefronts & Signs</option><option>Green Downtown</option><option>On the Move</option></select></div>
-  <div class="field"><label for="ct-city">City photographed</label><input id="ct-city" name="city" required></div></div>
-  <div class="field"><label for="ct-link">Link to your photo(s), max 5</label><input id="ct-link" name="photo_link" type="url" required placeholder="https://"><span class="hint">JPEG, at least 2000 px on the long edge. Make sure the link is viewable by anyone.</span></div>
-  <div class="field"><label for="ct-title">Title and short caption</label><textarea id="ct-title" name="caption" maxlength="400" data-count="ct-count" required></textarea><div class="counter" id="ct-count"></div></div>
-  <label class="check"><input type="checkbox" name="age" value="18+" required><span>I am 18 or older.</span></label>
-  <label class="check"><input type="checkbox" name="rights" value="Confirmed" required><span>The photos are my own original work, not AI-generated, and I have permission from any identifiable people who are the main subject.</span></label>
-  <label class="check"><input type="checkbox" name="licence" value="Granted" required><span>I keep copyright and grant Down.Town a non-exclusive, royalty-free licence to display my entry for the contest and its promotion, with credit. I accept the <a href="#rules">official rules</a>.</span></label>
-  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div><button class="btn amber" type="submit">Submit my entry</button><p class="form-status" role="status" aria-live="polite"></p>
- </form>
- <div>
-  <h2 style="font-size:1.5rem">Best Block Awards</h2>
-  <p class="muted">Know an independent downtown business that makes its block better? Nominate it. Winners get a feature in their city guide, a winner's badge for their window and website, and a free year of Spotlight listing.</p>
-  <form class="card form" data-form="Best Block nomination" data-ok="Nomination received. Thank you for championing your block.">
-   <div class="row"><div class="field"><label for="bb-biz">Business name</label><input id="bb-biz" name="business_name" required></div>
-   <div class="field"><label for="bb-city">Downtown</label><select id="bb-city" name="city" required><option value="">Choose a city</option><optgroup label="North America"><option value="Austin">Austin</option><option value="Boston">Boston</option><option value="Chicago">Chicago</option><option value="Denver">Denver</option><option value="Miami">Miami</option><option value="Montréal">Montréal</option><option value="New York">New York</option><option value="San Francisco">San Francisco</option><option value="Seattle">Seattle</option><option value="Toronto">Toronto</option><option value="Vancouver">Vancouver</option><option value="Washington, D.C.">Washington, D.C.</option></optgroup><optgroup label="Europe"><option value="Amsterdam">Amsterdam</option><option value="Barcelona">Barcelona</option><option value="Berlin">Berlin</option><option value="London">London</option><option value="Paris">Paris</option></optgroup><optgroup label="Asia-Pacific"><option value="Hong Kong">Hong Kong</option><option value="Melbourne">Melbourne</option><option value="Singapore">Singapore</option><option value="Sydney">Sydney</option><option value="Tokyo">Tokyo</option></optgroup><optgroup label="Middle East & Africa"><option value="Cape Town">Cape Town</option><option value="Dubai">Dubai</option></optgroup><optgroup label="Latin America"><option value="Mexico City">Mexico City</option></optgroup><optgroup label="South Asia"><option value="Mumbai">Mumbai</option></optgroup><option value="Another city">Another city</option><option value="Not sure yet">Not sure yet</option></select></div></div>
-   <div class="field"><label for="bb-why">Why they deserve it</label><textarea id="bb-why" name="why" maxlength="500" required></textarea></div>
-   <div class="row"><div class="field"><label for="bb-name">Your name</label><input id="bb-name" name="name" required autocomplete="name"></div>
-   <div class="field"><label for="bb-email">Your email</label><input id="bb-email" name="email" type="email" required autocomplete="email"></div></div>
-   <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div><button class="btn" type="submit">Nominate</button><p class="form-status" role="status" aria-live="polite"></p>
-  </form>
+
+<section class="sec tight" id="lens"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet e" aria-hidden="true">E</span> Downtown Lens</span><h2>Five categories, any downtown in the world</h2></div></div>
+ <p class="muted" style="max-width:68ch">Photograph any city centre, enter up to five photos a season, and a judging panel picks the best in each category on sense of place, composition, originality and technical quality.</p>
+ <div class="grid g3" style="margin-top:1.2rem">
+  <div class="card lined line-e pillar"><h3>Skyline After Dark</h3><p class="muted small">City lights, blue hour, reflections and the shape of a skyline at night.</p><a class="btn ghost sm" href="/contests.html?category=Skyline%20After%20Dark#enter">Enter this category</a></div>
+  <div class="card lined line-e pillar"><h3>Street Life</h3><p class="muted small">People, markets and everyday moments on downtown streets. Get permission from anyone who is the main subject of your photo.</p><a class="btn ghost sm" href="/contests.html?category=Street%20Life#enter">Enter this category</a></div>
+  <div class="card lined line-e pillar"><h3>Storefronts &amp; Signs</h3><p class="muted small">Independent shopfronts, neon, hand-painted lettering, windows and the typography of the street.</p><a class="btn ghost sm" href="/contests.html?category=Storefronts%20%26%20Signs#enter">Enter this category</a></div>
+  <div class="card lined line-l pillar"><h3>Green Downtown</h3><p class="muted small">Parks, rooftops, waterfronts, street trees and the nature that thrives in the core.</p><a class="btn ghost sm" href="/contests.html?category=Green%20Downtown#enter">Enter this category</a></div>
+  <div class="card lined line-b pillar"><h3>On the Move</h3><p class="muted small">Trains, trams, buses, bikes and ferries, and the people riding them.</p><a class="btn ghost sm" href="/contests.html?category=On%20the%20Move#enter">Enter this category</a></div>
+  <div class="card pillar" style="border-style:dashed"><h3>Sponsor a category</h3><p class="muted small">Fund a category prize, put your name on it and nominate a judge. Prizes in every category come from sponsors.</p><a class="btn ghost sm" href="#sponsor">Sponsor a prize</a></div>
  </div>
 </div></section>
-<section class="sec tight" id="rules"><div class="wrap legal prose" style="font-size:1.05rem">
- <h2>Official rules (summary)</h2>
- <ul>
-  <li><strong>Organiser:</strong> Down.Town (down.town). Contact via the <a href="contact.html?topic=Contest">contact form</a>.</li>
-  <li><strong>No purchase or payment necessary.</strong> Entering is free. Void where prohibited or restricted by law.</li>
-  <li><strong>Eligibility:</strong> open to individuals 18 or older, worldwide, except where prohibited. Down.Town staff, judges and their immediate families may not win prizes.</li>
-  <li><strong>Entry period:</strong> December 1, 2026, 00:00 UTC to February 28, 2027, 23:59 UTC. Entries outside the period are not eligible.</li>
-  <li><strong>Entries:</strong> up to five photographs per person across all categories, taken in a downtown or city centre within two years before submission. No AI-generated or composited images; standard editing is fine. Entrants must hold all rights and any required permissions from identifiable people or property owners.</li>
-  <li><strong>Judging:</strong> category and grand-prize winners are chosen on merit — composition, originality, technical quality and sense of place — by Down.Town editors and any category sponsor judges. Community Choice is decided by a public vote among shortlisted entries; one vote per person, and suspicious voting may be disqualified.</li>
-  <li><strong>Prizes:</strong> Grand Prize US$500 plus a cover feature; five category prizes of US$100; Community Choice US$100. One prize per person. Cash prizes are paid electronically within 30 days of winner verification; winners are responsible for any taxes. Sponsor-provided prizes may be added and will be described on this page.</li>
-  <li><strong>Winner verification:</strong> winners will be contacted by email and must respond within 14 days and confirm eligibility and rights, or an alternate may be selected.</li>
-  <li><strong>Licence:</strong> entrants keep copyright and grant Down.Town a non-exclusive, worldwide, royalty-free licence to display, reproduce and share entries, with credit, for the contest and its promotion. No other commercial use without separate agreement.</li>
-  <li><strong>Privacy:</strong> entry data is used to run the contest as described in our <a href="privacy.html">privacy policy</a>.</li>
-  <li><strong>General:</strong> Down.Town may cancel, suspend or modify the contest if it cannot run as planned, and may disqualify entries that break these rules. Decisions of the judges are final.</li>
- </ul>
+
+<section class="sec tight alt"><div class="wrap split">
+ <div>
+  <span class="tag">How to enter</span>
+  <h2 style="margin-top:.4rem">Four steps, about five minutes</h2>
+  <ol class="stations line-e" style="margin-top:1rem">
+   <li><b>Shoot</b><p>Photograph any downtown or city centre in the world. The photo must be your own work, taken within two years before you enter.</p></li>
+   <li><b>Host it yourself</b><p>Upload the photo to your own portfolio, cloud storage or photo-sharing page, as a JPEG at least 2,000 pixels on its long edge, and make sure anyone with the link can view it.</p></li>
+   <li><b>Submit</b><p>Use the <a href="#enter">entry form</a>: one photo per form, up to five photos per person across all categories each season.</p></li>
+   <li><b>Keep the link live</b><p>Leave the photo online until winners are announced. If the link stops working, the judges can't see your entry.</p></li>
+  </ol>
+ </div>
+ <div>
+  <span class="tag">Judging criteria</span>
+  <h2 style="margin-top:.4rem">What the panel looks for</h2>
+  <p class="muted">Every eligible entry is scored by a judging panel of Down.Town editors and, where a category has a sponsor, one judge nominated by that sponsor. Scores are weighted like this:</p>
+  <div class="scores line-e" style="margin-top:1rem">
+   <div class="score"><span>Sense of place</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>30%</b></div>
+   <div class="score"><span>Composition</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>25%</b></div>
+   <div class="score"><span>Originality</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>25%</b></div>
+   <div class="score"><span>Technical quality</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>20%</b></div>
+  </div>
+  <p class="small muted" style="margin-top:.8rem"><b>Sense of place:</b> could this only be this downtown? <b>Composition:</b> framing, light and timing. <b>Originality:</b> a fresh view of a familiar place. <b>Technical quality:</b> focus, exposure and editing that serves the picture.</p>
+ </div>
 </div></section>
-{% endraw %}
+
+<section class="sec tight"><div class="wrap">
+ <div class="sec-head"><div><span class="tag">Season 1</span><h2>How the season runs</h2></div></div>
+ <div class="grid g3">
+  <div class="card lined line-e"><span class="pill-note">Phase 1</span><h3 style="margin-top:.5rem">Open call</h3><p class="muted small">Downtown Lens entries and Best Block nominations are accepted through the forms on this page.</p></div>
+  <div class="card lined line-l"><span class="pill-note">Phase 2</span><h3 style="margin-top:.5rem">Judging</h3><p class="muted small">The panel scores every eligible entry and nomination against the published criteria. Prizes are confirmed before judging begins.</p></div>
+  <div class="card lined line-b"><span class="pill-note">Phase 3</span><h3 style="margin-top:.5rem">Winners announced</h3><p class="muted small">Winners are verified, then announced on this page and in the Downtown Dispatch, with credit.</p></div>
+ </div>
+ <div class="notice" style="margin-top:1.2rem">The dates for each phase are published on this page before the open call begins, and form part of the <a href="/contest-rules.html">official rules</a>. Want to hear first? Choose the Contests edition when you sign up for the <a href="#nl-h">Downtown Dispatch</a>.</div>
+ <div class="card" style="margin-top:1.2rem;border-left:8px solid var(--amber)">
+  <h3>Prizes</h3>
+  <p class="muted" style="margin:0">Prizes are funded by sponsors. Season 1 prize values will be announced on this page as sponsors confirm them, and before judging begins. Prizes can't be exchanged for cash unless the prize description says so. Winning entries and blocks are published on Down.Town with credit.</p>
+ </div>
+</div></section>
+
+<section class="sec tight alt" id="enter"><div class="wrap split">
+ <form class="card form" data-form="Downtown Lens entry" data-ok="Entry received. You can enter up to five photos a season, one per form.">
+  <h2 style="font-size:1.4rem;margin-bottom:.2rem">Enter Downtown Lens</h2>
+  <p class="small muted" style="margin:0">One photo per form. Up to five photos per person each season.</p>
+  <div class="row"><div class="field"><label for="dl-name">Full name</label><input id="dl-name" name="name" type="text" required autocomplete="name"></div>
+  <div class="field"><label for="dl-email">Email</label><input id="dl-email" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="row"><div class="field"><label for="dl-city">City photographed</label><input id="dl-city" name="city" type="text" required placeholder="e.g. Montréal"></div>
+  <div class="field"><label for="dl-country">Where you live</label><input id="dl-country" name="residence" type="text" required autocomplete="country-name" placeholder="Country and region"></div></div>
+  <div class="field"><label for="dl-cat">Category</label><select id="dl-cat" name="category" data-prefill="category" required><option value="">Choose a category</option><option>Skyline After Dark</option><option>Street Life</option><option>Storefronts &amp; Signs</option><option>Green Downtown</option><option>On the Move</option></select></div>
+  <div class="field"><label for="dl-link">Link to your photo</label><input id="dl-link" name="photo_link" type="url" required placeholder="https://"><span class="hint">A link to the photo on your own portfolio, cloud storage or photo-sharing page, viewable by anyone with the link. JPEG, at least 2,000 pixels on the long edge.</span></div>
+  <div class="field"><label for="dl-title">Title</label><input id="dl-title" name="title" type="text" required maxlength="100"></div>
+  <div class="field"><label for="dl-cap">Caption</label><textarea id="dl-cap" name="caption" required maxlength="280" data-count="dl-cap-count" placeholder="Where and when you took it, and what drew you to the shot."></textarea><span class="counter" id="dl-cap-count"></span></div>
+  <label class="check"><input type="checkbox" name="age" value="18+ or age of majority" required> <span>I am 18 or older, and at least the age of majority where I live.</span></label>
+  <label class="check"><input type="checkbox" name="rules" value="Accepted official rules" required> <span>I accept the <a href="/contest-rules.html" target="_blank">official rules</a>. This is my own original photo, not AI-generated, and I have permission from any identifiable person who is its main subject.</span></label>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed: run contest and contact me" required> <span>I agree that Down.Town may use these details to run the contest and contact me about my entry, and may publish my name and city with my photo if it wins. See the <a href="/privacy.html">privacy policy</a>.</span></label>
+  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <div><button class="btn amber" type="submit">Submit my entry</button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+ <div>
+  <h2 style="font-size:1.4rem">Before you submit</h2>
+  <ul class="check-list" style="margin-top:.6rem">
+   <li>The photo is yours, taken within the last two years</li>
+   <li>It was taken in a downtown or city centre</li>
+   <li>Edits are limited to normal adjustments: cropping, exposure, colour, contrast and cleaning up dust</li>
+   <li>No AI-generated images, composites, borders, watermarks or signatures</li>
+   <li>Anyone who is the main subject has agreed to be photographed and entered</li>
+   <li>You didn't trespass, fly a drone where it isn't allowed or break any other law to get the shot</li>
+   <li>The link opens for someone who isn't signed in to your account</li>
+  </ul>
+  <p class="small muted" style="margin-top:1rem">You keep the copyright. By entering, you grant Down.Town a non-exclusive licence to display your entry, with credit, for the contest and its promotion. Details are in the <a href="/contest-rules.html#licence">official rules</a>.</p>
+ </div>
+</div></section>
+
+<section class="sec tight" id="nominate"><div class="wrap split">
+ <div>
+  <span class="tag"><span class="bullet l" aria-hidden="true">L</span> Best Block Awards</span>
+  <h2 style="margin-top:.4rem">Which block makes your downtown?</h2>
+  <p class="muted">Every downtown has one: the stretch between two corners where the street feels most alive. Tell us which block it is in your city, and why. The panel reviews every nomination, and winning blocks are announced on this page and in the Dispatch, then written up by the editors.</p>
+  <h3 style="margin-top:1.2rem">What the panel looks for</h3>
+  <div class="scores line-l" style="margin-top:.6rem">
+   <div class="score"><span>Street life</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>30%</b></div>
+   <div class="score"><span>Local character</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>30%</b></div>
+   <div class="score"><span>Public space</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>20%</b></div>
+   <div class="score"><span>Walkability</span><span class="bar" aria-hidden="true" style="grid-template-columns:repeat(20,1fr)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>20%</b></div>
+  </div>
+  <p class="small muted" style="margin-top:.8rem"><b>Street life:</b> activity through the day and week. <b>Local character:</b> independent places, history and a sense that it belongs to this city. <b>Public space:</b> seating, shade, greenery and room to linger. <b>Walkability:</b> safe crossings, step-free access and transit close by.</p>
+  <p class="small muted">Up to three nominations per person each season. Nominators must be 18 or older.</p>
+ </div>
+ <form class="card form" data-form="Best Block nomination" data-ok="Nomination received. You can nominate up to three blocks a season.">
+  <h2 style="font-size:1.4rem;margin-bottom:.2rem">Nominate a block</h2>
+  <div class="field"><label for="bb-block">The block</label><input id="bb-block" name="block" type="text" required placeholder="Street name, between which cross streets"></div>
+  <div class="field"><label for="bb-city">Downtown</label><select id="bb-city" name="city" required><option value="">Choose a city</option><optgroup label="North America"><option>Atlanta</option><option>Austin</option><option>Boston</option><option>Calgary</option><option>Chicago</option><option>Dallas</option><option>Denver</option><option>Houston</option><option>Los Angeles</option><option>Miami</option><option>Minneapolis</option><option>Montréal</option><option>Nashville</option><option>New York</option><option>Ottawa</option><option>Philadelphia</option><option>Phoenix</option><option>Portland</option><option>San Diego</option><option>San Francisco</option><option>Seattle</option><option>Toronto</option><option>Vancouver</option><option>Washington, D.C.</option></optgroup><optgroup label="Europe"><option>Amsterdam</option><option>Barcelona</option><option>Berlin</option><option>Dublin</option><option>Lisbon</option><option>London</option><option>Paris</option></optgroup><optgroup label="Asia-Pacific"><option>Hong Kong</option><option>Melbourne</option><option>Seoul</option><option>Singapore</option><option>Sydney</option><option>Tokyo</option></optgroup><optgroup label="Middle East &amp; Africa"><option>Cape Town</option><option>Dubai</option></optgroup><optgroup label="Latin America"><option>Mexico City</option></optgroup><optgroup label="South Asia"><option>Bengaluru</option><option>Mumbai</option></optgroup><option>Another city</option></select></div>
+  <div class="field"><label for="bb-why">Why it deserves to win</label><textarea id="bb-why" name="why" required maxlength="500" data-count="bb-why-count" placeholder="What happens on this block, who it's for and what makes it better than the rest."></textarea><span class="counter" id="bb-why-count"></span></div>
+  <div class="row"><div class="field"><label for="bb-name">Your name</label><input id="bb-name" name="name" type="text" required autocomplete="name"></div>
+  <div class="field"><label for="bb-email">Your email</label><input id="bb-email" name="email" type="email" required autocomplete="email"></div></div>
+  <label class="check"><input type="checkbox" name="rules" value="18+ and accepted official rules" required> <span>I am 18 or older and accept the <a href="/contest-rules.html" target="_blank">official rules</a>.</span></label>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed: run awards and contact me" required> <span>I agree that Down.Town may use these details to run the awards and contact me about my nomination. See the <a href="/privacy.html">privacy policy</a>.</span></label>
+  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <div><button class="btn teal" type="submit">Send my nomination</button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+</div></section>
+
+<section class="sec tight alt" id="sponsor"><div class="wrap split">
+ <div>
+  <span class="tag">Sponsor a prize</span>
+  <h2 style="margin-top:.4rem">Put your name on a category</h2>
+  <p class="muted">Every Downtown Lens and Best Block prize is funded by a sponsor. In return, the category or award is presented by you, your logo appears on this page, the official rules and the winners' announcement, and you can nominate one judge to score alongside our editors on the published criteria.</p>
+  <ul class="list-check" style="margin-top:1rem">
+   <li>Camera, print and creative brands</li>
+   <li>Cities, tourism boards and downtown associations</li>
+   <li>Local businesses that want to back their own downtown</li>
+  </ul>
+  <p class="small muted" style="margin-top:1rem">Sponsors don't choose winners on their own, don't receive entrants' details (beyond what's needed to deliver a prize to a winner) and get no say over editorial content. See <a href="/advertise.html#packages">all sponsorship packages</a>.</p>
+ </div>
+ <form class="card form" data-form="Prize sponsorship" data-redirect="thank-you.html">
+  <h2 style="font-size:1.4rem;margin-bottom:.2rem">Ask about sponsoring a prize</h2>
+  <div class="row"><div class="field"><label for="ps-name">Name</label><input id="ps-name" name="name" type="text" required autocomplete="name"></div>
+  <div class="field"><label for="ps-email">Work email</label><input id="ps-email" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="row"><div class="field"><label for="ps-co">Company or organisation</label><input id="ps-co" name="company" type="text" required autocomplete="organization"></div>
+  <div class="field"><label for="ps-web">Website</label><input id="ps-web" name="website" type="url" placeholder="https://"></div></div>
+  <div class="field"><label for="ps-what">What would you like to sponsor?</label><select id="ps-what" name="sponsor_interest"><option>A Downtown Lens category</option><option>All Downtown Lens categories</option><option>The Best Block Awards</option><option>Not sure yet</option></select></div>
+  <div class="field"><label for="ps-msg">Your prize idea <span class="hint">(optional)</span></label><textarea id="ps-msg" name="message" maxlength="800" data-count="ps-msg-count" placeholder="The prize you have in mind, the category or city you care about, and your timing."></textarea><span class="counter" id="ps-msg-count"></span></div>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed: contact about sponsorship" required> <span>I agree that Down.Town may contact me about prize sponsorship. See the <a href="/privacy.html">privacy policy</a>.</span></label>
+  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <div><button class="btn" type="submit">Send enquiry</button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+</div></section>
+
+<section class="sec tight" id="rules"><div class="wrap split">
+ <div class="legal prose" style="font-size:1.04rem">
+  <h2 style="margin-top:0">The rules in brief</h2>
+  <ul>
+   <li><strong>Organiser:</strong> Down.Town, Montréal, Québec, Canada.</li>
+   <li><strong>No purchase necessary.</strong> Both contests are free to enter. Void where prohibited or restricted by law.</li>
+   <li><strong>Eligibility:</strong> individuals aged 18 or older, and at least the age of majority where they live. Down.Town editors, judges, sponsors' staff involved in the contest and their immediate families can't win.</li>
+   <li><strong>Skill, not chance:</strong> winners are chosen by a judging panel on the published criteria. There is no draw and no public vote.</li>
+   <li><strong>Entry limits:</strong> up to five Downtown Lens photos and three Best Block nominations per person each season.</li>
+   <li><strong>Your copyright:</strong> you keep it, and grant Down.Town a non-exclusive licence to display your entry, with credit.</li>
+   <li><strong>Prizes:</strong> funded by sponsors and announced on this page when sponsors confirm. No cash substitution unless stated.</li>
+   <li><strong>Canadian winners</strong> must correctly answer a time-limited skill-testing question.</li>
+   <li><strong>Québec residents:</strong> where required, the contest is registered with the Régie des alcools, des courses et des jeux, and a dispute may be submitted to the Régie.</li>
+  </ul>
+  <p>This is a summary. The <a href="/contest-rules.html">official rules</a> apply, and questions can go to the <a href="/contact.html?topic=Contest">contest desk</a>.</p>
+ </div>
+ <div>{% include faq.html %}</div>
+</div></section>

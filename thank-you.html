@@ -1,22 +1,49 @@
 ---
-layout: "default"
-title: "Thank You"
-description: "Your submission was received."
-root: ""
-canon: "thank-you.html"
-section: ""
+layout: default
+title: "Thank You: Your Message Is on Its Way"
+description: "Your form has reached Down.Town. Here is what happens next, plus free tools and city guides to explore while an editor reviews your message or request."
+section: about
+updated: "2026-10-29"
 noads: true
 noindex: true
+nolead: true
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <h1>Thank you — it's on its way</h1>
- <p class="lede" id="ty-msg">We've received your submission and will reply within two business days. Check your inbox (and spam folder) for our reply.</p>
- <div class="share"><a class="btn" href="index.html">Back to Down.Town</a><a class="btn ghost" href="explore/index.html">Browse city guides</a></div>
+ {% include crumbs.html label="Thank you" %}
+ <div class="done-box"><div class="tick" aria-hidden="true"></div></div>
+ <span class="tag">Received</span>
+ <h1 style="margin-top:.6rem">Thanks — it's on its way</h1>
+ <p class="lede">Your form has reached the Down.Town editors' private inbox, and a person, not a bot, will read it.</p>
+ <div class="share"><a class="btn" href="/">Back to Down.Town</a><a class="btn ghost" href="/explore/">Browse the city guides</a></div>
 </div></header>
-<section class="sec tight"><div class="wrap"><div class="grid g3">
- <article class="card lined line-t"><h3><a href="tools/downtown-match.html">Find Your Downtown</a></h3><p class="muted small">Rank 26 city centres by what matters to you.</p></article>
- <article class="card lined line-l"><h3><a href="live/downtown-move-checklist.html">The move checklist</a></h3><p class="muted small">30 things to check before you sign.</p></article>
- <article class="card lined line-b"><h3><a href="business/opening-a-downtown-storefront.html">Storefront playbook</a></h3><p class="muted small">Open downtown, step by step.</p></article>
-</div></div></section>
-{% endraw %}
+
+<section class="sec tight"><div class="wrap split">
+ <div>
+  <h2 style="font-size:1.5rem">What happens next</h2>
+  <ol class="stations line-e" style="margin-top:.8rem">
+   <li><b>We review it within one business day</b><p>An editor reads every submission by hand. Nothing is forwarded automatically.</p></li>
+   <li><b>We act on it</b><p>For introductions, we pick up to three partners who fit and send the introductions by email. For listings, we check the details and send pricing if you chose a paid tier. For questions and enquiries, we reply, usually within two business days.</p></li>
+   <li><b>Watch your inbox</b><p>Replies come by email, so check your spam or promotions folder if you don't see one. If you asked for introductions and a partner hasn't been in touch within 48 hours of being introduced, tell us and we'll chase.</p></li>
+  </ol>
+ </div>
+ <div class="proof">
+  <div class="card">
+   <h3>Forgot something?</h3>
+   <p class="small muted">Send the extra detail through the <a href="/contact.html">contact form</a> with the same email address, and we'll add it to your original message.</p>
+  </div>
+  <div class="card">
+   <h3>Your details</h3>
+   <p class="small muted">We use them only for what you asked. Requests for introductions are shared with up to three partners, and only because you ticked the consent box. Read <a href="/privacy.html#leads">how we handle requests</a>.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag">While you wait</span><h2>Three useful next stops</h2></div></div>
+ <div class="grid g3">
+  <div class="card lined line-t"><span class="bullet t" aria-hidden="true">T</span><h3 style="margin-top:.6rem"><a href="/tools/">Run the numbers</a></h3><p class="muted small">Ten free calculators: office space, coworking versus lease, venue budget, moving costs, rent versus buy and more.</p></div>
+  <div class="card lined line-e"><span class="bullet e" aria-hidden="true">E</span><h3 style="margin-top:.6rem"><a href="/explore/">Explore 42 downtowns</a></h3><p class="muted small">Districts, landmarks, getting around, living and doing business, in the same structure for every city.</p></div>
+  <div class="card lined line-l"><span class="bullet l" aria-hidden="true">L</span><h3 style="margin-top:.6rem"><a href="/live/downtown-move-checklist.html">The downtown move checklist</a></h3><p class="muted small">What to check about a building, a lease and a neighbourhood before you sign.</p></div>
+ </div>
+ <div style="margin-top:1.6rem">{% include cta.html kind="support" %}</div>
+</div></section>
