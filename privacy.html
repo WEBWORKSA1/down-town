@@ -1,47 +1,203 @@
 ---
-layout: "default"
-title: "Privacy Policy"
-description: "How Down.Town collects, uses and protects information, including Google AdSense advertising cookies and consent-based partner referrals."
-root: ""
-canon: "privacy.html"
-section: ""
+layout: default
+title: "Privacy Policy: How Down.Town Handles Your Information"
+description: "What Down.Town collects, why, and who sees it: consent-based partner introductions, Google AdSense cookies, retention periods and your privacy rights."
+section: about
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Privacy policy</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Privacy policy"}]}</script>
- <h1>Privacy policy</h1><p class="lede">Last updated October 2026.</p>
+ {% include crumbs.html label="Privacy policy" %}
+ <span class="tag"><span class="bullet d" aria-hidden="true">D</span> Legal</span>
+ <h1 style="margin-top:.6rem">Privacy policy</h1>
+ <p class="lede">What Down.Town collects, why we collect it, who sees it and the choices you have. Last updated 29 October 2026.</p>
 </div></header>
-<section class="sec tight"><div class="wrap legal prose" style="font-size:1.08rem">
-<p>This policy explains what information Down.Town ("we", "us") collects when you use down.town, why, and the choices you have.</p>
-<h2>Information you give us</h2>
-<p>When you submit a form — newsletter sign-up, Get Matched request, business listing, contest entry, pledge, application or contact message — we receive the details you enter, such as your name, email, phone number (if given) and the content of your request. Forms are delivered to our inbox through a form-processing service (FormSubmit), which acts as our processor for this purpose.</p>
-<h2>How we use it</h2>
-<ul>
-<li>To respond to you and provide what you asked for (for example, sending the newsletter or reviewing a listing).</li>
-<li><strong>Partner introductions:</strong> if you submit a Get Matched or similar request <em>and</em> tick the consent box, we share your request with up to three relevant partners (such as real-estate agents, movers, commercial brokers or contractors) so they can contact you about it. Partners may pay us a referral fee. We never sell or rent lists of personal information.</li>
-<li>To run contests as described in the official rules.</li>
-<li>To keep the site secure and prevent spam.</li>
-</ul>
-<h2>Advertising and cookies</h2>
-<p>We use Google AdSense to show ads. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the internet.</p>
-<p>You may opt out of personalised advertising by visiting Google's <a href="https://adssettings.google.com" rel="noopener" target="_blank">Ads Settings</a>, or opt out of some third-party vendors' use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices" rel="noopener" target="_blank">aboutads.info</a>. Learn <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">how Google uses information from sites that use its services</a>.</p>
-<p>When you first visit, a notice lets you accept all cookies or choose essential only. Choosing essential only requests non-personalised ads. Visitors in the European Economic Area, the UK and Switzerland may see Google's consent message, which records consent choices for advertising. See our <a href="cookies.html">cookie policy</a> for details.</p>
-<h2>Other services that may receive data</h2>
-<ul>
-<li><strong>Google Fonts</strong> delivers our typefaces; your browser requests them from Google's servers.</li>
-<li><strong>YouTube</strong> videos load only when you press play, using YouTube's privacy-enhanced embed domain.</li>
-<li><strong>OpenStreetMap</strong> map tiles load only if you open a map.</li>
-<li><strong>GitHub Pages</strong> hosts the site and may log technical data such as IP addresses for security.</li>
-</ul>
-<h2>Retention</h2>
-<p>We keep form submissions only as long as needed for the purpose: typically up to 24 months for enquiries and leads, 12 months for job applications, and for the duration of a subscription for the newsletter. Contest records are kept for the contest and any legally required period afterwards.</p>
-<h2>Your rights</h2>
-<p>Depending on where you live — including under the GDPR (EU/UK), Canadian privacy law (PIPEDA and Quebec's Law 25) and US state laws such as the CCPA/CPRA — you may have rights to access, correct, delete or port your information, to withdraw consent and to object to certain uses. We do not sell personal information in the ordinary sense; if a local law treats partner referrals as a "sale" or "sharing", you can opt out at any time. To exercise any right, use the <a href="contact.html?topic=Privacy%20request">contact form</a> and choose "Privacy request".</p>
-<h2>Children</h2>
-<p>Down.Town is intended for adults. We do not knowingly collect information from children under 16. Contest entrants must be 18 or older.</p>
-<h2>International transfers</h2>
-<p>Our service providers may process information in countries other than yours, including the United States. Where required, we rely on appropriate safeguards.</p>
-<h2>Changes</h2>
-<p>We'll update this page when our practices change and revise the date at the top.</p>
+
+<section class="sec tight"><div class="wrap">
+ <div class="split">
+  <div class="card" style="border-top:8px solid var(--teal)">
+   <h2 style="font-size:1.3rem">The short version</h2>
+   <ul class="list-check" style="margin-top:.6rem">
+    <li>We collect what you type into our forms, plus a few technical details that travel with them.</li>
+    <li>We share a request for introductions with up to three partners, and only when you tick the consent box.</li>
+    <li>We do not sell personal information, and we never sell, rent or trade lists.</li>
+    <li>Google shows ads on the site and uses cookies to do it. You can choose non-personalised ads.</li>
+    <li>You can ask to see, correct or delete your information at any time.</li>
+   </ul>
+  </div>
+  <nav class="card toc" aria-label="On this page">
+   <h2 style="font-size:1.3rem">On this page</h2>
+   <ol style="columns:13rem;column-gap:1.6rem">
+    <li><a href="#who">Who we are</a></li>
+    <li><a href="#collect">What we collect</a></li>
+    <li><a href="#use">How we use it, and why</a></li>
+    <li><a href="#leads">Requests for introductions</a></li>
+    <li><a href="#newsletter">The Downtown Dispatch</a></li>
+    <li><a href="#ads">Advertising and cookies</a></li>
+    <li><a href="#services">Services we use</a></li>
+    <li><a href="#sharing">When else we share</a></li>
+    <li><a href="#retention">How long we keep it</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#transfers">International transfers</a></li>
+    <li><a href="#privacy-contact">Contact us about privacy</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+   </ol>
+  </nav>
+ </div>
+
+ <div class="legal prose" style="font-size:1.06rem;margin-top:1.6rem">
+  <h2 id="who">1. Who we are</h2>
+  <p>Down.Town ("Down.Town", "we", "us") publishes the website at down.town, an independent guide to 42 downtowns. We are based in Montréal, Québec, Canada, and we are responsible for the personal information described in this policy (in European terms, we are its "controller").</p>
+  <p>Under Québec's Act respecting the protection of personal information in the private sector, as amended by Law 25, the person in charge of the protection of personal information at Down.Town is, by default, its publisher. You can reach that person, and anyone else who handles privacy for us, through the <a href="/contact.html?topic=Privacy%20request">contact form</a> (topic: Privacy request).</p>
+
+  <h2 id="collect">2. What we collect</h2>
+  <h3>Information you give us</h3>
+  <p>We only receive personal information when you choose to send a form. We ask for what we need for that form and mark optional fields as optional.</p>
+  <table>
+   <thead><tr><th>Form</th><th>What we ask for</th></tr></thead>
+   <tbody>
+    <tr><td>Get matched and other requests for introductions (including the short forms in city guides and tools)</td><td>Name, email, phone (optional), company (optional), city and area, the kind of space or help you need, size, budget, timing, must-haves, notes, preferred contact method and, optionally, good times to call</td></tr>
+    <tr><td>Downtown Dispatch newsletter</td><td>Email address and the editions you choose</td></tr>
+    <tr><td>Contact form</td><td>Name, email, topic, city (optional) and your message</td></tr>
+    <tr><td>Business listings</td><td>Business name, category, city, address, website, contact name, email, phone (optional), listing tier and description</td></tr>
+    <tr><td>Advertising and prize sponsorship enquiries</td><td>Name, email, company, website, the packages you're interested in, cities, budget range, timing and message</td></tr>
+    <tr><td>Partner network applications</td><td>Business and contact details, your role, the services you offer, cities served, capacity, the way you would like to work with us and, where a trade requires it, licence or registration details</td></tr>
+    <tr><td>Contest entries and nominations</td><td>Name, email, city, country of residence, category, a link to your photo, title and caption, or the block you nominate and why, plus confirmation of your age and acceptance of the rules</td></tr>
+    <tr><td>Careers applications</td><td>Name, email, role, city, portfolio link, availability and a short pitch</td></tr>
+    <tr><td>Reader support pledges</td><td>Name, email, amount, currency, where you'd like it to go and, optionally, a name and message for the supporter wall</td></tr>
+   </tbody>
+  </table>
+  <h3>Details that travel with a form</h3>
+  <p>When you send a form, it also carries: the page you sent it from; the date and time; the name of the form; whether you were on a mobile-sized or desktop-sized screen; and how your visit began, meaning the website that referred you (if any), the first page you landed on and any campaign tags in the link you followed (such as <em>utm_source</em> or a Google Ads click identifier). The visit details are held in your browser for the session and attached only to forms you choose to send. We use them to understand which guides and campaigns are genuinely useful.</p>
+  <p>The Get matched form also works out a simple priority score from the type of request, its timing and size, and whether you gave a phone number or company. It helps an editor decide which requests to read first. An editor reviews every request, and the score never decides on its own whether you receive an introduction.</p>
+  <h3>Information stored in your browser</h3>
+  <p>Your theme, your cookie choice, your saved guides and your progress through Get matched are kept in your own browser so the site works the way you left it. That information stays on your device and is not sent to us. The <a href="/cookies.html">cookie policy</a> lists every item.</p>
+  <h3>Information others collect when you visit</h3>
+  <p>Like any website, Down.Town is delivered by servers that receive your IP address and basic browser details. That includes our host and the services that supply parts of each page, such as Google's advertising and font services. They are described in <a href="#ads">advertising and cookies</a> and <a href="#services">services we use</a>.</p>
+  <p>We do not run a separate analytics or tracking service of our own, we don't create accounts or passwords, and we don't buy information about you from anyone.</p>
+
+  <h2 id="use">3. How we use it, and why</h2>
+  <p>Where the European Union's GDPR or the UK GDPR applies, we must have a legal basis for each use. Those bases are shown alongside each purpose.</p>
+  <table>
+   <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
+   <tbody>
+    <tr><td>Replying to your message and doing what you asked: reviewing a listing, answering an enquiry, handling a pledge, assessing an application</td><td>Steps taken at your request; our legitimate interest in answering readers; your consent where the form asks for it</td></tr>
+    <tr><td>Sharing a request for introductions with up to three partners</td><td>Your consent</td></tr>
+    <tr><td>Sending the Downtown Dispatch</td><td>Your consent</td></tr>
+    <tr><td>Running contests: judging, verifying and contacting winners, publishing results</td><td>Performing the official rules you accepted; legal obligations</td></tr>
+    <tr><td>Showing ads</td><td>Your consent where it is required; otherwise our legitimate interest in funding a free site</td></tr>
+    <tr><td>Keeping forms free of spam and the site secure</td><td>Legitimate interests</td></tr>
+    <tr><td>Understanding which pages and campaigns lead to useful requests</td><td>Legitimate interests</td></tr>
+    <tr><td>Keeping records, meeting legal duties, resolving disputes</td><td>Legal obligation; legitimate interests</td></tr>
+   </tbody>
+  </table>
+  <p>We do not make decisions about you based solely on automated processing.</p>
+
+  <h2 id="leads">4. Requests for introductions (Get matched)</h2>
+  <p>This section explains exactly what happens when you ask us for introductions through <a href="/get-matched.html">Get matched</a> or one of the shorter request forms in our city guides and tools.</p>
+  <h3>Who reads it first</h3>
+  <p>A Down.Town editor reviews each request by hand, usually within one business day. Nothing is passed to partners automatically.</p>
+  <h3>Who we share it with</h3>
+  <p>Up to three partners who fit your city, need, size, budget and timing. Depending on what you asked for, they may be tenant-side commercial real estate brokers, rental agents or apartment locators, residential realtors, coworking operators, event venues or movers. They are independent businesses, not part of Down.Town.</p>
+  <h3>What we share</h3>
+  <p>Only what a partner needs to respond: your name, your contact details (email, and phone if you gave it), your preferred contact method and call times, your company if you gave one, and the details of your request (city and area, the kind of space or help, size, budget, timing, must-haves and notes). We do not pass on your newsletter choice, the technical details that travel with the form, or the priority score.</p>
+  <h3>On what basis</h3>
+  <p>Your explicit consent, given by ticking the box that says we may share your request with up to three relevant partners. If you don't tick it, the form can't be sent, and we don't share requests that arrive without consent. The optional newsletter box is separate: ticking it, or not, makes no difference to your introductions.</p>
+  <h3>What partners may do with it</h3>
+  <p>Contact you about your request, by the method you chose. We ask partners to use your details for that purpose only and not to add you to marketing lists. Once a partner has your details, it is responsible for them under its own privacy policy and the law that applies to it.</p>
+  <h3>Referral fees</h3>
+  <p>Partners may pay Down.Town a fee for introductions, a featured-partner fee, or a referral fee if you choose to work with them. So that fees can be worked out, a partner may tell us whether an introduction went ahead, for example that a lease was signed or a venue booked. You never pay Down.Town anything.</p>
+  <h3>How long we keep it</h3>
+  <p>Up to 24 months from your request, after which we delete it. You can ask us to delete it sooner.</p>
+  <h3>Changing your mind</h3>
+  <p>You can withdraw your consent at any time through the <a href="/contact.html?topic=Privacy%20request">contact form</a> (topic: Privacy request). If we haven't made introductions yet, we won't. If we have, we will tell the partners we introduced you to that you have withdrawn, ask them to stop contacting you about the request and to delete your details, and delete our own copy, keeping only the minimum record needed for any referral fee already earned. Withdrawing doesn't undo sharing that took place while your consent was in force.</p>
+  <h3>What we never do</h3>
+  <p>Sell, rent or trade lists of readers; share a request with more than three partners; or share it with anyone at all without your consent.</p>
+
+  <h2 id="newsletter">5. The Downtown Dispatch</h2>
+  <p>If you sign up, or tick the optional box on another form, we use your email address to send the editions you chose. We send it only with your express consent, as Canada's anti-spam law requires. Every issue includes a way to unsubscribe, or you can ask us through the contact form. We keep your address until you unsubscribe, and then keep only a note of the unsubscribe so we don't email you again.</p>
+
+  <h2 id="ads">6. Advertising and cookies</h2>
+  <p>Down.Town is funded in part by ads served through Google AdSense (publisher ID ca-pub-6620975821265271). We keep ads off the Get matched page and our form confirmation pages.</p>
+  <ul>
+   <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
+   <li>Google's use of advertising cookies, including the DoubleClick cookie, enables it and its partners to serve ads to you based on your visit to Down.Town and/or other sites on the internet.</li>
+   <li>You may opt out of personalised advertising by visiting Google's <a href="https://adssettings.google.com" target="_blank" rel="noopener">Ads Settings</a>.</li>
+   <li>You can opt out of some third-party vendors' use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices" target="_blank" rel="noopener">aboutads.info/choices</a>.</li>
+   <li>Learn more about <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">how Google uses cookies in advertising</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from sites that use its services</a>.</li>
+  </ul>
+  <h3>Your choices on Down.Town</h3>
+  <p>On your first visit, a cookie notice offers two choices. <strong>Accept all</strong> allows personalised ads. <strong>Essential only</strong> tells Google to show non-personalised ads, which are not based on your past browsing; Google may still use cookies or similar technologies with them for frequency capping, aggregated ad reporting and to combat fraud and abuse.</p>
+  <p>For visitors in the European Economic Area, the United Kingdom and Switzerland, Down.Town uses Google's certified consent message, which asks for your consent before personalised ads and advertising cookies are used. Your choice in that message is the one Google applies to your visits from those regions.</p>
+  <p>You can change your mind at any time. The <a href="/cookies.html">cookie policy</a> explains how to bring the notice back and lists everything we store in your browser.</p>
+
+  <h2 id="services">7. Services we use</h2>
+  <ul>
+   <li><strong>FormSubmit (form relay).</strong> Every form on the site is sent over an encrypted connection to FormSubmit, a third-party form relay service, which delivers it to Down.Town's private inbox. FormSubmit handles the content of your submission in order to deliver it.</li>
+   <li><strong>Our email service.</strong> Submissions arrive in, and replies are sent from, an inbox hosted by an email service provider. Only the editors who need to see a message can open it.</li>
+   <li><strong>GitHub Pages (hosting).</strong> The site is served by GitHub Pages, which may log technical information such as IP addresses to operate and secure the service.</li>
+   <li><strong>Google AdSense (advertising).</strong> As described in <a href="#ads">advertising and cookies</a>.</li>
+   <li><strong>Google Fonts (typefaces).</strong> Our fonts are delivered by Google Fonts. Your browser requests them from Google's servers on each page, which means Google receives your IP address and browser details.</li>
+   <li><strong>YouTube (videos).</strong> Videos are embedded with YouTube's privacy-enhanced (youtube-nocookie) player, which loads only when you press play. Until then, the page shows the video's preview image, which your browser fetches from YouTube's image server. Once you press play, YouTube's own privacy policy applies to the video.</li>
+   <li><strong>OpenStreetMap (map).</strong> On the city directory, map tiles load from OpenStreetMap's servers only when you choose to open the map. The mapping library is fetched from the cdnjs content network at the same moment.</li>
+   <li><strong>Payment providers.</strong> If you pay through a checkout link we provide, the payment service (such as PayPal or Stripe) processes your payment under its own privacy policy. We never receive your full card number.</li>
+  </ul>
+
+  <h2 id="sharing">8. When else we share information</h2>
+  <ul>
+   <li><strong>Partners</strong>, only as described in <a href="#leads">requests for introductions</a>.</li>
+   <li><strong>Prize sponsors</strong>, who receive a winner's name and delivery details only if they deliver the prize, as set out in the <a href="/contest-rules.html">official contest rules</a>. Winners' names, cities and winning entries are published.</li>
+   <li><strong>Regulators and authorities</strong>, where the law requires it, including the Régie des alcools, des courses et des jeux for contests registered in Québec.</li>
+   <li><strong>Professional advisers</strong>, such as lawyers or accountants, where needed, under a duty of confidentiality.</li>
+   <li><strong>A new owner</strong>. If Down.Town, its domain or its website is sold or transferred, the personal information we hold may pass to the new owner, who must continue to protect it in line with this policy. We will post a notice here if that happens.</li>
+  </ul>
+  <p>We do not sell personal information.</p>
+
+  <h2 id="retention">9. How long we keep it</h2>
+  <table>
+   <thead><tr><th>Information</th><th>How long</th></tr></thead>
+   <tbody>
+    <tr><td>Requests for introductions</td><td>Up to 24 months from the request</td></tr>
+    <tr><td>Downtown Dispatch subscription</td><td>Until you unsubscribe, then only a record of the unsubscribe</td></tr>
+    <tr><td>Contact messages, listing, advertising and partner enquiries</td><td>Up to 24 months after our last exchange</td></tr>
+    <tr><td>Careers applications</td><td>12 months</td></tr>
+    <tr><td>Contest entries and nominations</td><td>For the season, then as long as the law requires for contest records</td></tr>
+    <tr><td>Pledges and payments</td><td>As long as accounting and tax law requires</td></tr>
+    <tr><td>Items stored in your browser</td><td>On your device until you clear them</td></tr>
+   </tbody>
+  </table>
+
+  <h2 id="security">10. Security</h2>
+  <p>Forms are sent over encrypted connections. Submissions go to a private inbox that only the editors who need it can open. Forms include a hidden spam trap, and we never ask for passwords or payment card numbers. No system is perfectly secure; if a breach involving your information creates a risk of serious harm, we will notify you and the relevant authorities as the law requires.</p>
+
+  <h2 id="rights">11. Your rights</h2>
+  <h3>Wherever you live</h3>
+  <p>You can ask us for a copy of the personal information we hold about you, ask us to correct or delete it, withdraw any consent you gave and unsubscribe from the Dispatch. It costs nothing. We reply within 30 days, and may ask you to confirm a detail, such as the email address you used, so that we release information only to the right person.</p>
+  <h3>European Economic Area and United Kingdom (GDPR and UK GDPR)</h3>
+  <p>You also have the right to restrict our use of your information, to object to uses based on legitimate interests, and to receive information you gave us in a portable format. You can complain to your local data protection authority; in the United Kingdom, that is the Information Commissioner's Office.</p>
+  <h3>Canada (PIPEDA) and Québec (Law 25)</h3>
+  <p>You have the right to access and correct your information and to withdraw consent. Québec residents may also ask for information they gave us in a structured, commonly used technological format, and ask us to stop disseminating it where the law allows. You can complain to the Office of the Privacy Commissioner of Canada or, in Québec, to the Commission d'accès à l'information du Québec.</p>
+  <h3>California and other US states (CCPA/CPRA): do not sell or share</h3>
+  <p>You have the right to know what personal information we collect and how we use it, to delete and correct it, to opt out of its sale or sharing, and not to be treated differently for using these rights.</p>
+  <ul>
+   <li><strong>We do not sell personal information.</strong></li>
+   <li><strong>Introductions happen only at your direction.</strong> We disclose a request to partners only when you tick the consent box asking us to, and you can withdraw that at any time.</li>
+   <li><strong>Advertising cookies.</strong> Google's personalised advertising cookies may count as "sharing" for cross-context behavioural advertising under California law. To opt out, choose "Essential only" in our cookie notice (the <a href="/cookies.html#change">cookie policy</a> shows how to bring it back) and use Google's <a href="https://adssettings.google.com" target="_blank" rel="noopener">Ads Settings</a>.</li>
+   <li>We don't collect sensitive personal information for the purpose of inferring characteristics about you, and we don't knowingly sell or share information about anyone under 16.</li>
+   <li>You may use an authorised agent to make a request; we may ask the agent for proof of authority.</li>
+  </ul>
+
+  <h2 id="children">12. Children</h2>
+  <p>Down.Town is written for adults and is not directed at children. We do not knowingly collect personal information from anyone under 16, and contest entrants must be 18 or older (or the age of majority where they live, if higher). If you believe a child has sent us personal information, tell us and we will delete it.</p>
+
+  <h2 id="transfers">13. International transfers</h2>
+  <p>Down.Town is based in Canada. Our service providers, including FormSubmit, Google, GitHub and our email service, may process information in other countries, including the United States, where privacy laws differ from yours. Where the GDPR or UK GDPR applies, transfers to Canada rely on adequacy decisions, and transfers elsewhere rely on safeguards such as the standard contractual clauses our providers offer. Before personal information about Québec residents is communicated outside Québec, we consider whether it will be adequately protected, as Law 25 requires.</p>
+
+  <h2 id="privacy-contact">14. Contact us about privacy</h2>
+  <p>Use the <a href="/contact.html?topic=Privacy%20request">contact form</a> and choose the topic <strong>Privacy request</strong>, or <a href="/contact.html" data-mail="Down.Town privacy request">email us</a>. Tell us your name, the email address you used with us and what you would like us to do. We will reply within 30 days.</p>
+
+  <h2 id="changes">15. Changes to this policy</h2>
+  <p>We update this policy when our practices or the law change, and revise the date at the top of the page. If a change materially affects how we use information you have already given us, we will tell you before it applies, where we have a way to reach you.</p>
+ </div>
 </div></section>
-{% endraw %}
