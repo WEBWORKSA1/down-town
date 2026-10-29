@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Event Venue Budget Calculator: Room Size and All-In Cost"
+description: "Guests, layout and catering level in; the room size you need, a full event budget with contingency and the cost per guest out — ready to send to venues."
+section: tools
+calc: true
+updated: "2026-10-29"
+faq:
+  - q: "How much space per guest does an event need?"
+    a: "Common planning figures are about 8–10 square feet per person for a standing reception, 10–12 for seated dinners at round tables, 6–8 for theatre-style rows and 15–20 for classroom layouts with tables. Stages, bars, buffets and dance floors need extra."
+  - q: "What is a food-and-beverage minimum?"
+    a: "Many venues waive or reduce a hire fee in exchange for a guaranteed minimum spend on catering and drinks. If you spend less, you pay the difference. Confirm whether service charges and taxes count toward the minimum."
+  - q: "How much contingency should I hold?"
+    a: "Ten to fifteen per cent is a common buffer for late guest-count changes, overtime, extra AV and weather plans for outdoor elements."
+---
+<header class="page-head line-strip line-e"><div class="wrap">
+ {% include crumbs.html label="Event venue budget" %}
+ <span class="tag"><span class="bullet e" aria-hidden="true">E</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Event venue budget</h1>
+ <p class="lede">Planning a meeting, launch, dinner or party downtown? Size the room and build an all-in budget before you start calling venues.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="tool">
+<form class="card form" id="vb-form" onsubmit="return false">
+ <div class="row"><div class="field"><label for="vb-guests">Guests</label><input id="vb-guests" type="number" min="2" max="20000" value="80" data-param="guests"></div>
+ <div class="field"><label for="vb-layout">Layout</label><select id="vb-layout"><option value="reception">Standing reception</option><option value="banquet">Seated dinner (rounds)</option><option value="theatre">Theatre (rows)</option><option value="classroom">Classroom (tables)</option><option value="boardroom">Boardroom</option></select></div></div>
+ <div class="field"><label for="vb-catering">Food and drink per guest</label><input id="vb-catering" type="number" min="0" step="5" value="70"><span class="hint">Replace with local quotes: canapés and drinks cost less than a plated dinner.</span></div>
+ <div class="row"><div class="field"><label for="vb-hire">Venue hire fee</label><input id="vb-hire" type="number" min="0" step="100" value="2500"></div>
+ <div class="field"><label for="vb-av">AV and production</label><input id="vb-av" type="number" min="0" step="100" value="1200"></div></div>
+ <div class="row"><div class="field"><label for="vb-staff">Staffing and security</label><input id="vb-staff" type="number" min="0" step="100" value="600"></div>
+ <div class="field"><label for="vb-decor">Décor, print and extras</label><input id="vb-decor" type="number" min="0" step="100" value="800"></div></div>
+ <div class="field"><label for="vb-cont">Contingency (%)</label><input id="vb-cont" type="number" min="0" max="40" value="12"></div>
+</form>
+<div class="result" aria-live="polite">
+ <p class="muted">All-in budget</p>
+ <div class="big" id="vb-main">—</div>
+ <table><tbody>
+  <tr><td>Room you need</td><td id="vb-room">—</td></tr>
+  <tr><td>Food and drink</td><td id="vb-food">—</td></tr>
+  <tr><td>Venue, AV, staff, décor</td><td id="vb-other">—</td></tr>
+  <tr><td>Contingency</td><td id="vb-contv">—</td></tr>
+  <tr><td>Per guest</td><td id="vb-pp">—</td></tr>
+ </tbody></table>
+ <div class="verdict" id="vb-verdict"></div>
+ <a class="btn amber" id="vb-cta" style="margin-top:1rem" href="/get-matched.html?need=venue">Get quotes from venues</a>
+</div></div>
+{% include ad.html %}
+<div class="prose" style="margin-top:2rem">
+<h2>Sizing the room</h2>
+<p>Venues publish capacities by layout because the same room holds very different numbers depending on how you set it. The calculator uses common planning allowances per guest for each layout. Treat the result as clear floor area: add space for a stage, bars, buffet lines, registration, photo walls and a dance floor, and check fire-safety capacity, which is the legal limit regardless of how many chairs fit.</p>
+<h2>Building the budget</h2>
+<p>For most downtown events, food and drink is the biggest line, followed by the venue fee and production. Many venues trade the hire fee for a <strong>food-and-beverage minimum</strong>; when that is the case, set the hire fee to zero and make sure your per-guest catering figure multiplied by guests reaches the minimum. Service charges and local sales taxes can add a significant share on top of menu prices in many cities, so ask whether quotes include them.</p>
+<h2>Questions to ask every venue</h2>
+<ul><li>How long will you hold the date without a deposit, and what triggers a first-option challenge?</li><li>What is the cancellation schedule, and does it change with the guest count?</li><li>Are AV, staging, furniture and security in-house or can we bring suppliers?</li><li>What are the load-in times, noise curfew and end time?</li><li>Is the space step-free, with accessible washrooms?</li></ul>
+<p>The full checklist is in <a href="/space/choosing-a-downtown-event-venue.html">choosing a downtown event venue</a>.</p>
+</div>
+{% include faq.html %}
+<p class="small muted" style="margin-top:1.4rem">Estimates for planning only. Read our <a href="/disclaimer.html">disclaimer</a>.</p>
+</div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Event venue budget calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"url":"https://down.town/tools/venue-budget.html"}</script>
