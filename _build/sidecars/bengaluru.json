@@ -1,0 +1,30 @@
+{
+ "tagline": "A garden city turned tech capital, where Cubbon Park's shade, filter coffee and brewpubs anchor a centre ringed by IT corridors.",
+ "events": [
+  {
+   "when": "January and August",
+   "name": "Lalbagh Flower Show",
+   "desc": "Elaborate floral displays fill the glasshouse around Republic Day and Independence Day."
+  },
+  {
+   "when": "March–April",
+   "name": "Bengaluru Karaga",
+   "desc": "A centuries-old night procession through the old city from the Dharmaraya Swamy Temple."
+  },
+  {
+   "when": "November",
+   "name": "Bengaluru Tech Summit",
+   "desc": "The state government's annual technology conference and exhibition."
+  },
+  {
+   "when": "November–December",
+   "name": "Kadalekai Parishe",
+   "desc": "A groundnut fair around the Bull Temple in Basavanagudi, celebrating the harvest."
+  }
+ ],
+ "video": {
+  "id": "1422DkT5c9g",
+  "title": "MG Road Bangalore 4k Walking Tour | India Virtual Walks | 4k 60fps",
+  "channel": "Daily Passenger Travels"
+ }
+}
