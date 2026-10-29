@@ -1,0 +1,12 @@
+title: Down.Town
+description: Independent guides to the world's downtowns.
+url: https://down.town
+markdown: kramdown
+exclude:
+  - README.md
+  - BUILD-PROMPT.md
+  - RESEARCH.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

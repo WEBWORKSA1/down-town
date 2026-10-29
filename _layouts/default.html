@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-root="{{ page.root }}">
+<head>
+<meta charset="utf-8">
+{% if page.base %}<script>document.write('<base href="'+(location.hostname.indexOf("github.io")>-1?"/down-town/":"/")+'">')</script>{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}{% unless page.home %} | Down.Town{% endunless %}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="https://down.town/{{ page.canon }}">
+<meta name="robots" content="{% if page.noindex %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
+<meta property="og:site_name" content="Down.Town">
+<meta property="og:type" content="{% if page.ogtype %}{{ page.ogtype }}{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="https://down.town/{{ page.canon }}">
+<meta property="og:image" content="https://down.town/assets/img/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1d2330">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="{{ page.root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ page.root }}site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+<link rel="stylesheet" href="{{ page.root }}assets/css/site.css">
+<script>try{var t=localStorage.getItem("dt-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+{% unless page.noads %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>{% endunless %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="owner-bar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="{{ page.root }}index.html" aria-label="Down.Town home">Down<span class="stop" aria-hidden="true"></span>Town</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="l-explore" href="{{ page.root }}explore/index.html"{% if page.section == "explore" %} aria-current="page"{% endif %}>Explore</a>
+      <a class="l-live" href="{{ page.root }}live/index.html"{% if page.section == "live" %} aria-current="page"{% endif %}>Live</a>
+      <a class="l-biz" href="{{ page.root }}business/index.html"{% if page.section == "business" %} aria-current="page"{% endif %}>Do Business</a>
+      <a class="l-tools" href="{{ page.root }}tools/index.html"{% if page.section == "tools" %} aria-current="page"{% endif %}>Tools</a>
+      <a href="{{ page.root }}rankings.html"{% if page.section == "rankings" %} aria-current="page"{% endif %}>Index</a>
+      <a href="{{ page.root }}videos.html"{% if page.section == "videos" %} aria-current="page"{% endif %}>Videos</a>
+      <a href="{{ page.root }}contests.html"{% if page.section == "contests" %} aria-current="page"{% endif %}>Contests</a>
+      <a href="{{ page.root }}support.html"{% if page.section == "support" %} aria-current="page"{% endif %}>Support</a>
+    </nav>
+    <div class="head-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn amber sm" href="{{ page.root }}get-matched.html">Get matched</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<section class="sec tight alt" aria-labelledby="nl-h">
+  <div class="wrap news-band">
+    <div>
+      <h2 id="nl-h">The Downtown Dispatch</h2>
+      <p class="muted">One email every Friday: a city centre worth your weekend, a tool or guide for movers and owners, and open contest calls. Free, and you can leave with one click.</p>
+    </div>
+    <form class="form" data-form="Newsletter signup" data-ok="You're on the list. The next Dispatch lands Friday.">
+      <div class="news-form">
+        <label class="vh" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <label class="check"><input type="checkbox" name="consent" value="Yes, newsletter" required> <span>Yes, send me the Downtown Dispatch. I can unsubscribe anytime. See the <a href="{{ page.root }}privacy.html">privacy policy</a>.</span></label>
+      <div class="hp" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="{{ page.root }}index.html">Down<span class="stop" aria-hidden="true"></span>Town</a>
+        <p class="disclose">An independent guide to the world's city centres: how to explore them, live in them and run a business in them. Down.Town is not affiliated with any city, business improvement district or organisation whose name contains the word "downtown". <a href="{{ page.root }}trademark.html">Trademark &amp; copyright notice</a>.</p>
+      </div>
+      <div><h4><span class="bullet e">E</span>Explore</h4><ul>
+        <li><a href="{{ page.root }}explore/index.html">All city guides</a></li>
+        <li><a href="{{ page.root }}rankings.html">Down.Town Index</a></li>
+        <li><a href="{{ page.root }}events.html">Festival calendar</a></li>
+        <li><a href="{{ page.root }}videos.html">Walking-tour videos</a></li>
+        <li><a href="{{ page.root }}journal.html">Journal</a></li></ul></div>
+      <div><h4><span class="bullet l">L</span>Live</h4><ul>
+        <li><a href="{{ page.root }}live/index.html">Living downtown</a></li>
+        <li><a href="{{ page.root }}tools/downtown-match.html">Find your downtown</a></li>
+        <li><a href="{{ page.root }}tools/rent-budget.html">Rent budget calculator</a></li>
+        <li><a href="{{ page.root }}tools/car-free.html">Car vs car-free</a></li>
+        <li><a href="{{ page.root }}get-matched.html#move">Moving help</a></li></ul></div>
+      <div><h4><span class="bullet b">B</span>Do Business</h4><ul>
+        <li><a href="{{ page.root }}business/index.html">Business guides</a></li>
+        <li><a href="{{ page.root }}tools/storefront-revenue.html">Storefront estimator</a></li>
+        <li><a href="{{ page.root }}list-your-business.html">List your business</a></li>
+        <li><a href="{{ page.root }}advertise.html">Advertise &amp; sponsor</a></li>
+        <li><a href="{{ page.root }}get-matched.html#business">Find commercial space</a></li></ul></div>
+      <div><h4>Down.Town</h4><ul>
+        <li><a href="{{ page.root }}about.html">About</a></li>
+        <li><a href="{{ page.root }}contact.html">Contact</a></li>
+        <li><a href="{{ page.root }}careers.html">Careers &amp; contributors</a></li>
+        <li><a href="{{ page.root }}contests.html">Contests</a></li>
+        <li><a href="{{ page.root }}support.html">Support us</a></li>
+        <li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy or partner on this domain</a></li></ul></div>
+    </div>
+    <div class="foot-legal">
+      <span>&copy; <span data-year>2026</span> Down.Town. Original content; all rights reserved.</span>
+      <span><a href="{{ page.root }}privacy.html">Privacy</a> &nbsp; <a href="{{ page.root }}cookies.html">Cookies</a> &nbsp; <a href="{{ page.root }}terms.html">Terms</a> &nbsp; <a href="{{ page.root }}disclaimer.html">Disclaimer</a> &nbsp; <a href="{{ page.root }}editorial-policy.html">Editorial policy</a> &nbsp; <a href="{{ page.root }}accessibility.html">Accessibility</a> &nbsp; <a href="{{ page.root }}sitemap.html">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+<div class="consent" id="consent" hidden role="region" aria-label="Cookie notice">
+  <p>Down.Town uses cookies for essential features and, with your consent, for personalised ads from Google and its partners. <a href="{{ page.root }}cookies.html">Cookie details</a>.</p>
+  <div class="acts"><button class="btn ghost sm" type="button" data-consent="essential">Essential only</button><button class="btn sm" type="button" data-consent="all">Accept all</button></div>
+</div>
+<div class="search-ov" id="search" hidden role="dialog" aria-modal="true" aria-label="Search Down.Town">
+  <div class="search-box">
+    <label class="vh" for="q">Search</label>
+    <input id="q" type="search" placeholder="Search cities, guides, tools…" autocomplete="off">
+    <ul class="search-res" id="search-res"></ul>
+  </div>
+</div>
+<button class="icon-btn to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 14 6-6 6 6"/></svg></button>
+<script src="{{ page.root }}assets/js/config.js"></script>
+{% if page.cities %}<script src="{{ page.root }}assets/js/cities-data.js"></script>{% endif %}
+<script src="{{ page.root }}assets/js/main.js"></script>
+{% if page.tools %}<script src="{{ page.root }}assets/js/tools.js"></script>{% endif %}
+</body>
+</html>
