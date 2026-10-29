@@ -1,0 +1,33 @@
+---
+layout: "default"
+title: "Careers and Contributors: Write, Shoot or Partner with Down.Town"
+description: "Paid freelance city editor, photographer, ambassador, partnerships and developer roles at Down.Town."
+root: ""
+canon: "careers.html"
+section: "careers"
+---
+{% raw %}
+<header class="page-head"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Careers &amp; contributors</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Careers & contributors"}]}</script>
+ <h1>Work with Down.Town</h1>
+ <p class="lede">We're hiring locals who know their downtown block by block. Remote, flexible and paid — with credit on everything you make.</p>
+</div></header>
+<section class="sec tight"><div class="wrap"><div class="grid g3"><div class="card"><h3>City Editor (freelance)</h3><p class="muted small">Write and update a city guide for a downtown you know well: research, fact-checking, photos sourced or shot, annual updates. Paid per guide plus per update.</p><a class="btn ghost sm" href="#apply" onclick="var s=document.getElementById('cr-role');if(s)s.value='City Editor (freelance)'">Apply</a></div><div class="card"><h3>Photographer / Videographer</h3><p class="muted small">License downtown photography and short walking videos for guides and social. Paid per image or per assignment, always credited.</p><a class="btn ghost sm" href="#apply" onclick="var s=document.getElementById('cr-role');if(s)s.value='Photographer / Videographer'">Apply</a></div><div class="card"><h3>City Ambassador</h3><p class="muted small">Represent Down.Town locally: introduce businesses, collect event listings, host the occasional photo walk. Revenue share on partnerships you bring in.</p><a class="btn ghost sm" href="#apply" onclick="var s=document.getElementById('cr-role');if(s)s.value='City Ambassador'">Apply</a></div><div class="card"><h3>Partnerships Lead (commission)</h3><p class="muted small">Sell City Partner, Spotlight and Dispatch sponsorships to tourism boards, associations and local brands. Commission-based, remote.</p><a class="btn ghost sm" href="#apply" onclick="var s=document.getElementById('cr-role');if(s)s.value='Partnerships Lead (commission)'">Apply</a></div><div class="card"><h3>Web and Data Developer (contract)</h3><p class="muted small">Build new tools, maps and data features on a static, fast, accessible stack. Project-based contracts.</p><a class="btn ghost sm" href="#apply" onclick="var s=document.getElementById('cr-role');if(s)s.value='Web and Data Developer (contract)'">Apply</a></div></div></div></section>
+<section class="sec tight alt" id="apply"><div class="wrap split">
+ <div><h2>How we work</h2><ul class="list-check"><li>Clear briefs, fair rates, paid on time</li><li>Credit on every piece of work</li><li>Editorial independence: no pay-for-praise</li><li>Remote-first; most roles take a few hours a week</li></ul>
+ <p class="muted" style="margin-top:1rem">Down.Town is an equal-opportunity publisher. We welcome applications from people of every background.</p></div>
+ <form class="card form" data-form="Careers application" data-redirect="thank-you.html">
+  <h3>Apply or introduce yourself</h3>
+  <div class="row"><div class="field"><label for="cr-name">Name</label><input id="cr-name" name="name" required autocomplete="name"></div>
+  <div class="field"><label for="cr-email">Email</label><input id="cr-email" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="row"><div class="field"><label for="cr-role">Role</label><select id="cr-role" name="role" required><option>City Editor (freelance)</option><option>Photographer / Videographer</option><option>City Ambassador</option><option>Partnerships Lead (commission)</option><option>Web and Data Developer (contract)</option><option>Something else</option></select></div>
+  <div class="field"><label for="cr-city">Your downtown</label><input id="cr-city" name="city" required></div></div>
+  <div class="field"><label for="cr-port">Portfolio or LinkedIn</label><input id="cr-port" name="portfolio" type="url" placeholder="https://" required></div>
+  <div class="row"><div class="field"><label for="cr-av">Availability</label><select id="cr-av" name="availability"><option>A few hours a week</option><option>Part-time</option><option>Project-based</option></select></div>
+  <div class="field"><label for="cr-rate">Rate expectations</label><input id="cr-rate" name="rate"></div></div>
+  <div class="field"><label for="cr-msg">Why you, why this city</label><textarea id="cr-msg" name="message" required></textarea></div>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed" required> <span>I agree that Down.Town may keep my application for 12 months and contact me about roles. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn" type="submit">Send application</button><p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+</div></section>
+{% endraw %}

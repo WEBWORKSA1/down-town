@@ -1,0 +1,72 @@
+---
+layout: "default"
+title: "Downtown Lens Photo Contest and Best Block Awards"
+description: "Enter Downtown Lens, the free photo contest for city centres with cash prizes, and nominate independent businesses for the Best Block Awards."
+root: ""
+canon: "contests.html"
+section: "contests"
+---
+{% raw %}
+<header class="page-head"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Contests</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Contests"}]}</script>
+ <h1>Downtown Lens: the photo contest for city centres</h1>
+ <p class="lede">Season 1 runs December 1, 2026 to February 28, 2027. Five categories, cash prizes, publication across Down.Town — and free to enter.</p>
+ <div class="share"><a class="btn amber" href="#enter">Enter Downtown Lens</a><a class="btn ghost" href="#rules">Read the rules</a></div>
+</div></header>
+<section class="sec tight"><div class="wrap">
+ <div class="stat-row"><div class="stat"><b>US$500</b><span>Grand prize + cover feature</span></div><div class="stat" style="--lc:var(--teal)"><b>5 × US$100</b><span>Category winners</span></div><div class="stat" style="--lc:var(--cobalt)"><b>US$100</b><span>Community Choice</span></div><div class="stat" style="--lc:var(--red)"><b>Free</b><span>Up to 5 entries per person</span></div></div>
+ <h2 style="margin-top:2.2rem">Categories</h2>
+ <div class="grid g3"><div class="card"><h3>Skyline After Dark</h3><p class="muted small">City lights, blue hour and reflections.</p></div><div class="card"><h3>Street Life</h3><p class="muted small">People, markets and moments — with permission from identifiable subjects.</p></div><div class="card"><h3>Storefronts & Signs</h3><p class="muted small">Independent shops, neon, typography and windows.</p></div><div class="card"><h3>Green Downtown</h3><p class="muted small">Parks, rooftops, waterfronts and street trees.</p></div><div class="card"><h3>On the Move</h3><p class="muted small">Trains, trams, bikes, ferries and the people riding them.</p></div><div class="card" style="border-style:dashed"><h3>Sponsor a category</h3><p class="muted small">Add your prize and a judge's seat. <a href="advertise.html">Contest sponsorship</a>.</p></div></div>
+ <h2 style="margin-top:2.2rem">How it works</h2>
+ <ol class="stations line-e" style="list-style:none">
+  <li><b>Shoot</b><p>Photograph any downtown or city centre in the world. Photos must be your own and taken within the last two years.</p></li>
+  <li><b>Submit</b><p>Send a share link (Google Drive, Dropbox, Flickr or your portfolio) with the form below, by February 28, 2027.</p></li>
+  <li><b>Judging</b><p>Editors shortlist entries in March 2027, judging composition, originality, technical quality and sense of place.</p></li>
+  <li><b>Community vote</b><p>Readers vote for Community Choice from the shortlist.</p></li>
+  <li><b>Winners</b><p>Announced in April 2027 on this page and in the Downtown Dispatch.</p></li>
+ </ol>
+</div></section>
+<section class="sec tight alt" id="enter"><div class="wrap split">
+ <form class="card form" data-form="Downtown Lens entry" data-redirect="thank-you.html">
+  <h3>Enter Season 1</h3>
+  <div class="row"><div class="field"><label for="ct-name">Full name</label><input id="ct-name" name="name" required autocomplete="name"></div>
+  <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="row"><div class="field"><label for="ct-cat">Category</label><select id="ct-cat" name="category" required><option>Skyline After Dark</option><option>Street Life</option><option>Storefronts & Signs</option><option>Green Downtown</option><option>On the Move</option></select></div>
+  <div class="field"><label for="ct-city">City photographed</label><input id="ct-city" name="city" required></div></div>
+  <div class="field"><label for="ct-link">Link to your photo(s), max 5</label><input id="ct-link" name="photo_link" type="url" required placeholder="https://"><span class="hint">JPEG, at least 2000 px on the long edge. Make sure the link is viewable by anyone.</span></div>
+  <div class="field"><label for="ct-title">Title and short caption</label><textarea id="ct-title" name="caption" maxlength="400" data-count="ct-count" required></textarea><div class="counter" id="ct-count"></div></div>
+  <label class="check"><input type="checkbox" name="age" value="18+" required><span>I am 18 or older.</span></label>
+  <label class="check"><input type="checkbox" name="rights" value="Confirmed" required><span>The photos are my own original work, not AI-generated, and I have permission from any identifiable people who are the main subject.</span></label>
+  <label class="check"><input type="checkbox" name="licence" value="Granted" required><span>I keep copyright and grant Down.Town a non-exclusive, royalty-free licence to display my entry for the contest and its promotion, with credit. I accept the <a href="#rules">official rules</a>.</span></label>
+  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div><button class="btn amber" type="submit">Submit my entry</button><p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+ <div>
+  <h2 style="font-size:1.5rem">Best Block Awards</h2>
+  <p class="muted">Know an independent downtown business that makes its block better? Nominate it. Winners get a feature in their city guide, a winner's badge for their window and website, and a free year of Spotlight listing.</p>
+  <form class="card form" data-form="Best Block nomination" data-ok="Nomination received. Thank you for championing your block.">
+   <div class="row"><div class="field"><label for="bb-biz">Business name</label><input id="bb-biz" name="business_name" required></div>
+   <div class="field"><label for="bb-city">Downtown</label><select id="bb-city" name="city" required><option value="">Choose a city</option><optgroup label="North America"><option value="Austin">Austin</option><option value="Boston">Boston</option><option value="Chicago">Chicago</option><option value="Denver">Denver</option><option value="Miami">Miami</option><option value="Montréal">Montréal</option><option value="New York">New York</option><option value="San Francisco">San Francisco</option><option value="Seattle">Seattle</option><option value="Toronto">Toronto</option><option value="Vancouver">Vancouver</option><option value="Washington, D.C.">Washington, D.C.</option></optgroup><optgroup label="Europe"><option value="Amsterdam">Amsterdam</option><option value="Barcelona">Barcelona</option><option value="Berlin">Berlin</option><option value="London">London</option><option value="Paris">Paris</option></optgroup><optgroup label="Asia-Pacific"><option value="Hong Kong">Hong Kong</option><option value="Melbourne">Melbourne</option><option value="Singapore">Singapore</option><option value="Sydney">Sydney</option><option value="Tokyo">Tokyo</option></optgroup><optgroup label="Middle East & Africa"><option value="Cape Town">Cape Town</option><option value="Dubai">Dubai</option></optgroup><optgroup label="Latin America"><option value="Mexico City">Mexico City</option></optgroup><optgroup label="South Asia"><option value="Mumbai">Mumbai</option></optgroup><option value="Another city">Another city</option><option value="Not sure yet">Not sure yet</option></select></div></div>
+   <div class="field"><label for="bb-why">Why they deserve it</label><textarea id="bb-why" name="why" maxlength="500" required></textarea></div>
+   <div class="row"><div class="field"><label for="bb-name">Your name</label><input id="bb-name" name="name" required autocomplete="name"></div>
+   <div class="field"><label for="bb-email">Your email</label><input id="bb-email" name="email" type="email" required autocomplete="email"></div></div>
+   <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div><button class="btn" type="submit">Nominate</button><p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+</div></section>
+<section class="sec tight" id="rules"><div class="wrap legal prose" style="font-size:1.05rem">
+ <h2>Official rules (summary)</h2>
+ <ul>
+  <li><strong>Organiser:</strong> Down.Town (down.town). Contact via the <a href="contact.html?topic=Contest">contact form</a>.</li>
+  <li><strong>No purchase or payment necessary.</strong> Entering is free. Void where prohibited or restricted by law.</li>
+  <li><strong>Eligibility:</strong> open to individuals 18 or older, worldwide, except where prohibited. Down.Town staff, judges and their immediate families may not win prizes.</li>
+  <li><strong>Entry period:</strong> December 1, 2026, 00:00 UTC to February 28, 2027, 23:59 UTC. Entries outside the period are not eligible.</li>
+  <li><strong>Entries:</strong> up to five photographs per person across all categories, taken in a downtown or city centre within two years before submission. No AI-generated or composited images; standard editing is fine. Entrants must hold all rights and any required permissions from identifiable people or property owners.</li>
+  <li><strong>Judging:</strong> category and grand-prize winners are chosen on merit — composition, originality, technical quality and sense of place — by Down.Town editors and any category sponsor judges. Community Choice is decided by a public vote among shortlisted entries; one vote per person, and suspicious voting may be disqualified.</li>
+  <li><strong>Prizes:</strong> Grand Prize US$500 plus a cover feature; five category prizes of US$100; Community Choice US$100. One prize per person. Cash prizes are paid electronically within 30 days of winner verification; winners are responsible for any taxes. Sponsor-provided prizes may be added and will be described on this page.</li>
+  <li><strong>Winner verification:</strong> winners will be contacted by email and must respond within 14 days and confirm eligibility and rights, or an alternate may be selected.</li>
+  <li><strong>Licence:</strong> entrants keep copyright and grant Down.Town a non-exclusive, worldwide, royalty-free licence to display, reproduce and share entries, with credit, for the contest and its promotion. No other commercial use without separate agreement.</li>
+  <li><strong>Privacy:</strong> entry data is used to run the contest as described in our <a href="privacy.html">privacy policy</a>.</li>
+  <li><strong>General:</strong> Down.Town may cancel, suspend or modify the contest if it cannot run as planned, and may disqualify entries that break these rules. Decisions of the judges are final.</li>
+ </ul>
+</div></section>
+{% endraw %}

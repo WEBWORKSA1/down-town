@@ -1,0 +1,46 @@
+---
+layout: "default"
+title: "Support Down.Town: Fund Independent Downtown Guides"
+description: "Support new city guides, local contributors, contest prizes and free tools with a monthly or one-time contribution."
+root: ""
+canon: "support.html"
+section: "support"
+---
+{% raw %}
+<header class="page-head"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Support Down.Town</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Support Down.Town"}]}</script>
+ <h1>Keep Down.Town independent</h1>
+ <p class="lede">Reader support pays for new city guides, local writers and photographers, contest prizes and the tools everyone uses for free. Every amount helps; monthly support helps most.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+ <div class="toggle" data-target="freq" role="group" aria-label="Frequency"><button type="button" data-value="monthly" aria-pressed="true">Monthly</button><button type="button" data-value="one-time" aria-pressed="false">One time</button></div>
+ <div class="tiers" style="margin-top:1rem"><button type="button" class="tier" data-amount="5" data-name="Supporter" aria-pressed="false"><span class="nm">Supporter</span><span class="amt">$5<small data-per>/mo</small></span><ul><li>Our thanks in the Dispatch</li><li>Supporter badge on the wall (optional)</li></ul></button><button type="button" class="tier" data-amount="15" data-name="Block Captain" aria-pressed="true"><span class="nm">Block Captain</span><span class="amt">$15<small data-per>/mo</small></span><ul><li>Everything in Supporter</li><li>Vote on the next city guide</li><li>Early contest announcements</li></ul></button><button type="button" class="tier" data-amount="50" data-name="Patron" aria-pressed="false"><span class="nm">Patron</span><span class="amt">$50<small data-per>/mo</small></span><ul><li>Everything in Block Captain</li><li>Name in a city guide's credits</li><li>Annual behind-the-scenes note</li></ul></button><button type="button" class="tier" data-amount="250" data-name="Founding Sponsor" aria-pressed="false"><span class="nm">Founding Sponsor</span><span class="amt">$250<small data-per>/mo</small></span><ul><li>Everything in Patron</li><li>Founding wall placement</li><li>A call with the editors about your city</li></ul></button></div>
+ <div class="split" style="margin-top:2rem">
+  <form class="card form" data-form="Support pledge" data-redirect="thank-you.html">
+   <h3>Pledge your support</h3>
+   <p class="small muted">Choose a level above or enter any amount. We'll email a secure payment link within one business day.</p>
+   <input type="hidden" name="frequency" id="freq" value="monthly"><input type="hidden" name="level" id="level" value="Block Captain">
+   <div class="row"><div class="field"><label for="amount">Amount (USD)</label><input id="amount" name="amount" type="number" min="1" value="15" required></div>
+   <div class="field"><label for="sp-dir">Direct my support to</label><select id="sp-dir" name="direct_to"><option>Wherever it's needed most</option><option>A specific city guide</option><option>Contest prize pool</option><option>Hiring local writers</option><option>Promotion and marketing</option></select></div></div>
+   <div class="row"><div class="field"><label for="sp-name">Name</label><input id="sp-name" name="name" required autocomplete="name"></div>
+   <div class="field"><label for="sp-email">Email</label><input id="sp-email" name="email" type="email" required autocomplete="email"></div></div>
+   <div class="field"><label for="sp-msg">Message for the supporter wall (optional)</label><input id="sp-msg" name="message" maxlength="140"></div>
+   <label class="check"><input type="checkbox" name="public_wall" value="Yes, show my first name"><span>Show my first name and message on the supporter wall.</span></label>
+   <label class="check"><input type="checkbox" name="consent" value="Agreed" required> <span>I agree that Down.Town may email me about my pledge. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <button class="btn amber" type="submit">Pledge support</button><p class="form-status" role="status" aria-live="polite"></p>
+   <div id="pay-links" class="share"></div>
+   <p id="pay-note" class="small muted" hidden>Prefer to pay now? Use one of the secure checkout links above.</p>
+  </form>
+  <div>
+   <h3>Where the money goes</h3>
+   <div class="alloc" role="img" aria-label="Planned allocation of reader support"><i style="width:35%;background:var(--amber)" title="New city guides and local writers: 35%"></i><i style="width:25%;background:var(--teal)" title="Hosting, tools and operations: 25%"></i><i style="width:20%;background:var(--cobalt)" title="Contest prizes: 20%"></i><i style="width:20%;background:var(--red)" title="Promotion and reader growth: 20%"></i></div>
+   <div class="alloc-legend"><span><i style="background:var(--amber)"></i>New city guides and local writers — 35%</span><span><i style="background:var(--teal)"></i>Hosting, tools and operations — 25%</span><span><i style="background:var(--cobalt)"></i>Contest prizes — 20%</span><span><i style="background:var(--red)"></i>Promotion and reader growth — 20%</span></div>
+   <h3 style="margin-top:1.6rem">Supporter wall</h3>
+   <div class="empty">Our first supporters will be listed here. Your name could start the wall.</div>
+   <h3 style="margin-top:1.6rem">Other ways to help</h3>
+   <ul class="list-check"><li><a href="advertise.html">Sponsor a city guide or contest</a></li><li><a href="careers.html">Contribute as a writer or photographer</a></li><li><a href="contact.html?topic=Correction">Send a correction or tip</a></li><li>Share a guide with someone planning a move</li></ul>
+   <p class="small muted" style="margin-top:1rem">Down.Town is an independent publication, not a registered charity, so contributions are not tax-deductible. Questions? <a href="contact.html?topic=Support">Contact us</a>.</p>
+  </div>
+ </div>
+</div></section>
+{% endraw %}
