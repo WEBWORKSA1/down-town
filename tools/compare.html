@@ -1,0 +1,31 @@
+---
+layout: "default"
+title: "Compare Downtowns Side by Side"
+description: "Compare two or three downtowns on walkability, transit, food, nightlife, culture, family life, business climate and value."
+root: "../"
+canon: "tools/compare.html"
+section: "tools"
+cities: true
+tools: true
+---
+{% raw %}
+<header class="page-head line-strip line-t"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools/index.html">Tools</a> / <span aria-current="page">Compare downtowns side by side</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://down.town/tools/"}, {"@type": "ListItem", "position": 3, "name": "Compare downtowns side by side"}]}</script>
+ <span class="tag"><span class="bullet t" aria-hidden="true">T</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Compare downtowns side by side</h1>
+ <p class="lede">Pick two or three city centres. The table highlights the winner in each category and sums up the trade-offs.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="card" style="margin-bottom:1.2rem"><div class="form"><div class="row" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+<div class="field"><label for="cmp-a">Downtown A</label><select id="cmp-a"><option value="amsterdam">Amsterdam</option><option value="austin">Austin</option><option value="barcelona">Barcelona</option><option value="berlin">Berlin</option><option value="boston">Boston</option><option value="cape-town">Cape Town</option><option value="chicago">Chicago</option><option value="denver">Denver</option><option value="dubai">Dubai</option><option value="hong-kong">Hong Kong</option><option value="london">London</option><option value="melbourne">Melbourne</option><option value="mexico-city">Mexico City</option><option value="miami">Miami</option><option value="montreal">Montréal</option><option value="mumbai">Mumbai</option><option value="new-york">New York</option><option value="paris">Paris</option><option value="san-francisco">San Francisco</option><option value="seattle">Seattle</option><option value="singapore">Singapore</option><option value="sydney">Sydney</option><option value="tokyo">Tokyo</option><option value="toronto">Toronto</option><option value="vancouver">Vancouver</option><option value="washington-dc">Washington, D.C.</option></select></div>
+<div class="field"><label for="cmp-b">Downtown B</label><select id="cmp-b"><option value="amsterdam">Amsterdam</option><option value="austin">Austin</option><option value="barcelona">Barcelona</option><option value="berlin">Berlin</option><option value="boston">Boston</option><option value="cape-town">Cape Town</option><option value="chicago">Chicago</option><option value="denver">Denver</option><option value="dubai">Dubai</option><option value="hong-kong">Hong Kong</option><option value="london">London</option><option value="melbourne">Melbourne</option><option value="mexico-city">Mexico City</option><option value="miami">Miami</option><option value="montreal">Montréal</option><option value="mumbai">Mumbai</option><option value="new-york">New York</option><option value="paris">Paris</option><option value="san-francisco">San Francisco</option><option value="seattle">Seattle</option><option value="singapore">Singapore</option><option value="sydney">Sydney</option><option value="tokyo">Tokyo</option><option value="toronto">Toronto</option><option value="vancouver">Vancouver</option><option value="washington-dc">Washington, D.C.</option></select></div>
+<div class="field"><label for="cmp-c">Downtown C (optional)</label><select id="cmp-c"><option value="">None</option><option value="amsterdam">Amsterdam</option><option value="austin">Austin</option><option value="barcelona">Barcelona</option><option value="berlin">Berlin</option><option value="boston">Boston</option><option value="cape-town">Cape Town</option><option value="chicago">Chicago</option><option value="denver">Denver</option><option value="dubai">Dubai</option><option value="hong-kong">Hong Kong</option><option value="london">London</option><option value="melbourne">Melbourne</option><option value="mexico-city">Mexico City</option><option value="miami">Miami</option><option value="montreal">Montréal</option><option value="mumbai">Mumbai</option><option value="new-york">New York</option><option value="paris">Paris</option><option value="san-francisco">San Francisco</option><option value="seattle">Seattle</option><option value="singapore">Singapore</option><option value="sydney">Sydney</option><option value="tokyo">Tokyo</option><option value="toronto">Toronto</option><option value="vancouver">Vancouver</option><option value="washington-dc">Washington, D.C.</option></select></div>
+</div></div></div>
+<div style="overflow-x:auto"><table class="compare-table" id="cmp-table"></table></div>
+<p class="verdict notice" id="cmp-verdict" style="margin-top:1rem"></p>
+<div class="share"><button class="btn ghost sm" type="button" data-share="copy">Copy link to this comparison</button></div>
+<div class="ad-zone" data-slot="incontent"></div>
+<div style="max-width:820px"><h2 style="font-size:1.4rem;margin-top:2rem">Good to know</h2><div class="faq"><details><summary>Where do the scores come from?</summary><p>They're Down.Town editorial scores from the <a href="../rankings.html">Down.Town Index</a>, reviewed at least yearly. <a href="../rankings.html#method">Methodology</a>.</p></details></div></div>
+</div></section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Compare downtowns side by side", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0"}, "url": "https://down.town/tools/compare.html"}</script>
+{% endraw %}
