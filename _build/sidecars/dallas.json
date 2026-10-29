@@ -1,0 +1,25 @@
+{
+ "tagline": "Glass towers, a park built over a freeway and a showcase arts district, with Deep Ellum's live music just across the road.",
+ "events": [
+  {
+   "when": "Late September–October",
+   "name": "State Fair of Texas",
+   "desc": "Big Tex, livestock shows, a midway and famously creative fried food fill Fair Park's Art Deco grounds, a short DART ride east."
+  },
+  {
+   "when": "October",
+   "name": "Red River Rivalry",
+   "desc": "The University of Texas and the University of Oklahoma play their annual football game at the Cotton Bowl during the fair."
+  },
+  {
+   "when": "December",
+   "name": "Dallas Marathon",
+   "desc": "The marathon, half marathon and relay start and finish downtown near City Hall."
+  }
+ ],
+ "video": {
+  "id": "6MB5UaGr5BE",
+  "title": "Downtown Dallas Walking Tour 4K",
+  "channel": "DaDiscoveries"
+ }
+}
