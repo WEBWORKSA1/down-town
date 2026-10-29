@@ -1,0 +1,35 @@
+---
+layout: "default"
+title: "Contact Down.Town"
+description: "Contact Down.Town about corrections, listings, events, advertising, partnerships, contests, careers or privacy requests."
+root: ""
+canon: "contact.html"
+section: "contact"
+---
+{% raw %}
+<header class="page-head"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Contact</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Contact"}]}</script>
+ <h1>Contact Down.Town</h1>
+ <p class="lede">We read everything and reply within two business days. For domain, website, sponsorship or partnership enquiries about Down.Town itself, you can also <a href="https://web.works/contact" target="_blank" rel="noopener">contact the owner directly</a>.</p>
+</div></header>
+<section class="sec tight"><div class="wrap split">
+ <form class="card form" data-form="Contact message" data-redirect="thank-you.html">
+  <div class="row"><div class="field"><label for="ct-n">Name</label><input id="ct-n" name="name" required autocomplete="name"></div>
+  <div class="field"><label for="ct-e">Email</label><input id="ct-e" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="field"><label for="ct-t">Topic</label><select id="ct-t" name="topic" data-prefill="topic"><option>General question</option><option>Correction</option><option>Event listing</option><option>Business listing</option><option>Advertising</option><option>Partnership</option><option>Press</option><option>Contest</option><option>Careers</option><option>Suggest a city</option><option>Index badge</option><option>Video</option><option>Support</option><option>Privacy request</option></select></div>
+  <div class="field"><label for="ct-m">Message</label><textarea id="ct-m" name="message" required></textarea></div>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed" required> <span>I agree that Down.Town may use these details to reply to me. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn" type="submit">Send message</button><p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+ <div>
+  <h2 style="font-size:1.4rem">Quick routes</h2>
+  <ul class="stations">
+   <li><a href="get-matched.html">Moving or opening a business</a><p>Use Get Matched for introductions to local pros.</p></li>
+   <li><a href="list-your-business.html">List your business</a><p>Free and paid listings in city guides.</p></li>
+   <li><a href="advertise.html">Advertise or sponsor</a><p>City Partners, newsletter and contest sponsorships.</p></li>
+   <li><a href="careers.html">Write or shoot for us</a><p>Paid contributor roles.</p></li>
+  </ul>
+  <p class="muted" style="margin-top:1rem">Prefer email? <a href="#" data-mail="Down.Town enquiry">Open an email to the editors</a>.</p>
+ </div>
+</div></section>
+{% endraw %}
