@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign c = site.data.cities | where: "slug", page.city | first %}
+<section class="city-hero">
+ <div class="wrap">
+  {% include crumbs.html label=c.name %}
+  <span class="tag" style="color:#dfe4ee"><span class="bullet e" aria-hidden="true">E</span> City guide · {{ c.region }}</span>
+  <h1 style="margin-top:.6rem">Downtown {{ c.name }}</h1>
+  <p class="lede">{{ c.tagline }}</p>
+  <div class="facts"><span><b>{{ c.district }}</b>, {{ c.country }}</span><span>Down.Town Index <b>{{ c.index }}</b>/100</span><span>Updated <time datetime="{{ page.updated }}">{{ page.updated | date: "%B %Y" }}</time></span></div>
+  <div class="share">
+   <a class="btn amber sm" href="/get-matched.html?need=home&amp;city={{ c.slug }}">Moving here? Get matched</a>
+   <a class="btn violet sm" href="/space/{{ c.slug }}.html">Office &amp; shop space</a>
+   <a class="btn ghost sm on-dark" href="/tools/compare.html?a={{ c.slug }}&amp;b={{ c.pair }}">Compare</a>
+   <button class="btn ghost sm on-dark" type="button" data-save="{{ page.url }}" data-save-title="Downtown {{ c.name }}">Save</button>
+   <button class="btn ghost sm on-dark" type="button" data-share="native">Share</button>
+  </div>
+ </div>
+ <div class="skyline" data-sky="{{ c.slug }}" data-tall="{{ c.tall | default: 2 }}" data-w="1200" data-h="150" data-base="#2b3449" data-d="0.2"></div>
+</section>
+<div class="wrap article-grid">
+ <article>
+{{ content }}
+  <div class="howwe notice"><b>How we research city guides.</b> Down.Town editors build each guide from official city, transit and tourism sources and on-the-ground reporting, then review it at least once a year. Scores are editorial judgements, not paid placements. Spotted something out of date? <a href="/contact.html?topic=correction">Send a correction</a>.</div>
+  {% include faq.html %}
+  {% include scores.html slug=c.slug %}
+  <div class="space-teaser card lined line-s">
+   <span class="tag"><span class="bullet s" aria-hidden="true">S</span> Find Space</span>
+   <h3 style="margin-top:.4rem"><a href="/space/{{ c.slug }}.html">Office &amp; commercial space in downtown {{ c.name }}</a></h3>
+   <p class="small muted">Where the office cores and retail corridors are, how leases work in {{ c.country }}, and what to check before you sign.</p>
+  </div>
+  {% include more-cities.html slug=c.slug %}
+  {% include cta.html kind="support" %}
+ </article>
+ <aside class="rail" aria-label="Guide tools">
+  <div class="card toc"><h3 style="font-size:1rem">On this page</h3><div id="toc"></div></div>
+  <div class="rail-sticky">
+   {% include rail-lead.html need="home" %}
+   <div class="card partner-slot"><span class="pill-note">Partner slot open</span><h3 style="margin-top:.5rem;font-size:1.05rem">Become the {{ c.name }} City Partner</h3><p class="small muted">One local business, association or tourism partner sponsors each guide: logo placement, a featured listing and a Dispatch mention.</p><a class="btn ghost sm" href="/advertise.html?city={{ c.slug }}#packages">See partner options</a></div>
+   {% include ad.html slot="sidebar" %}
+  </div>
+ </aside>
+</div>
