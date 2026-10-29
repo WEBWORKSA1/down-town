@@ -1,0 +1,61 @@
+---
+layout: default
+title: "Find Office, Retail, Coworking & Event Space Downtown — Free Matching"
+description: "Office, retail, coworking and event venues in 42 downtowns: where to look, how leases work in each country, and free introductions to tenant-side brokers and venues."
+section: space
+updated: "2026-10-29"
+faq:
+  - q: "Does it cost anything to use a tenant broker?"
+    a: "Usually not directly. In most commercial markets the landlord pays the leasing commission and the tenant's broker is paid from it. Ask any broker to confirm how they are paid before you sign an agreement with them."
+  - q: "What size office should I look for?"
+    a: "A common planning range is roughly 125–225 square feet (12–21 m²) of usable space per person who needs a desk, lower for hybrid teams that share desks. Our office space calculator turns your headcount and work pattern into a range."
+  - q: "Is coworking cheaper than leasing?"
+    a: "For small teams and short horizons, often yes, because fit-out, furniture and services are included. As headcount and term grow, a lease usually wins. Use the coworking vs lease tool to find your break-even."
+  - q: "Can you help with event venues as well as offices?"
+    a: "Yes. Tell us the guest count, layout, date and budget and we'll introduce you to suitable venues — from boardrooms and galleries to conference centres and rooftops."
+---
+{% assign ncity = site.data.cities | size %}
+<header class="page-head line-strip line-s"><div class="wrap">
+ {% include crumbs.html label="Find Space" %}
+ <span class="tag"><span class="bullet s" aria-hidden="true">S</span> Find Space</span>
+ <h1 style="margin-top:.6rem">Space to work, sell and gather downtown</h1>
+ <p class="lede">Office floors, shopfronts, kitchens, coworking suites and event venues in {{ ncity }} city centres — what to look for, how leases work in each country, and free introductions to people who know the buildings.</p>
+ <div class="share"><a class="btn violet" href="/get-matched.html?need=office">Find office space</a><a class="btn ghost" href="/get-matched.html?need=flex">Coworking</a><a class="btn ghost" href="/get-matched.html?need=retail">Retail or restaurant</a><a class="btn ghost" href="/get-matched.html?need=venue">Event venue</a></div>
+</div></header>
+
+<section class="sec tight"><div class="wrap">
+ <div class="grid g4">
+  <div class="card lined line-s"><h3>Office</h3><p class="small muted">Direct leases, subleases and headquarters moves. Start with size and lease length.</p><ul class="check-list small"><li><a href="/tools/office-space.html">Office space calculator</a></li><li><a href="/space/negotiating-office-rent.html">Negotiating office rent</a></li><li><a href="/space/sublease-office-space.html">Subleases explained</a></li></ul></div>
+  <div class="card lined line-b"><h3>Retail &amp; restaurant</h3><p class="small muted">Frontage, footfall and services decide the deal. Kitchens need extraction, gas and the right use class.</p><ul class="check-list small"><li><a href="/space/restaurant-space-checklist.html">Restaurant space checklist</a></li><li><a href="/business/commercial-lease-terms.html">Lease terms decoded</a></li><li><a href="/tools/storefront-revenue.html">Storefront estimator</a></li></ul></div>
+  <div class="card lined line-s"><h3>Coworking &amp; flex</h3><p class="small muted">Desks to private suites on monthly terms. Best for small teams, launches and uncertain headcount.</p><ul class="check-list small"><li><a href="/space/coworking-vs-private-office-vs-lease.html">Coworking vs lease</a></li><li><a href="/tools/coworking-vs-lease.html">Break-even tool</a></li><li><a href="/get-matched.html?need=flex">Get flex quotes</a></li></ul></div>
+  <div class="card lined line-e"><h3>Event venues</h3><p class="small muted">Capacity by layout, food-and-drink minimums, holds and deposits — know them before you tour.</p><ul class="check-list small"><li><a href="/space/choosing-a-downtown-event-venue.html">Choosing a venue</a></li><li><a href="/tools/venue-budget.html">Venue budget</a></li><li><a href="/get-matched.html?need=venue">Get venue quotes</a></li></ul></div>
+ </div>
+</div></section>
+
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet s" aria-hidden="true">S</span> By city</span><h2>Commercial space guides by downtown</h2></div></div>
+ <div class="toolbar"><label class="vh" for="city-q">Filter cities</label><input id="city-q" type="search" placeholder="Filter by city or country">
+  <div class="pill-row" role="group" aria-label="Region"><button class="chip" type="button" data-region="all" aria-pressed="true">All</button>{% assign regions = site.data.cities | group_by: "region" %}{% for g in regions %}{% assign r0 = g.items | first %}<button class="chip" type="button" data-region="{{ r0.rslug }}">{{ g.name }}</button>{% endfor %}</div>
+  <label class="vh" for="city-sort">Sort</label><select id="city-sort" style="max-width:220px"><option value="business">Sort: business climate</option><option value="index">Sort: Down.Town Index</option><option value="name">Sort: A–Z</option></select>
+ </div>
+ <div class="grid g3" id="city-dir">{% assign bybiz = site.data.cities | sort: "name" %}{% for c in bybiz %}{% include city-tile.html c=c base="space" %}{% endfor %}</div>
+ <p class="empty" id="city-empty" hidden>No match. <a href="/get-matched.html?need=office">Tell us the city</a> and we'll still try to help.</p>
+</div></section>
+
+<section class="sec"><div class="wrap split">
+ <div>
+  <span class="tag"><span class="bullet s" aria-hidden="true">S</span> How it works</span>
+  <h2 style="margin-top:.5rem">One brief, up to three introductions</h2>
+  <ol class="stations line-s">
+   <li><b>Tell us the brief</b><p>Headcount or size, budget, lease length, timing and must-haves. About 60 seconds.</p></li>
+   <li><b>We review it by hand</b><p>An editor checks every request within one business day — no automated list blasts.</p></li>
+   <li><b>Meet the right people</b><p>Up to three tenant-side brokers, coworking operators or venues who fit. You decide whether to reply.</p></li>
+  </ol>
+  <div class="notice" style="margin-top:1rem"><b>Our disclosure.</b> Down.Town is not a broker or landlord. Partners pay us a referral fee only if you choose to work with them. In most markets the landlord pays the tenant broker's commission. <a href="/partners.html">About the partner network</a>.</div>
+ </div>
+ <div>
+  <h2 style="font-size:1.4rem">Guides for tenants</h2>
+  <div class="grid">{% assign sg = site.pages | where: "section", "space" %}{% for p in sg %}{% if p.layout == "article" %}<div class="card lined line-s"><h3 style="font-size:1.05rem"><a href="{{ p.url }}">{{ p.title }}</a></h3><p class="small muted">{{ p.description }}</p></div>{% endif %}{% endfor %}</div>
+ </div>
+</div></section>
+<section class="sec tight alt"><div class="wrap">{% include faq.html %}</div></section>
