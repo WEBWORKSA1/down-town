@@ -1,0 +1,41 @@
+---
+layout: "default"
+title: "List Your Downtown Business: Free, Featured and Spotlight Listings"
+description: "Add your downtown business to Down.Town for free, or upgrade to Featured or Spotlight placement inside city guides read by movers and visitors."
+root: ""
+canon: "list-your-business.html"
+section: "business"
+---
+{% raw %}
+<header class="page-head line-strip line-b"><div class="wrap">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="business/index.html">Do Business</a> / <span aria-current="page">List your business</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Do Business", "item": "https://down.town/business/"}, {"@type": "ListItem", "position": 3, "name": "List your business"}]}</script>
+ <span class="tag"><span class="bullet b" aria-hidden="true">B</span> Listings</span>
+ <h1 style="margin-top:.6rem">Put your business in front of people exploring downtown</h1>
+ <p class="lede">Basic listings are free. Featured and Spotlight upgrades put you inside the city guides that movers, visitors and new residents read before they decide where to go.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+ <div class="grid g3"><div class="plan line-e"><h3>Basic</h3><div class="price">Free<small></small></div><ul><li>A listing in your city&#x27;s directory</li><li>Name, address, website, hours</li><li>280-character description</li><li>Reviewed within 5 business days</li></ul><a class="btn ghost sm" href="#lyb-form" onclick="var s=document.getElementById('lyb-plan');if(s)s.value='Basic'">Choose Basic</a></div><div class="plan line-l"><h3>Featured</h3><div class="price">US$29<small>/mo</small></div><ul><li>Everything in Basic</li><li>Highlighted card with photo</li><li>Priority placement in your city</li><li>Featured badge</li><li>Monthly performance note</li></ul><a class="btn amber sm" href="#lyb-form" onclick="var s=document.getElementById('lyb-plan');if(s)s.value='Featured'">Choose Featured</a></div><div class="plan line-b"><h3>Spotlight</h3><div class="price">US$99<small>/mo</small></div><ul><li>Everything in Featured</li><li>Placement inside your city guide</li><li>One mention in the Downtown Dispatch per quarter</li><li>Social post on launch</li><li>First access to City Partner slots</li></ul><a class="btn ghost sm" href="#lyb-form" onclick="var s=document.getElementById('lyb-plan');if(s)s.value='Spotlight'">Choose Spotlight</a></div></div>
+ <p class="small muted" style="margin-top:.8rem">Paid plans are billed monthly by invoice after your listing is approved; cancel anytime. Prices in US dollars; local-currency invoices on request.</p>
+</div></section>
+<section class="sec tight alt"><div class="wrap split">
+ <div>
+  <h2>Submit your business</h2>
+  <p class="muted">Independent businesses inside or near one of our 26 downtowns are welcome. Chains and franchises can list each downtown location separately.</p>
+  <ul class="list-check" style="--lc:var(--cobalt)"><li>Every listing is checked by an editor</li><li>No fake reviews, ever</li><li>Editorial picks in our guides are never for sale; paid placements are always labelled</li></ul>
+ </div>
+ <form class="card form" id="lyb-form" data-form="Business listing" data-redirect="thank-you.html">
+  <div class="row"><div class="field"><label for="lb-name">Your name</label><input id="lb-name" name="name" required autocomplete="name"></div>
+  <div class="field"><label for="lb-email">Email</label><input id="lb-email" name="email" type="email" required autocomplete="email"></div></div>
+  <div class="row"><div class="field"><label for="lb-biz">Business name</label><input id="lb-biz" name="business_name" required autocomplete="organization"></div>
+  <div class="field"><label for="lb-cat">Category</label><select id="lb-cat" name="category" required><option value="">Choose one</option><option>Food & drink</option><option>Shops & retail</option><option>Services</option><option>Health & wellness</option><option>Arts & entertainment</option><option>Hotels & stays</option><option>Real estate</option><option>Professional services</option><option>Other</option></select></div></div>
+  <div class="row"><div class="field"><label for="lb-city">Downtown</label><select id="lb-city" name="city" data-prefill="city" required><option value="">Choose a city</option><optgroup label="North America"><option value="Austin">Austin</option><option value="Boston">Boston</option><option value="Chicago">Chicago</option><option value="Denver">Denver</option><option value="Miami">Miami</option><option value="Montréal">Montréal</option><option value="New York">New York</option><option value="San Francisco">San Francisco</option><option value="Seattle">Seattle</option><option value="Toronto">Toronto</option><option value="Vancouver">Vancouver</option><option value="Washington, D.C.">Washington, D.C.</option></optgroup><optgroup label="Europe"><option value="Amsterdam">Amsterdam</option><option value="Barcelona">Barcelona</option><option value="Berlin">Berlin</option><option value="London">London</option><option value="Paris">Paris</option></optgroup><optgroup label="Asia-Pacific"><option value="Hong Kong">Hong Kong</option><option value="Melbourne">Melbourne</option><option value="Singapore">Singapore</option><option value="Sydney">Sydney</option><option value="Tokyo">Tokyo</option></optgroup><optgroup label="Middle East & Africa"><option value="Cape Town">Cape Town</option><option value="Dubai">Dubai</option></optgroup><optgroup label="Latin America"><option value="Mexico City">Mexico City</option></optgroup><optgroup label="South Asia"><option value="Mumbai">Mumbai</option></optgroup><option value="Another city">Another city</option><option value="Not sure yet">Not sure yet</option></select></div>
+  <div class="field"><label for="lb-addr">Street address</label><input id="lb-addr" name="address" required autocomplete="street-address"></div></div>
+  <div class="row"><div class="field"><label for="lb-web">Website</label><input id="lb-web" name="website" type="url" placeholder="https://"></div>
+  <div class="field"><label for="lb-phone">Phone</label><input id="lb-phone" name="phone" type="tel"></div></div>
+  <div class="field"><label for="lb-desc">Description</label><textarea id="lb-desc" name="description" maxlength="280" data-count="lb-count" required placeholder="What makes your place worth the walk?"></textarea><div class="counter" id="lb-count"></div></div>
+  <div class="field"><label for="lyb-plan">Plan</label><select id="lyb-plan" name="plan"><option>Basic</option><option>Featured</option><option>Spotlight</option></select></div>
+  <label class="check"><input type="checkbox" name="consent" value="Agreed" required> <span>I agree that Down.Town may review and publish this listing and contact me about it. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn cobalt" type="submit">Submit for review</button><p class="form-status" role="status" aria-live="polite"></p>
+ </form>
+</div></section>
+{% endraw %}
