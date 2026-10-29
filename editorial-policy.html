@@ -1,30 +1,96 @@
 ---
-layout: "default"
-title: "Editorial Policy"
-description: "How Down.Town researches, writes, scores, updates and corrects its guides, and how it separates editorial content from advertising."
-root: ""
-canon: "editorial-policy.html"
-section: ""
+layout: default
+title: "Editorial Policy: How Down.Town Researches and Corrects"
+description: "How Down.Town researches, writes, scores, updates and corrects its guides, labels sponsorship, uses AI tools and keeps paying partners away from editorial."
+section: about
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Editorial policy</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Editorial policy"}]}</script>
- <h1>Editorial policy</h1>
+ {% include crumbs.html label="Editorial policy" %}
+ <span class="tag"><span class="bullet d" aria-hidden="true">D</span> Standards</span>
+ <h1 style="margin-top:.6rem">Editorial policy</h1>
+ <p class="lede">How the Down.Town editors research, write, score, update and correct what we publish, and how we keep money away from the verdicts. Last updated 29 October 2026.</p>
 </div></header>
-<section class="sec tight"><div class="wrap legal prose" style="font-size:1.08rem">
-<h2>Research and sources</h2>
-<p>Guides are built from primary sources wherever possible: city and transit agencies, tourism boards, official event organisers, institutions and published data. We visit, walk and ride where we can, and we note when information is likely to change.</p>
-<h2>Use of technology</h2>
-<p>We use software tools — including AI writing and research assistance — to help draft, organise and check content. Every published guide is reviewed by an editor, and factual claims are checked against sources before publication. Tools never decide Index scores.</p>
-<h2>Scores and rankings</h2>
-<p>The Down.Town Index is an editorial judgement made with a published method. Scores cannot be bought or influenced by advertisers or sponsors.</p>
-<h2>Updates</h2>
-<p>Each guide shows the month it was last reviewed. We review every guide at least once a year and sooner when something important changes.</p>
-<h2>Corrections</h2>
-<p>When we get something wrong, we fix it quickly. Significant corrections are noted on the page. <a href="contact.html?topic=Correction">Report an error</a>.</p>
-<h2>Advertising and sponsorship</h2>
-<p>Ads, sponsored placements, Featured and Spotlight listings and partner modules are labelled. Sponsors may suggest topics but never review or approve editorial content.</p>
-<h2>Referral partners</h2>
-<p>When readers ask for introductions, we choose partners based on fit and service quality. Partner fees do not influence our guides.</p>
+
+<section class="sec tight"><div class="wrap">
+ <div class="split">
+  <div class="card" style="border-top:8px solid var(--amber)">
+   <h2 style="font-size:1.3rem">Our four commitments</h2>
+   <ul class="list-check" style="--lc:var(--amber);margin-top:.6rem">
+    <li><b>Accuracy:</b> facts checked against official and primary sources.</li>
+    <li><b>Independence:</b> no advertiser, sponsor or partner can buy coverage or a score.</li>
+    <li><b>Fairness:</b> every city answers the same questions, scored on the same measures.</li>
+    <li><b>Openness:</b> paid placements labelled, mistakes corrected, methods published.</li>
+   </ul>
+  </div>
+  <nav class="card toc" aria-label="On this page">
+   <h2 style="font-size:1.3rem">On this page</h2>
+   <ol style="columns:13rem;column-gap:1.6rem">
+    <li><a href="#sourcing">Research and sourcing</a></li>
+    <li><a href="#writing">What we publish, and don't</a></li>
+    <li><a href="#scores">Scores and rankings</a></li>
+    <li><a href="#updates">Reviews and updates</a></li>
+    <li><a href="#corrections">Corrections</a></li>
+    <li><a href="#sponsorship">Sponsorship and labelling</a></li>
+    <li><a href="#partners">Referral partners</a></li>
+    <li><a href="#ai">Software and AI tools</a></li>
+    <li><a href="#videos">Videos and images</a></li>
+    <li><a href="#contributors">Contributors and conflicts</a></li>
+    <li><a href="#style">Style</a></li>
+   </ol>
+  </nav>
+ </div>
+
+ <div class="legal prose" style="font-size:1.06rem;margin-top:1.6rem">
+  <h2 id="sourcing">Research and sourcing</h2>
+  <p>Our guides are built from primary sources wherever possible: city governments and their agencies, transit operators, tourism boards, official event organisers, universities, museums, courts and published data. When sources disagree, we rely on the one closest to the fact, such as the transit agency for a line or the organiser for an event, and we say so when something is uncertain or likely to change.</p>
+  <p>Official sources are the start, not the end. Freelance city contributors who live in or know each downtown report from the ground: walking the districts, riding the lines and telling us what the official pages leave out. An editor checks names, lines, agencies, laws and conventions before anything is published.</p>
+
+  <h2 id="writing">What we publish, and what we don't</h2>
+  <ul>
+   <li><strong>Places, not paid picks.</strong> Our editorial guides describe districts, streets, public landmarks, markets, parks, institutions and transit. They don't recommend named restaurants, shops, hotels, brokers, developers or landlords, so there is no editorial spot a business can buy.</li>
+   <li><strong>No invented people or experiences.</strong> We don't publish made-up quotes, invented experts, fabricated reviews or first-person anecdotes presented as fact.</li>
+   <li><strong>No invented numbers.</strong> We don't publish statistics, prices or dates we can't source. Where a figure is a rule of thumb, we say so. Costs in guides are described in relative terms; the tools do the maths with your own numbers.</li>
+   <li><strong>Events by season.</strong> Recurring events are listed with their usual month or season, because exact dates move every year. Always check with the organiser.</li>
+  </ul>
+
+  <h2 id="scores">Scores and rankings</h2>
+  <p>The <a href="/rankings.html">Down.Town Index</a> scores every downtown we cover on the same measures, using a method we publish alongside the scores. Scores are an editorial judgement informed by sources and reporting, not an official statistic. They are reviewed with each guide, they are set by editors (never by a software tool), and they cannot be bought, sponsored or negotiated by anyone, including advertisers, sponsors, partners and the cities themselves.</p>
+
+  <h2 id="updates">Reviews and updates</h2>
+  <p>Every guide is reviewed at least once a year, and sooner when something important changes, such as a new transit line, a major closure or a change in the law. Each guide shows the month it was last updated.</p>
+
+  <h2 id="corrections">Corrections</h2>
+  <p>When we get something wrong, we fix it as quickly as we can. Significant corrections, those that change a fact a reader might have relied on, are noted on the page with the month of the correction. Typing errors and broken links are fixed without a note.</p>
+  <p>To report an error, <a href="/contact.html?topic=Correction">send a correction</a> with the page, what is wrong and, ideally, a source. An editor reads every report and replies when we have checked it.</p>
+
+  <h2 id="sponsorship">Sponsorship and labelling</h2>
+  <p>Down.Town is funded by advertising, sponsorships, featured listings, reader support and referral fees. Our <a href="/about.html">about page</a> lists them all. Whatever the source, the rules are the same.</p>
+  <ul>
+   <li><strong>Everything paid is labelled.</strong> Ad units are marked "Advertisement" or carry Google's own ad label. Sponsorships carry a "Sponsored" label. Paid listings are marked "Featured" or "Spotlight".</li>
+   <li><strong>No paid editorial.</strong> We don't sell articles, reviews, rankings, recommendations or coverage. Partners never pay for editorial coverage.</li>
+   <li><strong>Sponsors don't approve anything.</strong> A sponsor supplies the content of its own labelled placement. It never sees, reviews or approves editorial content before publication, and it can't change a guide or a score.</li>
+   <li><strong>Selling and deciding are separate.</strong> Whoever sells a sponsorship has no say over what we cover or how we score it.</li>
+   <li><strong>Placements stay distinct.</strong> Sponsored placements are designed to look different from editorial content and from Google ads, and are never placed to encourage accidental clicks.</li>
+  </ul>
+
+  <h2 id="partners">Referral partners</h2>
+  <p>When a reader asks us for introductions through <a href="/get-matched.html">Get matched</a>, an editor chooses up to three partners on fit: city, type of space or service, size, budget and timing. A partner may pay us a referral fee if the reader chooses to work with it. Those fees don't influence our guides, our scores or which places we write about, and partners are never named or recommended in editorial content. Partners are independent businesses, and an introduction is not an endorsement. How we handle readers' details is set out in <a href="/privacy.html#leads">requests for introductions</a>.</p>
+
+  <h2 id="ai">Software and AI tools</h2>
+  <p>We may use software tools, including AI, to help research and draft; editors check facts and take responsibility for everything published.</p>
+  <p>In practice, that means a tool might help us gather and organise sources, suggest a structure or tidy a draft. It does not decide what we cover, it never sets a score, and nothing it produces is published without an editor checking the facts against sources. We don't publish AI-generated images presented as photographs, and Downtown Lens contest entries must not be AI-generated.</p>
+
+  <h2 id="videos">Videos and images</h2>
+  <p>The walking-tour videos in our guides are made by independent YouTube creators. Editors choose them because they show a district well, check that each one is genuine and on topic, and credit it with its title and channel. They are embedded with YouTube's player and remain their creators' property; creators can ask us to remove an embed at any time. Our skyline and route-map illustrations are our own original graphics, not photographs of real buildings.</p>
+
+  <h2 id="contributors">Contributors and conflicts of interest</h2>
+  <p>Contributors must tell us about any personal or financial connection to a place, organisation or business they write about, and may not accept payment, gifts or free services in exchange for coverage. Where a connection is relevant, we either assign the work to someone else or disclose it on the page. Contributors are credited for published work.</p>
+
+  <h2 id="style">Style</h2>
+  <p>We write in plain, specific English with British and Canadian spelling (centre, neighbourhood, licence), and keep local names and accents as places use them: Montréal, Bengaluru, Washington, D.C.</p>
+
+  <h2 id="contact">Questions about this policy</h2>
+  <p>Use the <a href="/contact.html">contact form</a>, or <a href="/contact.html" data-mail="Down.Town editorial policy">email us</a>. Meet the team behind it on <a href="/about.html#editors">the Down.Town editors</a>.</p>
+ </div>
 </div></section>
-{% endraw %}

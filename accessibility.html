@@ -1,25 +1,71 @@
 ---
-layout: "default"
-title: "Accessibility Statement"
-description: "Down.Town's accessibility commitment and how to report barriers."
-root: ""
-canon: "accessibility.html"
-section: ""
+layout: default
+title: "Accessibility Statement: Down.Town and WCAG 2.2 AA"
+description: "Down.Town aims to meet WCAG 2.2 level AA. What we've built in, where third-party content falls short, and how to report a barrier or ask for another format."
+section: about
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Accessibility</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Accessibility"}]}</script>
- <h1>Accessibility</h1>
+ {% include crumbs.html label="Accessibility" %}
+ <span class="tag"><span class="bullet d" aria-hidden="true">D</span> Accessibility</span>
+ <h1 style="margin-top:.6rem">Accessibility statement</h1>
+ <p class="lede">Down.Town should work for everyone, whatever device, browser or assistive technology you use. We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Last updated 29 October 2026.</p>
 </div></header>
-<section class="sec tight"><div class="wrap legal prose" style="font-size:1.08rem">
-<p>We want Down.Town to work for everyone. The site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA.</p>
-<ul>
-<li>Keyboard navigation with visible focus indicators and a skip link.</li>
-<li>Text alternatives for meaningful graphics; decorative graphics are hidden from assistive technology.</li>
-<li>Colour contrast checked in light and dark themes; information is never conveyed by colour alone.</li>
-<li>Reduced motion respected for visitors who prefer it.</li>
-<li>Forms with labels, clear errors and status messages announced to screen readers.</li>
-</ul>
-<p>If you find a barrier, please <a href="contact.html?topic=General%20question">tell us</a> — include the page and what happened, and we'll respond within five business days.</p>
+
+<section class="sec tight"><div class="wrap">
+ <div class="split">
+  <div>
+   <h2 style="font-size:1.5rem">What we've built in</h2>
+   <ul class="check-list" style="margin-top:.8rem">
+    <li>A "Skip to content" link as the first stop for keyboard users</li>
+    <li>Every link, button and form control reachable by keyboard, with a clearly visible focus outline</li>
+    <li>Site search from anywhere: press <span class="kbd">/</span> or <span class="kbd">Ctrl</span> + <span class="kbd">K</span> (<span class="kbd">⌘</span> + <span class="kbd">K</span> on a Mac); <span class="kbd">Esc</span> closes it</li>
+    <li>Light and dark themes that follow your system setting, with a switch in the header</li>
+    <li>Animation turned off when your device asks for reduced motion</li>
+    <li>Text sized in relative units, so it scales with your browser settings, and layouts that reflow on narrow screens</li>
+    <li>Forms with visible labels, marked optional fields, hints, character counters and status messages announced to screen readers</li>
+    <li>Progress through Get matched saved in your browser, so you can take a break and come back</li>
+    <li>Line colours always paired with a letter (E, L, S, B, T) or a label, so colour is never the only cue</li>
+    <li>Decorative skylines and icons hidden from screen readers; meaningful graphics described in text</li>
+    <li>No autoplaying video or audio: players load only when you press play</li>
+    <li>Breadcrumbs and consistent navigation on every page</li>
+   </ul>
+  </div>
+  <div class="proof">
+   <div class="card lined line-t">
+    <h3>Report a barrier</h3>
+    <p class="small muted">Tell us the page, what you were trying to do, what happened, and the device, browser and any assistive technology you use. We reply within five business days and fix what we can as a priority.</p>
+    <p style="margin:.6rem 0 0"><a class="btn sm" href="/contact.html?topic=Accessibility">Report an accessibility barrier</a></p>
+    <p class="small muted" style="margin:.8rem 0 0">Or <a href="/contact.html" data-mail="Down.Town accessibility">email us</a>.</p>
+   </div>
+   <div class="card">
+    <h3>Need another format?</h3>
+    <p class="small muted">If any page is hard to use, ask and we'll send its content as plain text by email, or answer your question directly.</p>
+   </div>
+  </div>
+ </div>
+
+ <div class="legal prose" style="font-size:1.06rem;margin-top:1.6rem">
+  <h2 id="standard">The standard we work to</h2>
+  <p>WCAG 2.2 level AA is the internationally recognised benchmark for accessible websites. It covers how content is perceived, operated and understood: text alternatives, contrast, keyboard access, focus visibility, target sizes, clear labels and error messages, and compatibility with assistive technologies. We use it as the standard for new page templates and features, and check colour contrast in both light and dark themes.</p>
+
+  <h2 id="limitations">Known limitations</h2>
+  <p>Some content on Down.Town comes from other services, and we can't fully control how accessible it is.</p>
+  <ul>
+   <li><strong>Ads.</strong> Ads are supplied by Google and its partners. They are labelled as ads, but their content and behaviour are set by advertisers and Google.</li>
+   <li><strong>Videos.</strong> Walking-tour videos are made by independent creators and play in YouTube's player. Captions and audio description depend on the creator and on YouTube's automatic captions. Every guide's written content stands on its own without the video.</li>
+   <li><strong>The map.</strong> The optional map on the city directory is visual. The same cities are always listed as text on the page, with links to every guide.</li>
+   <li><strong>Google's consent message.</strong> Visitors in the European Economic Area, the United Kingdom and Switzerland see a consent message provided by Google, which controls its design.</li>
+  </ul>
+  <p>If one of these stops you doing something on Down.Town, tell us and we will find another way to help.</p>
+
+  <h2 id="compatibility">Compatibility</h2>
+  <p>Down.Town is designed for current versions of major browsers on desktop and mobile, and for screen readers and magnifiers used with them. The site is built from plain HTML, so its content remains readable even if a script fails to load.</p>
+
+  <h2 id="feedback">Feedback and follow-up</h2>
+  <p>We treat accessibility reports as bugs, not requests. Every report is read by a person, and we will tell you what we are doing about it. If you aren't satisfied with our response, say so in a reply and an editor will review it again.</p>
+
+  <h2 id="assessment">About this statement</h2>
+  <p>This statement reflects our own assessment of the site's templates and features. We review it whenever we add a significant feature, and at least once a year.</p>
+ </div>
 </div></section>
-{% endraw %}
