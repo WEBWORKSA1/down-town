@@ -1,0 +1,62 @@
+---
+layout: default
+title: "Rent vs Buy Downtown Calculator: Condo or Keep Renting?"
+description: "Compare the true cost of owning a downtown condo — mortgage, fees, taxes, upkeep and selling costs — with renting and investing the difference, year by year."
+section: tools
+calc: true
+updated: "2026-10-29"
+faq:
+  - q: "Why does the calculator subtract equity from the cost of owning?"
+    a: "Because part of what you pay as an owner comes back when you sell. The owning line shows everything you paid minus what you would walk away with after selling costs and paying off the mortgage."
+  - q: "What is the 'lost returns' on the renting side?"
+    a: "If you rent, the down payment and purchase costs stay invested. The renting line includes what that money could have earned — the opportunity cost of buying."
+  - q: "Why do short stays usually favour renting?"
+    a: "Buying and selling costs — taxes, legal fees, agent commissions — are front- and back-loaded. Over a few years, appreciation rarely covers them."
+---
+<header class="page-head line-strip line-l"><div class="wrap">
+ {% include crumbs.html label="Rent vs buy" %}
+ <span class="tag"><span class="bullet l" aria-hidden="true">L</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Rent vs buy downtown</h1>
+ <p class="lede">Condo fees, special assessments and selling costs change the maths in the city centre. See which wins over your time horizon.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="tool">
+<form class="card form" id="rb-form" onsubmit="return false">
+ <fieldset class="field"><legend>Buying</legend>
+ <div class="row"><div class="field"><label for="rb-price">Purchase price</label><input id="rb-price" type="number" min="0" step="5000" value="650000" data-param="budget"></div><div class="field"><label for="rb-down">Down payment (%)</label><input id="rb-down" type="number" min="0" max="100" value="20"></div></div>
+ <div class="row"><div class="field"><label for="rb-rate">Mortgage rate (%)</label><input id="rb-rate" type="number" min="0" max="25" step="0.05" value="5"></div><div class="field"><label for="rb-term">Amortisation (years)</label><input id="rb-term" type="number" min="1" max="40" value="25"></div></div>
+ <div class="row"><div class="field"><label for="rb-fees">Condo / strata fees per month</label><input id="rb-fees" type="number" min="0" step="10" value="550"></div><div class="field"><label for="rb-tax">Property tax (% of value / yr)</label><input id="rb-tax" type="number" min="0" max="5" step="0.05" value="0.7"></div></div>
+ <div class="row"><div class="field"><label for="rb-maint">Maintenance (% of value / yr)</label><input id="rb-maint" type="number" min="0" max="5" step="0.1" value="0.5"></div><div class="field"><label for="rb-app">Price growth (% / yr)</label><input id="rb-app" type="number" min="-10" max="15" step="0.1" value="2.5"></div></div>
+ <div class="row"><div class="field"><label for="rb-buyc">Buying costs (% of price)</label><input id="rb-buyc" type="number" min="0" max="15" step="0.1" value="3"></div><div class="field"><label for="rb-sellc">Selling costs (% of price)</label><input id="rb-sellc" type="number" min="0" max="15" step="0.1" value="5"></div></div>
+ </fieldset>
+ <fieldset class="field"><legend>Renting</legend>
+ <div class="row"><div class="field"><label for="rb-rent">Rent for a similar home / month</label><input id="rb-rent" type="number" min="0" step="50" value="2700"></div><div class="field"><label for="rb-rentup">Rent increase (% / yr)</label><input id="rb-rentup" type="number" min="0" max="20" step="0.1" value="3"></div></div>
+ <div class="row"><div class="field"><label for="rb-inv">Investment return (% / yr)</label><input id="rb-inv" type="number" min="0" max="20" step="0.1" value="5"></div><div class="field"><label for="rb-years">Years you'll stay</label><input id="rb-years" type="number" min="1" max="30" value="7"></div></div>
+ </fieldset>
+</form>
+<div class="result" aria-live="polite">
+ <p class="muted">Over your horizon</p>
+ <div class="big" id="rb-main">—</div>
+ <table><tbody>
+  <tr><td>Mortgage payment</td><td id="rb-pmt">—</td></tr>
+  <tr><td>Net cost of owning</td><td id="rb-own">—</td></tr>
+  <tr><td>Cost of renting (incl. lost returns)</td><td id="rb-rentc">—</td></tr>
+  <tr><td>Owning pulls ahead</td><td id="rb-be">—</td></tr>
+ </tbody></table>
+ <div id="rb-chart" style="margin-top:.8rem"></div>
+ <div class="verdict" id="rb-verdict"></div>
+ <div class="share"><a class="btn teal" id="rb-cta-buy" href="/get-matched.html?need=buy">Talk to a realtor</a><a class="btn ghost on-dark" id="rb-cta-rent" href="/get-matched.html?need=home">Find a rental</a></div>
+</div></div>
+{% include ad.html %}
+<div class="prose" style="margin-top:2rem">
+<h2>What the comparison counts</h2>
+<p>The owning line adds your down payment, buying costs, mortgage payments, condo fees, property tax and maintenance, then subtracts the equity you would keep if you sold at the end — the home's value after selling costs, minus the remaining mortgage. The renting line adds rent, rising each year, plus the return your down payment and buying costs would have earned if invested instead.</p>
+<h2>Downtown-specific factors</h2>
+<ul><li><strong>Condo fees and reserves.</strong> Towers with pools, concierge and older mechanical systems carry higher fees, and underfunded reserves can mean special assessments. Read <a href="/live/buying-a-downtown-condo.html">buying a downtown condo</a> before you trust any fee figure.</li><li><strong>Rental rules.</strong> Short-let and rental restrictions affect resale value and your flexibility if you move.</li><li><strong>Supply.</strong> Downtowns with many new towers can see slower price growth; test a lower growth rate.</li></ul>
+<h2>Using the result</h2>
+<p>Change one assumption at a time. If the answer flips with a small change in price growth or the number of years you stay, the decision is close and flexibility is worth more than the arithmetic. If owning wins comfortably across sensible assumptions, it is time to talk to a lender about pre-approval.</p>
+</div>
+{% include faq.html %}
+<p class="small muted" style="margin-top:1.4rem">For general planning only, not financial or tax advice. Read our <a href="/disclaimer.html">disclaimer</a>.</p>
+</div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Rent vs buy downtown calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"url":"https://down.town/tools/rent-vs-buy.html"}</script>
