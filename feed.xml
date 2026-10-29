@@ -1,0 +1,15 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Down.Town Journal</title>
+<link>{{ site.url }}/</link>
+<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+<description>{{ site.description | xml_escape }}</description>
+<language>en</language>
+{% assign items = site.pages | where: "layout", "article" %}{% for p in items %}<item><title>{{ p.title | xml_escape }}</title><link>{{ site.url }}{{ p.url }}</link><guid isPermaLink="true">{{ site.url }}{{ p.url }}</guid><pubDate>{{ p.updated | date_to_rfc822 }}</pubDate><description>{{ p.description | xml_escape }}</description></item>
+{% endfor %}{% assign guides = site.pages | where: "layout", "city" %}{% for p in guides %}<item><title>{{ p.title | xml_escape }}</title><link>{{ site.url }}{{ p.url }}</link><guid isPermaLink="true">{{ site.url }}{{ p.url }}</guid><pubDate>{{ p.updated | date_to_rfc822 }}</pubDate><description>{{ p.description | xml_escape }}</description></item>
+{% endfor %}</channel>
+</rss>
