@@ -1,0 +1,10 @@
+{
+ "tagline": "Victorian blocks, a bayfront promenade and a trolley to the border — a sunny, flat downtown made for walking.",
+ "events": [
+  {"when": "July", "name": "Comic-Con International", "desc": "The giant pop-culture convention takes over the convention centre, the Gaslamp and the waterfront for several days."},
+  {"when": "October", "name": "Little Italy Festa", "desc": "A street festival of Italian food, music and chalk art filling Little Italy's main streets."},
+  {"when": "Early December", "name": "December Nights", "desc": "Balboa Park's free holiday festival of lights, music and food from around the world."},
+  {"when": "December", "name": "San Diego Bay Parade of Lights", "desc": "Illuminated boats sail past the downtown waterfront on winter evenings."}
+ ],
+ "video": {"id": "qLLsKd6VGtU", "title": "San Diego, CA - Downtown San Diego from Little Italy to Gaslamp Quarter 4K Walking Tour", "channel": "Walking Expedition"}
+}

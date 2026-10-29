@@ -1,0 +1,36 @@
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Down.Town home">Down<span class="stop" aria-hidden="true"></span>Town</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="l-explore" href="/explore/"{% if page.section == "explore" %} aria-current="page"{% endif %}>Explore</a>
+      <a class="l-live" href="/live/"{% if page.section == "live" %} aria-current="page"{% endif %}>Live</a>
+      <a class="l-space" href="/space/"{% if page.section == "space" %} aria-current="page"{% endif %}>Find Space</a>
+      <a class="l-biz" href="/business/"{% if page.section == "business" %} aria-current="page"{% endif %}>Do Business</a>
+      <a class="l-tools" href="/tools/"{% if page.section == "tools" %} aria-current="page"{% endif %}>Tools</a>
+      <a href="/events.html"{% if page.section == "events" %} aria-current="page"{% endif %}>Events</a>
+      <a href="/videos.html"{% if page.section == "videos" %} aria-current="page"{% endif %}>Videos</a>
+      <details class="more">
+        <summary>More</summary>
+        <div class="more-panel">
+          <a href="/rankings.html">Down.Town Index</a>
+          <a href="/journal.html">Journal</a>
+          <a href="/contests.html">Contests &amp; prizes</a>
+          <a href="/support.html">Support Down.Town</a>
+          <a href="/advertise.html">Advertise &amp; sponsor</a>
+          <a href="/partners.html">Partner network</a>
+          <a href="/list-your-business.html">List your business</a>
+          <a href="/careers.html">Careers &amp; contributors</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </details>
+    </nav>
+    <div class="head-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn saved-btn" type="button" data-saved-open aria-label="Your saved guides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="saved-count" hidden>0</span></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn amber sm" href="/get-matched.html">Get matched</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
