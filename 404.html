@@ -1,23 +1,36 @@
 ---
-layout: "default"
+layout: default
 title: "Page Not Found"
-description: "This page could not be found."
-root: ""
-canon: "404.html"
-section: ""
+description: "The page you were looking for isn't on Down.Town. Search the site, jump to the city guides, Find Space, the tools or Get matched, or tell us what you need."
+section: about
+updated: "2026-10-29"
+permalink: /404.html
 noads: true
+nolead: true
 noindex: true
-base: true
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <h1>This stop isn't on the map</h1>
- <p class="lede">The page you're looking for has moved or never existed. Try a search, or start from one of the lines below.</p>
- <div class="share"><button class="btn" type="button" data-search-open>Search Down.Town</button><a class="btn ghost" href="index.html">Home</a></div>
+ {% include crumbs.html label="Page not found" %}
+ <span class="tag"><span class="bullet t" aria-hidden="true">T</span> Error 404</span>
+ <h1 style="margin-top:.6rem">This stop isn't on the map</h1>
+ <p class="lede">The page you were looking for has moved, been renamed or never existed. Search for it, or change here for one of our main lines.</p>
+ <div class="share"><button class="btn" type="button" data-search-open>Search Down.Town</button><a class="btn ghost" href="/">Go to the home page</a></div>
 </div></header>
-<section class="sec tight"><div class="wrap"><ul class="stations line-e">
- <li><a href="explore/index.html">City guides</a><p>26 downtowns, one consistent route.</p></li>
- <li><a href="tools/index.html">Tools</a><p>Calculators for moving and opening downtown.</p></li>
- <li><a href="journal.html">Journal</a><p>Every long-form guide.</p></li>
-</ul></div></section>
-{% endraw %}
+
+<section class="sec tight"><div class="wrap">
+ <div class="sec-head"><div><span class="tag">Popular stops</span><h2>Where most people are heading</h2></div></div>
+ <div class="grid g4">
+  <div class="card lined line-e"><span class="bullet e" aria-hidden="true">E</span><h3 style="margin-top:.6rem"><a href="/explore/">City guides</a></h3><p class="muted small">42 downtowns: districts, landmarks, food, getting around and events.</p></div>
+  <div class="card lined line-s"><span class="bullet s" aria-hidden="true">S</span><h3 style="margin-top:.6rem"><a href="/space/">Find Space</a></h3><p class="muted small">Office, retail, coworking and event venues, city by city.</p></div>
+  <div class="card lined line-l"><span class="bullet l" aria-hidden="true">L</span><h3 style="margin-top:.6rem"><a href="/get-matched.html">Get matched</a></h3><p class="muted small">Free introductions to up to three vetted local pros.</p></div>
+  <div class="card lined line-t"><span class="bullet t" aria-hidden="true">T</span><h3 style="margin-top:.6rem"><a href="/tools/">Tools</a></h3><p class="muted small">Ten free calculators for moving, leasing and opening downtown.</p></div>
+ </div>
+ <p class="small muted" style="margin-top:1rem">More stops: <a href="/live/">Live</a> · <a href="/business/">Do Business</a> · <a href="/events.html">Events</a> · <a href="/videos.html">Videos</a> · <a href="/rankings.html">Down.Town Index</a> · <a href="/sitemap.html">Sitemap</a></p>
+</div></section>
+
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag">Or skip the search</span><h2>What are you looking for downtown?</h2></div></div>
+ <p class="muted" style="max-width:62ch">Pick one and we'll ask a few quick questions, then introduce you to up to three local pros who fit. Free, with no obligation.</p>
+ <div style="margin-top:1rem">{% include intent-grid.html %}</div>
+ <p class="small muted" style="margin-top:1.4rem">Followed a broken link on Down.Town? <a href="/contact.html?topic=Correction">Tell us where</a> and we'll fix it.</p>
+</div></section>
