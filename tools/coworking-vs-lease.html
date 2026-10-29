@@ -1,0 +1,67 @@
+---
+layout: default
+title: "Coworking vs Lease Calculator: Find Your Break-Even Point"
+description: "Compare the full cost of coworking desks or a private suite with leasing and fitting out your own office, month by month, and see when the lease pays back."
+section: tools
+calc: true
+updated: "2026-10-29"
+faq:
+  - q: "When does leasing beat coworking?"
+    a: "Usually when the team is larger and the horizon longer: the upfront fit-out and furniture are spread over more months and more people. For small teams on horizons under two or three years, coworking or a fitted suite is often cheaper and far more flexible."
+  - q: "What does a coworking desk price include?"
+    a: "Typically the desk or office, furniture, internet, cleaning, utilities, kitchen and some meeting-room credits. Check for extras such as printing, additional meeting hours, parking, storage and day passes for guests."
+  - q: "What costs does a lease add?"
+    a: "Base rent, operating costs or service charges, property taxes where passed through, utilities, cleaning, insurance, fit-out or reinstatement at the end, furniture, IT and telecoms, and often a deposit or bank guarantee."
+  - q: "Can I get a fitted office on a lease?"
+    a: "Yes. Many landlords now offer fitted or 'plug-and-play' suites, and subleases often come with furniture. Both cut the upfront cost and move the break-even point closer."
+---
+<header class="page-head line-strip line-s"><div class="wrap">
+ {% include crumbs.html label="Coworking vs lease" %}
+ <span class="tag"><span class="bullet s" aria-hidden="true">S</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Coworking vs lease</h1>
+ <p class="lede">Desks by the month or an office of your own? Put both on the same timeline, including fit-out and furniture, and find the month the lease pays back.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="tool">
+<form class="card form" id="cw-form" onsubmit="return false">
+ <div class="row"><div class="field"><label for="cw-team">Team size</label><input id="cw-team" type="number" min="1" max="500" value="20" data-param="team"></div>
+ <div class="field"><label for="cw-months">Horizon (months)</label><input id="cw-months" type="number" min="1" max="180" value="60"></div></div>
+ <div class="field"><label for="cw-desk">Coworking price per person per month</label><input id="cw-desk" type="number" min="0" step="10" value="800"><span class="hint">Use the all-in quote for a private office divided by desks.</span></div>
+ <fieldset class="field"><legend>Your own lease</legend>
+ <div class="row"><div class="field"><label for="cw-unit">Units</label><select id="cw-unit"><option value="sqft">Square feet</option><option value="m2">Square metres</option></select></div>
+ <div class="field"><label for="cw-sqpp">Area per person</label><input id="cw-sqpp" type="number" min="1" value="150"></div></div>
+ <div class="row"><div class="field"><label for="cw-rent">Rent per unit per year</label><input id="cw-rent" type="number" min="0" step="0.5" value="38"></div>
+ <div class="field"><label for="cw-ops">Operating costs per unit per year</label><input id="cw-ops" type="number" min="0" step="0.5" value="15"><span class="hint">Service charge, utilities, cleaning.</span></div></div>
+ <div class="row"><div class="field"><label for="cw-fit">Fit-out per unit (one-off)</label><input id="cw-fit" type="number" min="0" step="1" value="25"><span class="hint">Net of any landlord allowance.</span></div>
+ <div class="field"><label for="cw-furn">Furniture &amp; IT per person (one-off)</label><input id="cw-furn" type="number" min="0" step="50" value="1500"></div></div>
+ </fieldset>
+</form>
+<div class="result" aria-live="polite">
+ <p class="muted">Over your horizon</p>
+ <div class="big" id="cw-main">—</div>
+ <table><tbody>
+  <tr><td>Coworking total</td><td id="cw-cow">—</td></tr>
+  <tr><td>Lease total (incl. upfront)</td><td id="cw-lease">—</td></tr>
+  <tr><td>Upfront for the lease</td><td id="cw-upfront">—</td></tr>
+  <tr><td>Coworking per month</td><td id="cw-cowm">—</td></tr>
+  <tr><td>Lease running cost per month</td><td id="cw-leasem">—</td></tr>
+  <tr><td>Leased area</td><td id="cw-area">—</td></tr>
+  <tr><td>Lease pays back after</td><td id="cw-be">—</td></tr>
+ </tbody></table>
+ <div class="verdict" id="cw-verdict"></div>
+ <div class="share"><a class="btn violet" id="cw-cta-lease" href="/get-matched.html?need=office">Get lease options</a><a class="btn ghost on-dark" id="cw-cta-flex" href="/get-matched.html?need=flex">Get coworking quotes</a></div>
+</div></div>
+{% include ad.html %}
+<div class="prose" style="margin-top:2rem">
+<h2>What the comparison includes</h2>
+<p>Coworking is priced as one monthly number per desk or per office, which bundles furniture, internet, cleaning, utilities and some meeting-room time. A lease splits the same things into rent, operating costs and one-off spending on fit-out, furniture and technology. The calculator puts both on a single timeline so you compare like with like.</p>
+<p>The <strong>break-even</strong> is the month when the lease's lower running cost has paid back its upfront spending. If that month falls inside your horizon, the lease is cheaper overall; if not, coworking is — before you even put a value on flexibility.</p>
+<h2>What it leaves out</h2>
+<ul><li><strong>Flexibility.</strong> Being able to add or drop desks monthly has real value when headcount is uncertain.</li><li><strong>Incentives.</strong> Rent-free months and fit-out allowances can transform a lease's economics; enter fit-out net of any allowance.</li><li><strong>Exit costs.</strong> Reinstatement or dilapidations at the end of a lease, and the risk of paying for empty space if you shrink.</li><li><strong>Deposits.</strong> Cash tied up in a deposit or bank guarantee is not a cost, but it matters to a young company.</li></ul>
+<h2>The middle options</h2>
+<p>Between a hot desk and a ten-year lease sit fitted suites, managed offices (a provider runs a private floor for you) and subleases with furniture included. These often deliver most of a lease's cost advantage with a fraction of the commitment. Read <a href="/space/coworking-vs-private-office-vs-lease.html">coworking vs private office vs lease</a> and <a href="/space/sublease-office-space.html">subleasing office space</a>.</p>
+</div>
+{% include faq.html %}
+<p class="small muted" style="margin-top:1.4rem">For planning only, not financial advice. Read our <a href="/disclaimer.html">disclaimer</a>.</p>
+</div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Coworking vs lease calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"url":"https://down.town/tools/coworking-vs-lease.html"}</script>
