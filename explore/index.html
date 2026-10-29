@@ -31,7 +31,6 @@ updated: "2026-10-29"
  <div class="sec-head"><div><span class="tag"><span class="bullet e" aria-hidden="true">E</span> Explorer guides</span><h2>Make the most of any downtown</h2></div></div>
  <div class="grid g3">{% assign ex = site.pages | where: "section", "explore" %}{% for p in ex %}{% if p.layout == "article" %}<div class="card lined line-e"><h3 style="font-size:1.1rem"><a href="{{ p.url }}">{{ p.title }}</a></h3><p class="small muted">{{ p.description }}</p></div>{% endif %}{% endfor %}<div class="card lined line-e"><h3 style="font-size:1.1rem"><a href="/events.html">The downtown events calendar</a></h3><p class="small muted">Signature festivals and seasons across every city we cover, filterable by month and region.</p></div></div>
 </div></section>
-<section class="sec tight">
-<div class="wrap">
+<section class="sec tight"><div class="wrap">
  {% include cta.html kind="venue" %}
 </div></section>
