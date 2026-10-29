@@ -1,0 +1,30 @@
+{
+ "tagline": "Honky-tonks with bands from late morning, a hilltop Capitol and the Mother Church of Country Music, all on one riverside grid.",
+ "events": [
+  {
+   "when": "Late March",
+   "name": "Tin Pan South Songwriters Festival",
+   "desc": "Songwriters play the hits they wrote in intimate rounds at venues across the city."
+  },
+  {
+   "when": "June",
+   "name": "CMA Fest",
+   "desc": "Country music's big fan festival, with stadium concerts at night and free daytime stages around downtown and the riverfront."
+  },
+  {
+   "when": "July",
+   "name": "Let Freedom Sing! Fourth of July",
+   "desc": "A free riverfront concert followed by one of the country's larger fireworks shows over the Cumberland."
+  },
+  {
+   "when": "Winter",
+   "name": "Opry at the Ryman",
+   "desc": "The Grand Ole Opry returns to its former home for a run of winter shows."
+  }
+ ],
+ "video": {
+  "id": "OZJORbpexhI",
+  "title": "Nashville Walking Tour. Up and Down Broadway. Music, Food, and Bars. Music City USA! Tennessee.",
+  "channel": "Beachin with the Boones"
+ }
+}

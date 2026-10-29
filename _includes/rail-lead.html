@@ -1,0 +1,25 @@
+{% assign rc = site.data.cities | where: "slug", page.city | first %}{% assign need = include.need | default: "home" %}
+<div class="card mini-lead need-{{ need }}">
+<span class="tag"><span class="bullet {% if need == 'home' or need == 'buy' %}l{% elsif need == 'venue' %}e{% elsif need == 'retail' %}b{% else %}s{% endif %}" aria-hidden="true">✓</span> Free introductions</span>
+<h3 style="margin-top:.5rem">{% if need == "office" %}Looking for space{% if rc %} in downtown {{ rc.name }}{% endif %}?{% elsif need == "venue" %}Planning an event{% if rc %} in {{ rc.name }}{% endif %}?{% else %}Moving to downtown{% if rc %} {{ rc.name }}{% endif %}?{% endif %}</h3>
+<p class="small muted">Tell us what you need. We'll introduce you to up to three vetted local pros. Free for you, no obligation.</p>
+<form class="form" data-form="Quick lead (sidebar)" data-redirect="thank-you.html">
+<input type="hidden" name="city" value="{% if rc %}{{ rc.name }}{% endif %}" data-prefill="city">
+<div class="field"><label for="rl-need">I'm looking for</label><select id="rl-need" name="need" required>
+<option value="Rent a home"{% if need == "home" %} selected{% endif %}>A home to rent</option>
+<option value="Buy a home"{% if need == "buy" %} selected{% endif %}>A home to buy</option>
+<option value="Office space"{% if need == "office" %} selected{% endif %}>Office space</option>
+<option value="Retail or restaurant space"{% if need == "retail" %} selected{% endif %}>Retail or restaurant space</option>
+<option value="Coworking or flexible office"{% if need == "flex" %} selected{% endif %}>Coworking or a flexible office</option>
+<option value="Event venue"{% if need == "venue" %} selected{% endif %}>An event venue</option>
+<option value="Team relocation">Help relocating a team</option>
+</select></div>
+<div class="field"><label for="rl-when">When</label><select id="rl-when" name="timeline" required><option value="">Choose timing</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>6+ months</option><option>Just exploring</option></select></div>
+<div class="field"><label for="rl-name">First name</label><input id="rl-name" name="name" type="text" autocomplete="given-name" required></div>
+<div class="field"><label for="rl-email">Email</label><input id="rl-email" name="email" type="email" autocomplete="email" required></div>
+<label class="check"><input type="checkbox" name="consent" value="Agreed to partner introductions" required> <span>Share my request with up to three relevant partners so they can contact me about it. <a href="/privacy.html#leads">How we handle requests</a>.</span></label>
+<div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+<button class="btn amber block" type="submit">Get my free matches</button>
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="small muted" style="margin:0">Prefer more detail? <a href="/get-matched.html?need={{ need }}{% if rc %}&amp;city={{ rc.slug }}{% endif %}">Use the full request form</a>.</p>
+</form></div>

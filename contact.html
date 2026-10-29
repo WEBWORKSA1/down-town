@@ -1,35 +1,77 @@
 ---
-layout: "default"
-title: "Contact Down.Town"
-description: "Contact Down.Town about corrections, listings, events, advertising, partnerships, contests, careers or privacy requests."
-root: ""
-canon: "contact.html"
-section: "contact"
+layout: default
+title: "Contact Down.Town: Corrections, Partners, Press & Privacy"
+description: "Contact the Down.Town editors about a guide, a correction, advertising, partners, listings, contests, press or privacy. A person reads every message."
+section: about
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Contact</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Contact"}]}</script>
- <h1>Contact Down.Town</h1>
- <p class="lede">We read everything and reply within two business days. For domain, website, sponsorship or partnership enquiries about Down.Town itself, you can also <a href="https://web.works/contact" target="_blank" rel="noopener">contact the owner directly</a>.</p>
+ {% include crumbs.html label="Contact" %}
+ <span class="tag"><span class="bullet d" aria-hidden="true">D</span> Contact</span>
+ <h1 style="margin-top:.6rem">Talk to the Down.Town editors</h1>
+ <p class="lede">A person reads every message. We review new messages within one business day and reply to most within two. Pick a topic so it reaches the right desk.</p>
+ <div class="trust" style="margin-top:1rem"><span>Read by a person</span><span>Reviewed within one business day</span><span>Never added to a mailing list</span></div>
 </div></header>
+
 <section class="sec tight"><div class="wrap split">
- <form class="card form" data-form="Contact message" data-redirect="thank-you.html">
-  <div class="row"><div class="field"><label for="ct-n">Name</label><input id="ct-n" name="name" required autocomplete="name"></div>
-  <div class="field"><label for="ct-e">Email</label><input id="ct-e" name="email" type="email" required autocomplete="email"></div></div>
-  <div class="field"><label for="ct-t">Topic</label><select id="ct-t" name="topic" data-prefill="topic"><option>General question</option><option>Correction</option><option>Event listing</option><option>Business listing</option><option>Advertising</option><option>Partnership</option><option>Press</option><option>Contest</option><option>Careers</option><option>Suggest a city</option><option>Index badge</option><option>Video</option><option>Support</option><option>Privacy request</option></select></div>
-  <div class="field"><label for="ct-m">Message</label><textarea id="ct-m" name="message" required></textarea></div>
-  <label class="check"><input type="checkbox" name="consent" value="Agreed" required> <span>I agree that Down.Town may use these details to reply to me. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
-  <button class="btn" type="submit">Send message</button><p class="form-status" role="status" aria-live="polite"></p>
- </form>
  <div>
-  <h2 style="font-size:1.4rem">Quick routes</h2>
-  <ul class="stations">
-   <li><a href="get-matched.html">Moving or opening a business</a><p>Use Get Matched for introductions to local pros.</p></li>
-   <li><a href="list-your-business.html">List your business</a><p>Free and paid listings in city guides.</p></li>
-   <li><a href="advertise.html">Advertise or sponsor</a><p>City Partners, newsletter and contest sponsorships.</p></li>
-   <li><a href="careers.html">Write or shoot for us</a><p>Paid contributor roles.</p></li>
-  </ul>
-  <p class="muted" style="margin-top:1rem">Prefer email? <a href="#" data-mail="Down.Town enquiry">Open an email to the editors</a>.</p>
+  <form class="card form" id="contact-form" data-form="Contact message" data-redirect="thank-you.html">
+   <h2 style="font-size:1.4rem;margin-bottom:.2rem">Send a message</h2>
+   <div class="row"><div class="field"><label for="c-name">Name</label><input id="c-name" name="name" type="text" required autocomplete="name"></div>
+   <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div></div>
+   <div class="row"><div class="field"><label for="c-topic">Topic</label><select id="c-topic" name="topic" data-prefill="topic" required>
+    <optgroup label="Readers">
+     <option value="General question">General question</option>
+     <option value="Correction">Correction to a guide</option>
+     <option value="Suggest a city">Suggest a city</option>
+     <option value="Event listing">Event listing</option>
+     <option value="Video">Video suggestion</option>
+     <option value="Support">Reader support</option>
+    </optgroup>
+    <optgroup label="Business">
+     <option value="Advertising or sponsorship">Advertising or sponsorship</option>
+     <option value="Partner network">Partner network</option>
+     <option value="Business listing">Business listing</option>
+     <option value="Index badge">Index badge</option>
+     <option value="Contest">Contest</option>
+     <option value="Press">Press</option>
+    </optgroup>
+    <optgroup label="Rights and access">
+     <option value="Privacy request">Privacy request</option>
+     <option value="Copyright notice">Copyright notice</option>
+     <option value="Accessibility">Accessibility barrier</option>
+    </optgroup>
+   </select></div>
+   <div class="field"><label for="c-city">City <span class="hint">(optional)</span></label><input id="c-city" name="city" type="text" list="c-cities" autocomplete="off" placeholder="e.g. Lisbon"><datalist id="c-cities"><option value="Amsterdam"></option><option value="Atlanta"></option><option value="Austin"></option><option value="Barcelona"></option><option value="Bengaluru"></option><option value="Berlin"></option><option value="Boston"></option><option value="Calgary"></option><option value="Cape Town"></option><option value="Chicago"></option><option value="Dallas"></option><option value="Denver"></option><option value="Dubai"></option><option value="Dublin"></option><option value="Hong Kong"></option><option value="Houston"></option><option value="Lisbon"></option><option value="London"></option><option value="Los Angeles"></option><option value="Melbourne"></option><option value="Mexico City"></option><option value="Miami"></option><option value="Minneapolis"></option><option value="Montréal"></option><option value="Mumbai"></option><option value="Nashville"></option><option value="New York"></option><option value="Ottawa"></option><option value="Paris"></option><option value="Philadelphia"></option><option value="Phoenix"></option><option value="Portland"></option><option value="San Diego"></option><option value="San Francisco"></option><option value="Seattle"></option><option value="Seoul"></option><option value="Singapore"></option><option value="Sydney"></option><option value="Tokyo"></option><option value="Toronto"></option><option value="Vancouver"></option><option value="Washington, D.C."></option></datalist></div></div>
+   <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required maxlength="3000" data-count="c-msg-count" placeholder="For a correction, include the page and, if you have one, a source."></textarea><span class="counter" id="c-msg-count"></span></div>
+   <label class="check"><input type="checkbox" name="consent" value="Agreed: reply to my message" required> <span>I agree that Down.Town may use these details to reply to my message. We won't add you to any mailing list. See the <a href="/privacy.html">privacy policy</a>.</span></label>
+   <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div><button class="btn" type="submit">Send message</button></div>
+   <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+  <p class="small muted" style="margin-top:.8rem">Prefer email? <a href="/contact.html" data-mail="Down.Town enquiry">Email us</a> instead. Messages are delivered to our private inbox by a form relay service; see <a href="/privacy.html#services">services we use</a>.</p>
+ </div>
+
+ <div class="proof">
+  <h2 style="font-size:1.4rem;margin:0">Quick routes</h2>
+  <div class="card lined line-s"><h3><a href="/get-matched.html">Moving, leasing or hosting downtown?</a></h3><p class="small muted">Use Get matched for free introductions to up to three vetted agents, brokers, coworking operators, venues or movers. Faster than a message.</p></div>
+  <div class="card lined line-l"><h3><a href="/partners.html">Join the partner network</a></h3><p class="small muted">For brokers, rental agents, realtors, coworking operators, venues and movers who want consented, specific requests in their city.</p></div>
+  <div class="card lined line-e"><h3><a href="/advertise.html">Advertise or sponsor</a></h3><p class="small muted">City Partner, Find Space, Dispatch, contest and strategic packages, with a media-kit request form.</p></div>
+  <div class="card lined line-b"><h3><a href="/list-your-business.html">List your business</a></h3><p class="small muted">Basic listings are free. Featured and Spotlight are paid, labelled upgrades.</p></div>
+  <div class="card lined line-t"><h3><a href="/support.html">Support Down.Town</a></h3><p class="small muted">Reader donations and pledges fund new guides, local contributors and contest prizes.</p></div>
+  <div class="card" style="border-style:dashed"><h3><a href="https://web.works/contact" target="_blank" rel="noopener">The domain or the website itself</a></h3><p class="small muted">Interested in acquiring, sponsoring or partnering on the Down.Town domain name or website? Contact the owner directly.</p></div>
  </div>
 </div></section>
-{% endraw %}
+
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag">Before you write</span><h2>Help us help you faster</h2></div></div>
+ <div class="grid g3">
+  <div class="goal" style="--lc:var(--amber)"><b>Corrections</b><p>Tell us the page, what is wrong and where you saw the right information. We check every report against a source and note significant corrections on the page. See our <a href="/editorial-policy.html">editorial policy</a>.</p></div>
+  <div class="goal" style="--lc:var(--teal)"><b>Privacy requests</b><p>Choose "Privacy request" and tell us what you want: a copy of your data, a correction, deletion, or to withdraw consent for introductions. Use the email address you gave us so we can find your records. See the <a href="/privacy.html#rights">privacy policy</a>.</p></div>
+  <div class="goal" style="--lc:var(--red)"><b>Copyright notices</b><p>Choose "Copyright notice" and include the details listed in our <a href="/trademark.html#notice">notice-and-takedown procedure</a>, so we can act quickly.</p></div>
+  <div class="goal" style="--lc:var(--cobalt)"><b>Press</b><p>Journalists can ask about our guides, the Down.Town Index or our contests. Tell us your publication and deadline.</p></div>
+  <div class="goal" style="--lc:var(--violet)"><b>Contests</b><p>Questions about Downtown Lens or the Best Block Awards? Read the <a href="/contest-rules.html">official rules</a> first; most answers are there.</p></div>
+  <div class="goal" style="--lc:var(--ink-2)"><b>Accessibility</b><p>Found a barrier? Tell us the page, what you were trying to do and the device or assistive technology you use. See our <a href="/accessibility.html">accessibility statement</a>.</p></div>
+ </div>
+ <p class="small muted" style="margin-top:1.4rem">Down.Town is an independent publication based in Montréal, Québec, Canada. We are not a city service or tourist office and can't answer questions on behalf of any government, business improvement district or downtown association.</p>
+</div></section>

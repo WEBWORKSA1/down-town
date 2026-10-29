@@ -1,15 +1,16 @@
 {
  "name": "Down.Town",
  "short_name": "Down.Town",
- "start_url": "./index.html",
+ "start_url": "/",
  "display": "standalone",
  "background_color": "#eef0f3",
  "theme_color": "#1d2330",
  "icons": [
   {
-   "src": "assets/img/favicon.svg",
+   "src": "/assets/img/favicon.svg",
    "sizes": "any",
    "type": "image/svg+xml"
   }
- ]
+ ],
+ "description": "Explore, live and find space in the world's downtowns."
 }

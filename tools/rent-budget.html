@@ -1,16 +1,13 @@
 ---
-layout: "default"
-title: "Rent Budget Calculator: How Much Rent Can You Afford Downtown?"
-description: "Turn income, debts, savings goals and car savings into a conservative, classic and stretch housing budget."
-root: "../"
-canon: "tools/rent-budget.html"
-section: "tools"
+layout: default
+title: 'Rent Budget Calculator: How Much Rent Can You Afford Downtown?'
+description: Turn income, debts, savings goals and car savings into a conservative, classic and stretch housing budget.
+section: tools
 cities: true
 tools: true
 ---
-{% raw %}
 <header class="page-head line-strip line-l"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools/index.html">Tools</a> / <span aria-current="page">Rent budget calculator</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://down.town/tools/"}, {"@type": "ListItem", "position": 3, "name": "Rent budget calculator"}]}</script>
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / <span aria-current="page">Rent budget calculator</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://down.town/tools/"}, {"@type": "ListItem", "position": 3, "name": "Rent budget calculator"}]}</script>
  <span class="tag"><span class="bullet l" aria-hidden="true">L</span> Tool</span>
  <h1 style="margin-top:.6rem;max-width:22ch">Rent budget calculator</h1>
  <p class="lede">See what you can comfortably spend on housing — including the money you free up by dropping a car.</p>
@@ -21,7 +18,7 @@ tools: true
  <div class="field"><label for="r-income">Household income before tax, per year</label><input id="r-income" type="number" min="0" step="1000" value="90000" inputmode="numeric"><span class="hint">Any currency — results use the same one.</span></div>
  <div class="field"><label for="r-tax">Estimated tax and deductions (%)</label><input id="r-tax" type="number" min="0" max="70" value="28"></div>
  <div class="field"><label for="r-debt">Other monthly debt payments</label><input id="r-debt" type="number" min="0" step="10" value="300"><span class="hint">Car loan, student loans, credit cards.</span></div>
- <div class="field"><label for="r-car">Monthly car costs you'd drop by moving downtown</label><input id="r-car" type="number" min="0" step="10" value="0"><span class="hint">Use the <a href="car-free.html">car vs. car-free calculator</a> if unsure.</span></div>
+ <div class="field"><label for="r-car">Monthly car costs you'd drop by moving downtown</label><input id="r-car" type="number" min="0" step="10" value="0"><span class="hint">Use the <a href="/tools/car-free.html">car vs. car-free calculator</a> if unsure.</span></div>
  <div class="field"><label for="r-save">Savings goal (% of take-home pay)</label><input id="r-save" type="number" min="0" max="60" value="15"></div>
 </form>
 <div class="result" aria-live="polite">
@@ -35,10 +32,9 @@ tools: true
   <tr><td>Left after housing, debt and savings</td><td id="r-left">—</td></tr>
  </tbody></table>
  <div class="verdict" id="r-verdict"></div>
- <a class="btn amber" style="margin-top:1rem" href="../get-matched.html#move">Find a place in this range</a>
+ <a class="btn amber" style="margin-top:1rem" href="/get-matched.html?need=home">Find a place in this range</a>
 </div></div>
 <div class="ad-zone" data-slot="incontent"></div>
-<div style="max-width:820px"><h2 style="font-size:1.4rem;margin-top:2rem">Good to know</h2><div class="faq"><details><summary>What does &#x27;housing budget&#x27; include?</summary><p>Rent or mortgage plus building fees, utilities and renter's or home insurance. Landlords often look for gross income of around 2.5–3 times the rent, but rules vary.</p></details><details><summary>Why include car costs?</summary><p>Many people who move downtown sell a car. That money can go to rent without hurting the rest of the budget.</p></details><details><summary>Is the 30% rule right for me?</summary><p>It's a starting point. High earners can often spend more; households with high childcare or debt costs should spend less. The 'left after' line is the most honest check.</p></details></div><p class="small muted" style="margin-top:1.4rem">For general planning only, not financial advice. Read our <a href="../disclaimer.html">disclaimer</a>.</p></div>
+<div style="max-width:820px"><h2 style="font-size:1.4rem;margin-top:2rem">Good to know</h2><div class="faq"><details><summary>What does &#x27;housing budget&#x27; include?</summary><p>Rent or mortgage plus building fees, utilities and renter's or home insurance. Landlords often look for gross income of around 2.5–3 times the rent, but rules vary.</p></details><details><summary>Why include car costs?</summary><p>Many people who move downtown sell a car. That money can go to rent without hurting the rest of the budget.</p></details><details><summary>Is the 30% rule right for me?</summary><p>It's a starting point. High earners can often spend more; households with high childcare or debt costs should spend less. The 'left after' line is the most honest check.</p></details></div><p class="small muted" style="margin-top:1.4rem">For general planning only, not financial advice. Read our <a href="/disclaimer.html">disclaimer</a>.</p></div>
 </div></section>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Rent budget calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0"}, "url": "https://down.town/tools/rent-budget.html"}</script>
-{% endraw %}

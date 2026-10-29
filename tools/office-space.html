@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Office Space Calculator: How Much Space Does Your Team Need?"
+description: "Turn headcount, growth and work pattern into usable and rentable office area, desks and meeting rooms — plus an annual cost estimate you can take to a broker."
+section: tools
+calc: true
+updated: "2026-10-29"
+faq:
+  - q: "How much office space per person is normal?"
+    a: "Planners commonly use about 125–225 square feet (12–21 m²) of usable space per person for a traditional office, with dense layouts lower and private-office-heavy layouts higher. Hybrid teams that share desks typically need less per employee."
+  - q: "What is the difference between usable and rentable area?"
+    a: "Usable area is the space you occupy. Rentable area adds your share of common parts such as lobbies, corridors and washrooms. The difference, often called the load factor or add-on factor, commonly runs 10–20% in multi-tenant buildings, and rent is usually charged on rentable area."
+  - q: "Should I plan for growth?"
+    a: "Yes, if you expect to hire during the lease. Many tenants add 10–20% for growth, or negotiate expansion rights or a sublet clause rather than paying for empty desks from day one."
+  - q: "Does this calculator replace a space plan?"
+    a: "No. It gives you a defensible range for a brief. A designer or tenant-side broker will produce a test fit for each shortlisted floor, which is the number that matters."
+---
+<header class="page-head line-strip line-s"><div class="wrap">
+ {% include crumbs.html label="Office space calculator" %}
+ <span class="tag"><span class="bullet s" aria-hidden="true">S</span> Tool</span>
+ <h1 style="margin-top:.6rem;max-width:22ch">Office space calculator</h1>
+ <p class="lede">How big an office does your team really need? Enter headcount and how you work; get usable and rentable area, desks, meeting rooms and a budget range.</p>
+</div></header>
+<section class="sec tight"><div class="wrap">
+<div class="tool">
+<form class="card form" id="office-form" onsubmit="return false">
+ <div class="row"><div class="field"><label for="o-team">People today</label><input id="o-team" type="number" min="1" max="5000" value="25" inputmode="numeric" data-param="team"></div>
+ <div class="field"><label for="o-grow">Growth during the lease (%)</label><input id="o-grow" type="number" min="0" max="200" value="15"></div></div>
+ <div class="field"><label for="o-pattern">How you work</label><select id="o-pattern"><option value="hybrid">Hybrid — 2–3 office days, shared desks</option><option value="office">Mostly in the office — a desk each</option><option value="light">Mostly remote — the office is a hub</option></select></div>
+ <div class="row"><div class="field"><label for="o-unit">Units</label><select id="o-unit"><option value="sqft">Square feet</option><option value="m2">Square metres</option></select></div>
+ <div class="field"><label for="o-load">Load factor (%)</label><input id="o-load" type="number" min="0" max="40" value="15"><span class="hint">Common areas added to rentable area.</span></div></div>
+ <div class="row"><div class="field"><label for="o-rent">Rent per unit per year <span class="hint">(optional)</span></label><input id="o-rent" type="number" min="0" step="0.5" placeholder="e.g. 45" inputmode="decimal"></div>
+ <div class="field"><label for="o-ops">Operating costs per unit per year <span class="hint">(optional)</span></label><input id="o-ops" type="number" min="0" step="0.5" placeholder="e.g. 15" inputmode="decimal"></div></div>
+ <p class="small muted">If rent is quoted per month (common in parts of Asia and California), multiply by 12 first. Any currency works.</p>
+</form>
+<div class="result" aria-live="polite">
+ <p class="muted">Usable area you need</p>
+ <div class="big" id="o-main">—</div>
+ <table><tbody>
+  <tr><td>Planning headcount</td><td id="o-heads">—</td></tr>
+  <tr><td>Desks</td><td id="o-desks">—</td></tr>
+  <tr><td>Meeting space</td><td id="o-rooms">—</td></tr>
+  <tr><td>Usable area</td><td id="o-usable">—</td></tr>
+  <tr><td>Rentable area (with load factor)</td><td id="o-rentable">—</td></tr>
+  <tr><td>Estimated occupancy cost</td><td id="o-cost">—</td></tr>
+ </tbody></table>
+ <div class="verdict" id="o-verdict"></div>
+ <a class="btn violet" id="o-cta" style="margin-top:1rem" href="/get-matched.html?need=office">Send this brief to tenant brokers</a>
+</div></div>
+{% include ad.html %}
+<div class="prose" style="margin-top:2rem">
+<h2>How the calculator works</h2>
+<p>The calculator starts from your planning headcount: today's team plus the growth you expect during the lease. It multiplies that by a per-person allowance that depends on how you work. A team that is in the office every day needs a desk each and roughly 150–200 square feet per person once meeting rooms, kitchen and circulation are included. A hybrid team that shares desks on a 70% ratio needs closer to 100–150. A team that is mostly remote and uses the office as a hub for meetings and collaboration days can work with 60–100.</p>
+<p>Those figures give <strong>usable area</strong>, the space inside your demised premises. Landlords in most multi-tenant buildings charge on <strong>rentable area</strong>, which adds your share of lobbies, corridors and washrooms. The load factor field adds that share; 10–20% is common, but ask for the building's measured figure because it varies widely between older and newer towers.</p>
+<h2>Meeting rooms and focus space</h2>
+<p>Teams under-provide meeting space more than anything else. A workable starting point is one bookable meeting room for every 10–15 people and one phone or focus room for every eight, adjusted for how much of your work is video calls. Client-facing firms usually need a larger room near reception; engineering teams often prefer more small rooms and quiet zones.</p>
+<h2>From a number to a brief</h2>
+<p>Take the range, not the midpoint, to brokers and landlords. Ask each to provide a <strong>test fit</strong> — a quick layout of your requirements on their floor plate — because column grids, window lines and core position change how efficiently a given area works. Two floors with the same rentable area can house very different headcounts.</p>
+<p>When you add rent and operating costs, the calculator multiplies them by the rentable area at the middle of your range to give an annual occupancy figure. It ignores fit-out, furniture, IT, moving and incentives such as rent-free months, which can be large; see <a href="/space/negotiating-office-rent.html">negotiating office rent</a> and <a href="/space/office-relocation-timeline.html">the office relocation timeline</a> for those.</p>
+<div class="callout" style="--lc:var(--violet)"><h4>Small team?</h4><p>Below roughly 15 people, coworking private offices and fitted suites often win on cost and flexibility. Check your break-even with the <a href="/tools/coworking-vs-lease.html">coworking vs lease tool</a>.</p></div>
+</div>
+{% include faq.html %}
+<p class="small muted" style="margin-top:1.4rem">Rules of thumb for planning only — not a space plan, valuation or advice. Read our <a href="/disclaimer.html">disclaimer</a>.</p>
+</div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Office space calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"url":"https://down.town/tools/office-space.html"}</script>

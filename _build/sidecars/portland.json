@@ -1,0 +1,30 @@
+{
+ "tagline": "Food carts, rose gardens and bridges over the Willamette in a small, green downtown built for walking and cycling.",
+ "events": [
+  {
+   "when": "February",
+   "name": "Portland Winter Light Festival",
+   "desc": "Free light-art installations and performances at sites across the city, including along the river."
+  },
+  {
+   "when": "Late May–June",
+   "name": "Portland Rose Festival",
+   "desc": "The city's signature festival, with a riverfront fair, dragon boat races and the Grand Floral Parade."
+  },
+  {
+   "when": "Early July",
+   "name": "Waterfront Blues Festival",
+   "desc": "A big multi-day blues festival in Tom McCall Waterfront Park around the Fourth of July."
+  },
+  {
+   "when": "March–December",
+   "name": "Portland Saturday Market",
+   "desc": "Craft stalls, buskers and food booths by the river every Saturday of the season."
+  }
+ ],
+ "video": {
+  "id": "FsoqyaxlLcM",
+  "title": "Downtown Portland, Oregon Summer Walk (August 2025)",
+  "channel": "4K Nature and City Walks"
+ }
+}

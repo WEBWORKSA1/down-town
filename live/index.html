@@ -1,23 +1,31 @@
 ---
-layout: "default"
-title: "Live: Downtown Guides"
-description: "Practical guides for renting, buying and settling into a city centre — plus calculators that turn rent, commute and car costs into one clear comparison."
-root: "../"
-canon: "live/"
-section: "live"
+layout: default
+title: "Living Downtown: Rent, Buy and Relocate to a City Centre"
+description: "Guides, checklists and calculators for renting, buying or relocating to a downtown — from building checks and noise to budgets, schools and going car-free."
+section: live
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head line-strip line-l"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Live</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Live"}]}</script>
+ {% include crumbs.html label="Live" %}
  <span class="tag"><span class="bullet l" aria-hidden="true">L</span> Live</span>
- <h1 style="margin-top:.6rem">Living downtown, decided with numbers</h1><p class="lede">Practical guides for renting, buying and settling into a city centre — plus calculators that turn rent, commute and car costs into one clear comparison.</p>
+ <h1 style="margin-top:.6rem">Living downtown, with the numbers in view</h1>
+ <p class="lede">City-centre living trades space for time and choice. These guides help you make that trade on purpose: what to check in a building, what it really costs, and how to move without losing a month to admin.</p>
+ <div class="share"><a class="btn teal" href="/get-matched.html?need=home">Find a rental agent</a><a class="btn ghost" href="/get-matched.html?need=buy">Talk to a realtor</a><a class="btn ghost" href="/get-matched.html?need=relocate">Relocating a team</a></div>
 </div></header>
-<section class="sec tight"><div class="wrap"><div class="grid g3"><article class="card lined line-l"><h3><a href="downtown-move-checklist.html">The Downtown Move Checklist: 30 Things to Check Before You Sign</a></h3><p class="muted small">A practical, printable checklist for renting or buying downtown — from water pressure and elevator counts to loading-dock bookings.</p><div class="meta">3 min read</div></article><article class="card lined line-l"><h3><a href="downtown-vs-suburbs-cost.html">Downtown vs. Suburbs: How to Run the Real Cost Comparison</a></h3><p class="muted small">Rent is only half the story. A clear method for comparing housing, transport and time costs between a downtown apartment and a suburban home.</p><div class="meta">3 min read</div></article><article class="card lined line-l"><h3><a href="living-car-free-downtown.html">Living Car-Free Downtown: A Practical Playbook</a></h3><p class="muted small">How to handle groceries, weekends away, winter, kids and emergencies without owning a car — and what it can save.</p><div class="meta">3 min read</div></article><article class="card lined line-l"><h3><a href="choosing-a-downtown-building.html">Tower, Conversion or Walk-Up: Choosing a Downtown Building</a></h3><p class="muted small">How new high-rises, office-to-residential conversions, lofts and older walk-ups compare on noise, cost, light and daily convenience.</p><div class="meta">3 min read</div></article><article class="card lined line-l"><h3><a href="raising-kids-downtown.html">Raising Kids Downtown: What Works and What Doesn&#x27;t</a></h3><p class="muted small">Schools, space, play, safety and independence — an honest look at family life in the city centre.</p><div class="meta">3 min read</div></article><article class="card lined line-l"><h3><a href="sleeping-well-downtown.html">Sleeping Well Downtown: Noise, Light and Picking the Right Unit</a></h3><p class="muted small">How to judge an apartment for sleep before you sign — and how to fix noise and light problems after you move in.</p><div class="meta">3 min read</div></article></div><div class="ad-zone" data-slot="incontent"></div></div></section>
-<section class="sec tight"><div class="wrap"><div class="sec-head"><div><span class="tag"><span class="bullet l" aria-hidden="true">L</span> Tools for movers</span><h2>Run your numbers</h2></div></div>
-<div class="grid g3">
-<article class="card lined line-t"><h3><a href="../tools/downtown-match.html">Find Your Downtown</a></h3><p class="muted small">Rank 26 city centres by walkability, transit, family life, nightlife and value.</p></article>
-<article class="card lined line-l"><h3><a href="../tools/rent-budget.html">Rent Budget Calculator</a></h3><p class="muted small">A safe, a stretch and a conservative housing budget from your income.</p></article>
-<article class="card lined line-l"><h3><a href="../tools/car-free.html">Car vs. Car-Free</a></h3><p class="muted small">Compare the real yearly cost of a car with transit, bikes and rentals.</p></article>
-</div></div></section>
-<section class="sec tight alt"><div class="wrap"><div class="cta-band line-l"><div><h3>Ready to move?</h3><p>One request connects you with up to three local agents, movers or rental finders. Free, and nothing is shared without your consent.</p></div><a class="btn teal" href="../get-matched.html#move">Get matched</a></div></div></section>
-{% endraw %}
+<section class="sec tight"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet l" aria-hidden="true">L</span> Guides</span><h2>Start here</h2></div></div>
+ <div class="grid g3">{% assign lg = site.pages | where: "section", "live" %}{% for p in lg %}{% if p.layout == "article" %}<div class="card lined line-l"><h3 style="font-size:1.1rem"><a href="{{ p.url }}">{{ p.title }}</a></h3><p class="small muted">{{ p.description }}</p></div>{% endif %}{% endfor %}</div>
+</div></section>
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet t" aria-hidden="true">T</span> Tools for movers</span><h2>Run the numbers</h2></div><a class="btn ghost sm" href="/tools/">All tools</a></div>
+ <div class="grid g3">{% assign mt = "rent-budget,rent-vs-buy,moving-cost,car-free,downtown-match,compare" | split: "," %}{% for s in mt %}{% assign tl = site.data.tools | where: "slug", s | first %}<div class="card lined line-{{ tl.line }}"><h3 style="font-size:1.08rem"><a href="/tools/{{ tl.slug }}.html">{{ tl.name }}</a></h3><p class="small muted">{{ tl.desc }}</p></div>{% endfor %}</div>
+</div></section>
+<section class="sec tight"><div class="wrap split">
+ <div>
+  <h2>Which downtown suits you?</h2>
+  <p class="muted">Every city guide has a "Living downtown" section on housing stock, leasing norms and who it suits. Start with the most liveable downtowns in the Index, or take the 60-second match quiz.</p>
+  <a class="btn teal" href="/tools/downtown-match.html">Find your downtown</a>
+ </div>
+ <ol class="stations line-l">{% assign fam = site.data.cities | sort: "index" | reverse %}{% for c in fam limit: 6 %}<li><a href="/explore/{{ c.slug }}.html">Downtown {{ c.name }}</a><p>Family-friendly {{ c.s.family }}/10 · Value {{ c.s.value }}/10 · Transit {{ c.s.transit }}/10</p></li>{% endfor %}</ol>
+</div></section>
+<section class="sec tight alt"><div class="wrap">{% include cta.html kind="move" %}</div></section>

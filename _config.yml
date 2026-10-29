@@ -1,7 +1,13 @@
 title: Down.Town
-description: Independent guides to the world's downtowns.
+tagline: Explore, live and find space in the world's downtowns
+description: Independent guides to the world's downtowns — explore them, live in them, and find office, retail and event space in them.
 url: https://down.town
+baseurl: ""
+lang: en
+adsense_client: ca-pub-6620975821265271
+owner_contact: https://web.works/contact
 markdown: kramdown
+timezone: UTC
 exclude:
   - README.md
   - BUILD-PROMPT.md
@@ -10,3 +16,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - _build
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

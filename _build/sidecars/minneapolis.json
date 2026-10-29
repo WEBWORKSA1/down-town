@@ -1,0 +1,30 @@
+{
+ "tagline": "A river city of mill ruins, theatres and skyways, with lakes and trails on the doorstep and summers worth the winter.",
+ "events": [
+  {
+   "when": "Mid-May",
+   "name": "Art-A-Whirl",
+   "desc": "Artists across the Northeast Minneapolis Arts District open their studios to the public for a long weekend."
+  },
+  {
+   "when": "Late June",
+   "name": "Twin Cities Pride",
+   "desc": "A big, free Pride festival in Loring Park, with a parade along Hennepin Avenue."
+  },
+  {
+   "when": "July",
+   "name": "Minneapolis Aquatennial",
+   "desc": "A summer festival of river, lake and street events, including the Torchlight Parade on Nicollet Mall."
+  },
+  {
+   "when": "Early October",
+   "name": "Twin Cities Marathon",
+   "desc": "A marathon from downtown Minneapolis past the lakes and along the river to the State Capitol in St. Paul."
+  }
+ ],
+ "video": {
+  "id": "wqfQoC8jfJE",
+  "title": "Downtown Minneapolis 4K Walking Tour 🇺🇸 2026",
+  "channel": "LOMAS POV"
+ }
+}

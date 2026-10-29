@@ -1,0 +1,9 @@
+[
+ {"key":"explore","name":"Explore","url":"/explore/","line":"e"},
+ {"key":"live","name":"Live","url":"/live/","line":"l"},
+ {"key":"space","name":"Find Space","url":"/space/","line":"s"},
+ {"key":"business","name":"Do Business","url":"/business/","line":"b"},
+ {"key":"tools","name":"Tools","url":"/tools/","line":"t"},
+ {"key":"events","name":"Events","url":"/events.html","line":"e"},
+ {"key":"videos","name":"Videos","url":"/videos.html","line":"e"}
+]

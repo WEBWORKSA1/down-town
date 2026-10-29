@@ -1,22 +1,31 @@
 ---
-layout: "default"
-title: "Do Business Downtown: Guides for Owners"
-description: "Leases, foot traffic, pop-ups, funding and events — the playbooks independent owners use to make city-centre rents pay off."
-root: "../"
-canon: "business/"
-section: "business"
+layout: default
+title: "Doing Business Downtown: Storefronts, Leases and Foot Traffic"
+description: "Playbooks for opening and growing a downtown business: storefront economics, commercial lease terms, pop-ups, funding routes and turning events and foot traffic into sales."
+section: business
+updated: "2026-10-29"
 ---
-{% raw %}
 <header class="page-head line-strip line-b"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Do Business</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Do Business"}]}</script>
+ {% include crumbs.html label="Do Business" %}
  <span class="tag"><span class="bullet b" aria-hidden="true">B</span> Do Business</span>
- <h1 style="margin-top:.6rem">Open, run and grow a business downtown</h1><p class="lede">Leases, foot traffic, pop-ups, funding and events — the playbooks independent owners use to make city-centre rents pay off.</p>
+ <h1 style="margin-top:.6rem">Grow a business where the people are</h1>
+ <p class="lede">Downtown rents are high because the customers are close. These playbooks help you check the maths before you sign, negotiate the lease that protects you, and turn passing foot traffic into regulars.</p>
+ <div class="share"><a class="btn cobalt" href="/get-matched.html?need=retail">Find retail space</a><a class="btn ghost" href="/list-your-business.html">List your business</a><a class="btn ghost" href="/advertise.html">Advertise</a></div>
 </div></header>
-<section class="sec tight"><div class="wrap"><div class="grid g3"><article class="card lined line-b"><h3><a href="opening-a-downtown-storefront.html">Opening a Downtown Storefront: The Step-by-Step Playbook</a></h3><p class="muted small">From validating the location to opening day — a practical sequence for launching a shop, café or studio in a city centre.</p><div class="meta">3 min read</div></article><article class="card lined line-b"><h3><a href="commercial-lease-terms.html">Commercial Lease Terms Decoded: What to Negotiate and Why</a></h3><p class="muted small">Gross vs. net, CAM, tenant improvements, exclusivity, co-tenancy and personal guarantees — the clauses that decide whether a downtown lease works.</p><div class="meta">3 min read</div></article><article class="card lined line-b"><h3><a href="turning-foot-traffic-into-customers.html">Turning Foot Traffic into Customers: Street-Level Marketing That Works</a></h3><p class="muted small">Windows, signage, lighting, local search and partnerships — practical ways to convert passers-by into paying customers.</p><div class="meta">3 min read</div></article><article class="card lined line-b"><h3><a href="pop-up-shops.html">Pop-Up Shops: Test a Downtown Location Before You Commit</a></h3><p class="muted small">How to find short-term space, what to negotiate, and how to measure whether a pop-up proves a permanent store will work.</p><div class="meta">2 min read</div></article><article class="card lined line-b"><h3><a href="funding-a-downtown-business.html">Funding a Downtown Business: Grants, Loans and Programmes to Research</a></h3><p class="muted small">An overview of the funding routes small businesses use to open or grow downtown — and where to look in the US, Canada and the UK.</p><div class="meta">2 min read</div></article><article class="card lined line-b"><h3><a href="using-downtown-events.html">Using Downtown Events to Grow a Small Business</a></h3><p class="muted small">How to turn festivals, markets, game days and holidays into new customers — without burning out your staff or your budget.</p><div class="meta">3 min read</div></article></div><div class="ad-zone" data-slot="incontent"></div></div></section>
-<section class="sec tight"><div class="wrap"><div class="grid g3">
-<article class="card lined line-b"><h3><a href="../tools/storefront-revenue.html">Storefront Revenue Estimator</a></h3><p class="muted small">Foot traffic, conversion and average sale in; monthly revenue and rent ratio out.</p></article>
-<article class="card lined line-b"><h3><a href="../list-your-business.html">List your business</a></h3><p class="muted small">Free listings, with Featured and Spotlight upgrades for more visibility.</p></article>
-<article class="card lined line-b"><h3><a href="../advertise.html">Advertise and sponsor</a></h3><p class="muted small">City Partner sponsorships, newsletter placements and contest categories.</p></article>
-</div></div></section>
-<section class="sec tight alt"><div class="wrap"><div class="cta-band line-b"><div><h3>Need commercial space?</h3><p>Tell us your city, size and budget. We'll introduce you to brokers and landlords with space that fits.</p></div><a class="btn cobalt" href="../get-matched.html#business">Request introductions</a></div></div></section>
-{% endraw %}
+<section class="sec tight"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet b" aria-hidden="true">B</span> Playbooks</span><h2>Business guides</h2></div></div>
+ <div class="grid g3">{% assign bg = site.pages | where: "section", "business" %}{% for p in bg %}{% if p.layout == "article" %}<div class="card lined line-b"><h3 style="font-size:1.1rem"><a href="{{ p.url }}">{{ p.title }}</a></h3><p class="small muted">{{ p.description }}</p></div>{% endif %}{% endfor %}</div>
+</div></section>
+<section class="sec tight alt"><div class="wrap">
+ <div class="sec-head"><div><span class="tag"><span class="bullet s" aria-hidden="true">S</span> Space</span><h2>Looking for a location?</h2></div><a class="btn ghost sm" href="/space/">All space guides</a></div>
+ <div class="grid g3">{% assign sg = site.pages | where: "section", "space" %}{% for p in sg %}{% if p.layout == "article" %}<div class="card lined line-s"><h3 style="font-size:1.05rem"><a href="{{ p.url }}">{{ p.title }}</a></h3><p class="small muted">{{ p.description }}</p></div>{% endif %}{% endfor %}</div>
+</div></section>
+<section class="sec tight"><div class="wrap split">
+ <div>
+  <h2>Best downtowns for business</h2>
+  <p class="muted">Ranked by the Down.Town business-climate score: depth of the office core, retail footfall, ease of setting up and access to talent.</p>
+  <a class="btn cobalt" href="/rankings.html">See the Index</a>
+ </div>
+ <ol class="stations line-b">{% assign bz = site.data.cities | sort: "index" | reverse %}{% assign shown = 0 %}{% for c in bz %}{% if c.s.business >= 9 and shown < 6 %}{% assign shown = shown | plus: 1 %}<li><a href="/space/{{ c.slug }}.html">Space in downtown {{ c.name }}</a><p>Business climate {{ c.s.business }}/10 · {{ c.district }}</p></li>{% endif %}{% endfor %}</ol>
+</div></section>
+<section class="sec tight alt"><div class="wrap">{% include cta.html kind="business" %}</div></section>

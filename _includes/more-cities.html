@@ -1,0 +1,5 @@
+{% assign me = site.data.cities | where: "slug", include.slug | first %}{% assign near = site.data.cities | where: "rslug", me.rslug %}{% assign base = include.base | default: "explore" %}
+<section aria-labelledby="mc-h" class="more-cities">
+<h2 id="mc-h">{% if base == "space" %}Space in other downtowns{% else %}More downtowns nearby{% endif %}</h2>
+<ul class="stations line-{% if base == 'space' %}s{% else %}e{% endif %}">{% assign shown = 0 %}{% for c in near %}{% if c.slug != me.slug and shown < 5 %}{% assign shown = shown | plus: 1 %}<li><a href="/{{ base }}/{{ c.slug }}.html">{% if base == "space" %}Office &amp; commercial space in {{ c.name }}{% else %}Downtown {{ c.name }}{% endif %}</a><p>{{ c.tagline }}</p></li>{% endif %}{% endfor %}</ul>
+</section>

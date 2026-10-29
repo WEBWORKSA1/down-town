@@ -1,0 +1,7 @@
+{% assign c = site.data.cities | where: "slug", include.slug | first %}{% if c %}
+<section class="scores-block" aria-labelledby="sc-h">
+<h2 id="sc-h">Down.Town Index scores</h2>
+<p class="small muted">Editorial ratings out of 10, combined into the <a href="/rankings.html">Down.Town Index</a> ({{ c.index }}/100). <a href="/rankings.html#method">How we score</a>.</p>
+<div class="scores">{% assign labels = "walk:Walkability,transit:Transit,food:Food & drink,night:Nightlife,culture:Culture,family:Family-friendly,business:Business climate,value:Value for money" | split: "," %}{% for pair in labels %}{% assign kv = pair | split: ":" %}{% assign k = kv[0] %}{% assign v = c.s[k] %}<div class="score" style="--lc:var(--amber)"><span>{{ kv[1] }}</span><span class="bar" role="img" aria-label="{{ kv[1] }}: {{ v }} out of 10">{% for n in (1..10) %}<i{% if n <= v %} class="on"{% endif %}></i>{% endfor %}</span><b>{{ v }}</b></div>{% endfor %}</div>
+<p class="small" style="margin-top:.8rem"><a href="/tools/compare.html?a={{ c.slug }}&amp;b={{ c.pair }}">Compare {{ c.name }} with another downtown</a></p>
+</section>{% endif %}

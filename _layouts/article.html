@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% assign sec = site.data.sections | where: "key", page.section | first %}
+<header class="page-head line-strip line-{{ sec.line }}"><div class="wrap">
+ {% include crumbs.html %}
+ <span class="tag"><span class="bullet {{ sec.line }}" aria-hidden="true">{{ sec.line | upcase }}</span> {{ sec.name }}</span>
+ <h1 style="margin-top:.6rem;max-width:24ch">{{ page.title }}</h1>
+ <p class="lede">{{ page.lede }}</p>
+ {% assign words = content | strip_html | number_of_words %}{% assign mins = words | divided_by: 230 | plus: 1 %}
+ <div class="byline"><span>By the <a href="/about.html#editors">Down.Town editors</a></span><span>Updated <time datetime="{{ page.updated }}">{{ page.updated | date: "%-d %B %Y" }}</time></span><span>{{ mins }} min read</span><button class="linklike" type="button" data-save="{{ page.url }}" data-save-title="{{ page.title | xml_escape }}">Save</button></div>
+</div></header>
+<div class="wrap article-grid">
+ <article>
+  <div class="prose">
+{{ content }}
+  </div>
+  {% include faq.html %}
+  {% if page.related %}<section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><div class="grid g3">{% for r in page.related %}{% assign rp = site.pages | where: "url", r | first %}{% if rp %}<div class="card lined line-{% assign rs = site.data.sections | where: 'key', rp.section | first %}{{ rs.line | default: 'd' }}"><h3 style="font-size:1.05rem"><a href="{{ rp.url }}">{{ rp.title }}</a></h3><p class="small muted">{{ rp.description }}</p></div>{% endif %}{% endfor %}</div></section>{% endif %}
+  {% include cta.html kind="support" %}
+ </article>
+ <aside class="rail" aria-label="Article tools">
+  <div class="card toc"><h3 style="font-size:1rem">In this guide</h3><div id="toc"></div></div>
+  <div class="rail-sticky">
+   {% if page.tool %}{% include tool-card.html tool=page.tool %}{% endif %}
+   {% if page.section == "space" or page.section == "business" %}{% include rail-lead.html need="office" %}{% elsif page.section == "explore" %}{% include rail-lead.html need="venue" %}{% else %}{% include rail-lead.html need="home" %}{% endif %}
+   {% include ad.html slot="sidebar" %}
+  </div>
+ </aside>
+</div>
