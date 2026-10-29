@@ -1,92 +1,173 @@
 ---
-layout: "default"
-title: "Get Matched: Free Introductions for Moving or Opening a Business Downtown"
-description: "Moving downtown or opening a downtown business? One short request connects you with up to three local agents, movers, brokers or contractors. Free and consent-based."
-root: ""
-canon: "get-matched.html"
-section: "match"
+layout: default
+title: "Get Matched: Free Introductions to Downtown Agents, Brokers & Venues"
+description: "Tell us once what you need downtown — a home, office, shopfront, coworking desk or event venue — and we'll introduce you to up to three vetted local pros. Free."
+section: matched
+funnel: true
+noads: true
+nolead: true
+updated: "2026-10-29"
+faq:
+  - q: "Is Down.Town really free for me?"
+    a: "Yes. You never pay Down.Town. When you choose to work with a partner we introduced, that partner may pay us a referral fee. In most commercial markets the landlord pays the tenant broker's commission, so using a broker usually costs a tenant nothing extra."
+  - q: "Who sees my details?"
+    a: "An editor reviews every request by hand. We share it only with up to three partners who fit your city, size, budget and timing, and only because you ticked the consent box. We never sell lists or add you to anyone else's marketing."
+  - q: "How fast will I hear back?"
+    a: "We aim to review requests within one business day and make introductions within two. If a partner hasn't contacted you within 48 hours of an introduction, tell us and we will chase them or find another."
+  - q: "Am I committing to anything?"
+    a: "No. Sending a request doesn't commit you to a viewing, a lease or a booking. You choose whether to reply to any introduction."
+  - q: "What if my city isn't listed?"
+    a: "Choose 'Another city' and tell us where. We cover more than the downtowns with full guides and will say honestly if we can't help."
 ---
-{% raw %}
 <header class="page-head"><div class="wrap">
- <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Get matched</span></nav><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://down.town/"}, {"@type": "ListItem", "position": 2, "name": "Get matched"}]}</script>
- <span class="tag"><span class="bullet l" aria-hidden="true">L</span> <span class="bullet b" aria-hidden="true">B</span> Get matched</span>
+ {% include crumbs.html label="Get matched" %}
+ <span class="tag"><span class="bullet l" aria-hidden="true">L</span><span class="bullet s" aria-hidden="true">S</span><span class="bullet e" aria-hidden="true">E</span> Free introductions</span>
  <h1 style="margin-top:.6rem">Tell us once. Meet the right local pros.</h1>
- <p class="lede">Moving downtown or opening a business there? Answer a few questions and we'll introduce you to up to three professionals who fit your city, budget and timing.</p>
+ <p class="lede">A home, an office, a shopfront, a coworking desk or a venue for 300 people: answer a few questions and we'll introduce you to up to three vetted agents, brokers or venues who fit your city, budget and timing.</p>
+ <div class="trust" style="margin-top:1rem"><span>Free for you</span><span>About 60 seconds</span><span>Up to 3 introductions</span><span>Shared only with your consent</span><span>No obligation</span></div>
 </div></header>
 <section class="sec tight"><div class="wrap split">
- <div class="lead-panel">
-  <div class="track-tabs" role="tablist" aria-label="Choose your request">
-   <button type="button" role="tab" id="tab-move" aria-controls="panel-move" data-track="move" aria-selected="true"><span class="bullet l" aria-hidden="true">L</span> I'm moving downtown</button>
-   <button type="button" role="tab" id="tab-biz" aria-controls="panel-business" data-track="business" aria-selected="false"><span class="bullet b" aria-hidden="true">B</span> I'm opening a business</button>
-  </div>
-  <div role="tabpanel" id="panel-move" aria-labelledby="tab-move"><form class="form" data-form="Relocation lead" data-steps data-redirect="thank-you.html" style="--lc:var(--teal)">
- <div class="steps-bar"><i></i><i></i><i></i><i></i></div><p class="step-count"></p>
- <div class="step" data-auto>
-  <fieldset class="field"><legend>When are you moving?</legend><div class="opts"><label class="opt big"><input type="radio" name="timeline" value="Within 1 month" required><span>Within 1 month</span></label><label class="opt big"><input type="radio" name="timeline" value="1–3 months" required><span>1–3 months</span></label><label class="opt big"><input type="radio" name="timeline" value="3–6 months" required><span>3–6 months</span></label><label class="opt big"><input type="radio" name="timeline" value="6+ months" required><span>6+ months</span></label><label class="opt big"><input type="radio" name="timeline" value="Just exploring" required><span>Just exploring</span></label></div></fieldset>
- </div>
- <div class="step" hidden>
-  <div class="field"><label for="mv-city">Which downtown?</label><select id="mv-city" name="city" data-prefill="city" required><option value="">Choose a city</option><optgroup label="North America"><option value="Austin">Austin</option><option value="Boston">Boston</option><option value="Chicago">Chicago</option><option value="Denver">Denver</option><option value="Miami">Miami</option><option value="Montréal">Montréal</option><option value="New York">New York</option><option value="San Francisco">San Francisco</option><option value="Seattle">Seattle</option><option value="Toronto">Toronto</option><option value="Vancouver">Vancouver</option><option value="Washington, D.C.">Washington, D.C.</option></optgroup><optgroup label="Europe"><option value="Amsterdam">Amsterdam</option><option value="Barcelona">Barcelona</option><option value="Berlin">Berlin</option><option value="London">London</option><option value="Paris">Paris</option></optgroup><optgroup label="Asia-Pacific"><option value="Hong Kong">Hong Kong</option><option value="Melbourne">Melbourne</option><option value="Singapore">Singapore</option><option value="Sydney">Sydney</option><option value="Tokyo">Tokyo</option></optgroup><optgroup label="Middle East & Africa"><option value="Cape Town">Cape Town</option><option value="Dubai">Dubai</option></optgroup><optgroup label="Latin America"><option value="Mexico City">Mexico City</option></optgroup><optgroup label="South Asia"><option value="Mumbai">Mumbai</option></optgroup><option value="Another city">Another city</option><option value="Not sure yet">Not sure yet</option></select></div>
-  <fieldset class="field"><legend>Rent or buy?</legend><div class="opts"><label class="opt"><input type="radio" name="intent" value="Rent" required><span>Rent</span></label><label class="opt"><input type="radio" name="intent" value="Buy" required><span>Buy</span></label><label class="opt"><input type="radio" name="intent" value="Not sure yet" required><span>Not sure yet</span></label></div></fieldset>
-  <div class="field"><label for="mv-budget">Monthly housing budget (rent) or purchase budget</label><input id="mv-budget" name="budget" type="text" placeholder="e.g. 2,500 / month or 650,000" required></div>
-  <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn teal" type="button" data-next>Next</button></div>
- </div>
- <div class="step" hidden>
-  <div class="field"><label for="mv-hh">Household</label><select id="mv-hh" name="household"><option>Just me</option><option>Couple</option><option>Family with children</option><option>Roommates</option></select></div>
-  <fieldset class="field"><legend>What would help? Pick any</legend><div data-need-one><div class="opts"><label class="opt"><input type="checkbox" name="services" value="Real estate agent"><span>Real estate agent</span></label><label class="opt"><input type="checkbox" name="services" value="Rental finder"><span>Rental finder</span></label><label class="opt"><input type="checkbox" name="services" value="Movers"><span>Movers</span></label><label class="opt"><input type="checkbox" name="services" value="Mortgage advice"><span>Mortgage advice</span></label><label class="opt"><input type="checkbox" name="services" value="Storage"><span>Storage</span></label><label class="opt"><input type="checkbox" name="services" value="Neighbourhood advice"><span>Neighbourhood advice</span></label></div></div></fieldset>
-  <fieldset class="field"><legend>Must-haves</legend><div class="opts"><label class="opt"><input type="checkbox" name="must_haves" value="Walk to work"><span>Walk to work</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Near transit"><span>Near transit</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Good schools"><span>Good schools</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Quiet street"><span>Quiet street</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Pets allowed"><span>Pets allowed</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Parking"><span>Parking</span></label><label class="opt"><input type="checkbox" name="must_haves" value="Nightlife nearby"><span>Nightlife nearby</span></label></div></fieldset>
-  <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn teal" type="button" data-next>Next</button></div>
- </div>
- <div class="step" hidden>
-  <div class="row"><div class="field"><label for="mv-name">Full name</label><input id="mv-name" name="name" required autocomplete="name"></div>
-  <div class="field"><label for="mv-email">Email</label><input id="mv-email" name="email" type="email" required autocomplete="email"></div></div>
-  <div class="field"><label for="mv-phone">Phone (optional)</label><input id="mv-phone" name="phone" type="tel" autocomplete="tel"><span class="hint">Add it if you're happy to receive calls or texts from matched partners about this request.</span></div>
-  <div class="field"><label for="mv-notes">Anything else?</label><textarea id="mv-notes" name="notes" placeholder="Neighbourhoods you like, move-in date, deal-breakers…"></textarea></div>
-  <label class="check"><input type="checkbox" name="consent" value="Agreed to partner contact" required> <span>I agree that Down.Town may share my request with up to three relevant local partners so they can contact me about it. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
-  <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn teal" type="submit">Get my matches</button></div>
- </div>
- <p class="form-status" role="status" aria-live="polite"></p>
- <div class="trust"><span>Free for you</span><span>Up to 3 introductions</span><span>Shared only with your consent</span><span>About 60 seconds</span></div>
-</form></div>
-  <div role="tabpanel" id="panel-business" aria-labelledby="tab-biz" hidden><form class="form" data-form="Business lead" data-steps data-redirect="thank-you.html" style="--lc:var(--cobalt)">
- <div class="steps-bar"><i></i><i></i><i></i></div><p class="step-count"></p>
- <div class="step" data-auto>
-  <fieldset class="field"><legend>What do you need first?</legend><div class="opts"><label class="opt big"><input type="radio" name="need" value="Commercial space" required><span>Commercial space</span></label><label class="opt big"><input type="radio" name="need" value="Pop-up / short-term space" required><span>Pop-up / short-term space</span></label><label class="opt big"><input type="radio" name="need" value="Funding and financing" required><span>Funding and financing</span></label><label class="opt big"><input type="radio" name="need" value="Fit-out and contractors" required><span>Fit-out and contractors</span></label><label class="opt big"><input type="radio" name="need" value="Marketing and foot traffic" required><span>Marketing and foot traffic</span></label><label class="opt big"><input type="radio" name="need" value="Something else" required><span>Something else</span></label></div></fieldset>
- </div>
- <div class="step" hidden>
-  <div class="row"><div class="field"><label for="bz-city">Which downtown?</label><select id="bz-city" name="city" data-prefill="city" required><option value="">Choose a city</option><optgroup label="North America"><option value="Austin">Austin</option><option value="Boston">Boston</option><option value="Chicago">Chicago</option><option value="Denver">Denver</option><option value="Miami">Miami</option><option value="Montréal">Montréal</option><option value="New York">New York</option><option value="San Francisco">San Francisco</option><option value="Seattle">Seattle</option><option value="Toronto">Toronto</option><option value="Vancouver">Vancouver</option><option value="Washington, D.C.">Washington, D.C.</option></optgroup><optgroup label="Europe"><option value="Amsterdam">Amsterdam</option><option value="Barcelona">Barcelona</option><option value="Berlin">Berlin</option><option value="London">London</option><option value="Paris">Paris</option></optgroup><optgroup label="Asia-Pacific"><option value="Hong Kong">Hong Kong</option><option value="Melbourne">Melbourne</option><option value="Singapore">Singapore</option><option value="Sydney">Sydney</option><option value="Tokyo">Tokyo</option></optgroup><optgroup label="Middle East & Africa"><option value="Cape Town">Cape Town</option><option value="Dubai">Dubai</option></optgroup><optgroup label="Latin America"><option value="Mexico City">Mexico City</option></optgroup><optgroup label="South Asia"><option value="Mumbai">Mumbai</option></optgroup><option value="Another city">Another city</option><option value="Not sure yet">Not sure yet</option></select></div>
-  <div class="field"><label for="bz-type">Business type</label><select id="bz-type" name="business_type" required><option value="">Choose one</option><option>Retail shop</option><option>Café or restaurant</option><option>Bar</option><option>Salon or wellness</option><option>Fitness or studio</option><option>Office / professional</option><option>Clinic</option><option>Pop-up or brand activation</option><option>Other</option></select></div></div>
-  <div class="row"><div class="field"><label for="bz-size">Space size</label><select id="bz-size" name="size"><option>Not sure</option><option>Under 500 sq ft (46 m²)</option><option>500–1,500 sq ft</option><option>1,500–3,000 sq ft</option><option>3,000+ sq ft</option></select></div>
-  <div class="field"><label for="bz-when">Timeline</label><select id="bz-when" name="timeline"><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Researching</option></select></div></div>
-  <div class="field"><label for="bz-budget">Monthly rent budget</label><input id="bz-budget" name="budget" placeholder="e.g. 4,000–6,000"></div>
-  <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn cobalt" type="button" data-next>Next</button></div>
- </div>
- <div class="step" hidden>
-  <div class="row"><div class="field"><label for="bz-name">Full name</label><input id="bz-name" name="name" required autocomplete="name"></div>
-  <div class="field"><label for="bz-co">Business name</label><input id="bz-co" name="business_name" autocomplete="organization"></div></div>
-  <div class="row"><div class="field"><label for="bz-email">Email</label><input id="bz-email" name="email" type="email" required autocomplete="email"></div>
-  <div class="field"><label for="bz-phone">Phone (optional)</label><input id="bz-phone" name="phone" type="tel" autocomplete="tel"></div></div>
-  <div class="field"><label for="bz-notes">Tell us more</label><textarea id="bz-notes" name="notes" placeholder="Concept, preferred streets, must-haves like a kitchen exhaust or street frontage…"></textarea></div>
-  <label class="check"><input type="checkbox" name="consent" value="Agreed to partner contact" required> <span>I agree that Down.Town may share my request with up to three relevant local partners so they can contact me about it. See the <a href="privacy.html">privacy policy</a>.</span></label><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
-  <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn cobalt" type="submit">Request introductions</button></div>
- </div>
- <p class="form-status" role="status" aria-live="polite"></p>
- <div class="trust"><span>Free for business owners</span><span>Brokers and pros who know the area</span><span>Shared only with your consent</span></div>
-</form></div>
- </div>
  <div>
-  <h2 style="font-size:1.5rem">What happens next</h2>
-  <ol class="prose" style="font-size:1.05rem">
-   <li><strong>We review your request</strong> within two business days.</li>
-   <li><strong>We pick up to three partners</strong> who serve your downtown and your budget — agents, rental finders, movers, brokers, lenders or contractors.</li>
-   <li><strong>They contact you</strong> by email (and phone only if you gave a number). You choose whether to work with any of them.</li>
-  </ol>
-  <div class="faq" style="margin-top:1.4rem">
-   <details><summary>Is it free?</summary><p>Yes. Partners may pay Down.Town a referral fee; that never changes what you pay them.</p></details>
-   <details><summary>Who sees my details?</summary><p>Only Down.Town and the partners we match you with — never more than three, and only because you ticked the consent box. We don't sell lists. <a href="privacy.html">Privacy policy</a>.</p></details>
-   <details><summary>Can I change my mind?</summary><p>Yes. Use the <a href="contact.html?topic=Privacy%20request">contact form</a> to withdraw consent or ask us to delete your request.</p></details>
-   <details><summary>Are you a realtor, mover or broker?</summary><p>Join the referral partner network on our <a href="advertise.html#partners">advertise page</a>.</p></details>
+ <form class="funnel" id="funnel" novalidate>
+  <div class="steps-bar" style="--lc:var(--violet)"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="step-head" style="display:flex;justify-content:space-between;gap:1rem;align-items:center"><p class="step-count" aria-live="polite"></p><button class="linklike small" type="button" data-reset hidden>Start over</button></div>
+
+  <div class="step" data-step="need">
+   <h2>What do you need downtown?</h2>
+   <fieldset><legend class="vh">What do you need?</legend>
+   <div class="need-tiles">
+    <label class="need-tile" style="--lc:var(--teal)"><input type="radio" name="need" value="home"><span><b>Rent a home</b><small>Apartment, loft, furnished</small></span></label>
+    <label class="need-tile" style="--lc:var(--teal)"><input type="radio" name="need" value="buy"><span><b>Buy a home</b><small>Condo, townhome, loft</small></span></label>
+    <label class="need-tile" style="--lc:var(--violet)"><input type="radio" name="need" value="office"><span><b>Office space</b><small>Lease, sublease, HQ</small></span></label>
+    <label class="need-tile" style="--lc:var(--cobalt)"><input type="radio" name="need" value="retail"><span><b>Retail or restaurant</b><small>Shopfront, kitchen, pop-up</small></span></label>
+    <label class="need-tile" style="--lc:var(--violet)"><input type="radio" name="need" value="flex"><span><b>Coworking</b><small>Desks, private suites</small></span></label>
+    <label class="need-tile" style="--lc:var(--amber)"><input type="radio" name="need" value="venue"><span><b>Event venue</b><small>Meeting to gala</small></span></label>
+    <label class="need-tile" style="--lc:var(--red)"><input type="radio" name="need" value="relocate"><span><b>Relocate a team</b><small>Office, housing, movers</small></span></label>
+   </div></fieldset>
   </div>
-  <div class="cta-band line-e" style="margin-top:1.6rem"><div><h3>Not sure which city yet?</h3><p>Take the 60-second match quiz first.</p></div><a class="btn ghost" href="tools/downtown-match.html">Find your downtown</a></div>
+
+  <div class="step" data-step="where" hidden>
+   <h2>Which downtown?</h2>
+   <div class="field"><label for="f-city">City</label><select id="f-city" name="city" required><option value="">Choose a city</option>{% assign groups = site.data.cities | group_by: "region" %}{% for g in groups %}<optgroup label="{{ g.name }}">{% assign gi = g.items | sort: "name" %}{% for c in gi %}<option value="{{ c.name }}" data-slug="{{ c.slug }}">{{ c.name }}</option>{% endfor %}</optgroup>{% endfor %}<option value="Another city" data-slug="other">Another city</option><option value="Not sure yet" data-slug="unsure">Not sure yet</option></select></div>
+   <div class="field" data-show="city:Another city"><label for="f-city-other">Which city?</label><input id="f-city-other" name="city_other" type="text" placeholder="City and country"></div>
+   <div class="field"><label for="f-area">Preferred area or address <span class="hint">(optional)</span></label><input id="f-area" name="area" type="text" placeholder="e.g. near the main station, waterfront, a specific street"></div>
+   <div class="field" data-show="need:relocate"><label for="f-from">Moving from</label><input id="f-from" name="moving_from" type="text" placeholder="Current city"></div>
+   <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn violet" type="button" data-next>Next</button></div>
+  </div>
+
+  <div class="step" data-step="details" hidden>
+   <h2 data-title-for="home">About the home</h2><h2 data-title-for="buy">About the purchase</h2><h2 data-title-for="office">About the office</h2><h2 data-title-for="retail">About the space</h2><h2 data-title-for="flex">About the coworking space</h2><h2 data-title-for="venue">About the event</h2><h2 data-title-for="relocate">About the move</h2>
+
+   <div data-branch="home buy">
+    <fieldset class="field"><legend>Bedrooms</legend><div class="opts"><label class="opt"><input type="radio" name="bedrooms" value="Studio"><span>Studio</span></label><label class="opt"><input type="radio" name="bedrooms" value="1"><span>1</span></label><label class="opt"><input type="radio" name="bedrooms" value="2"><span>2</span></label><label class="opt"><input type="radio" name="bedrooms" value="3+"><span>3+</span></label></div></fieldset>
+    <div class="row"><div class="field"><label for="f-budget-h"><span data-title-for="home">Monthly rent budget</span><span data-title-for="buy">Purchase budget</span></label><input id="f-budget-h" name="budget" type="number" min="0" step="50" inputmode="numeric" placeholder="e.g. 2500" data-need-for="home buy"></div>
+    <div class="field"><label for="f-cur">Currency</label><select id="f-cur" name="currency"><option>USD</option><option>CAD</option><option>EUR</option><option>GBP</option><option>AUD</option><option>SGD</option><option>HKD</option><option>JPY</option><option>KRW</option><option>INR</option><option>AED</option><option>MXN</option><option>ZAR</option></select></div></div>
+    <div class="field"><label for="f-hh">Household</label><select id="f-hh" name="household"><option>Just me</option><option>Couple</option><option>Family with children</option><option>Roommates</option><option>Corporate let</option></select></div>
+    <div class="field" data-show="need:buy"><label for="f-pre">Mortgage pre-approval</label><select id="f-pre" name="preapproval"><option>Not yet</option><option>Yes, pre-approved</option><option>Buying with cash</option><option>Would like mortgage advice</option></select></div>
+    <fieldset class="field"><legend>Must-haves <span class="hint">(pick any)</span></legend><div class="opts"><label class="opt"><input type="checkbox" name="musthave" value="Near transit"><span>Near transit</span></label><label class="opt"><input type="checkbox" name="musthave" value="Pet-friendly"><span>Pet-friendly</span></label><label class="opt"><input type="checkbox" name="musthave" value="In-unit laundry"><span>In-unit laundry</span></label><label class="opt"><input type="checkbox" name="musthave" value="Parking"><span>Parking</span></label><label class="opt"><input type="checkbox" name="musthave" value="Gym"><span>Gym</span></label><label class="opt"><input type="checkbox" name="musthave" value="Concierge"><span>Concierge</span></label><label class="opt"><input type="checkbox" name="musthave" value="Furnished"><span>Furnished</span></label><label class="opt"><input type="checkbox" name="musthave" value="Outdoor space"><span>Outdoor space</span></label></div></fieldset>
+   </div>
+
+   <div data-branch="office relocate">
+    <div class="row"><div class="field"><label for="f-team">People who need a desk</label><input id="f-team" name="team_size" type="number" min="1" max="5000" inputmode="numeric" placeholder="e.g. 25" data-need-for="office relocate"></div>
+    <div class="field"><label for="f-style">Work pattern</label><select id="f-style" name="work_style"><option value="hybrid">Hybrid (2–3 office days)</option><option value="office">Mostly in the office</option><option value="light">Mostly remote, office as a hub</option></select></div></div>
+    <div class="row"><div class="field"><label for="f-lease">Lease length</label><select id="f-lease" name="lease_length"><option>Flexible / under 2 years</option><option>2–3 years</option><option>3–5 years</option><option>5+ years</option><option>Not sure</option></select></div>
+    <div class="field"><label for="f-osize">Size, if you know it <span class="hint">(optional)</span></label><input id="f-osize" name="size_known" type="text" placeholder="e.g. 4,000 sq ft or 400 m²"></div></div>
+    <fieldset class="field"><legend>Must-haves <span class="hint">(pick any)</span></legend><div class="opts"><label class="opt"><input type="checkbox" name="musthave" value="Meeting rooms"><span>Meeting rooms</span></label><label class="opt"><input type="checkbox" name="musthave" value="Fitted / furnished"><span>Fitted / furnished</span></label><label class="opt"><input type="checkbox" name="musthave" value="Near commuter rail"><span>Near commuter rail</span></label><label class="opt"><input type="checkbox" name="musthave" value="Showers and bike storage"><span>Showers &amp; bike storage</span></label><label class="opt"><input type="checkbox" name="musthave" value="24/7 access"><span>24/7 access</span></label><label class="opt"><input type="checkbox" name="musthave" value="Signage"><span>Signage</span></label><label class="opt"><input type="checkbox" name="musthave" value="Parking"><span>Parking</span></label><label class="opt"><input type="checkbox" name="musthave" value="Sublease OK"><span>Sublease is fine</span></label></div></fieldset>
+    <fieldset class="field" data-show="need:relocate"><legend>What should we help with?</legend><div class="opts"><label class="opt"><input type="checkbox" name="services" value="Office space"><span>Office space</span></label><label class="opt"><input type="checkbox" name="services" value="Employee housing"><span>Employee housing</span></label><label class="opt"><input type="checkbox" name="services" value="Temporary housing"><span>Temporary housing</span></label><label class="opt"><input type="checkbox" name="services" value="Office movers"><span>Office movers</span></label><label class="opt"><input type="checkbox" name="services" value="Household movers"><span>Household movers</span></label><label class="opt"><input type="checkbox" name="services" value="Schools advice"><span>Schools advice</span></label></div></fieldset>
+   </div>
+
+   <div data-branch="retail">
+    <div class="field"><label for="f-use">What will it be?</label><select id="f-use" name="use_type"><option>Shop</option><option>Restaurant or café</option><option>Bar</option><option>Showroom</option><option>Pop-up (under 6 months)</option><option>Salon, clinic or service</option><option>Other</option></select></div>
+    <div class="row"><div class="field"><label for="f-rsize">Rough size</label><select id="f-rsize" name="retail_size"><option>Under 500 sq ft (45 m²)</option><option>500–1,500 sq ft (45–140 m²)</option><option>1,500–3,000 sq ft (140–280 m²)</option><option>3,000+ sq ft (280+ m²)</option><option>Not sure</option></select></div>
+    <div class="field"><label for="f-rbudget">Monthly budget <span class="hint">(optional)</span></label><input id="f-rbudget" name="budget_retail" type="number" min="0" step="100" inputmode="numeric" placeholder="e.g. 8000"></div></div>
+    <fieldset class="field"><legend>Must-haves <span class="hint">(pick any)</span></legend><div class="opts"><label class="opt"><input type="checkbox" name="musthave" value="High foot traffic"><span>High foot traffic</span></label><label class="opt"><input type="checkbox" name="musthave" value="Corner / frontage"><span>Corner or wide frontage</span></label><label class="opt"><input type="checkbox" name="musthave" value="Kitchen extraction"><span>Kitchen extraction</span></label><label class="opt"><input type="checkbox" name="musthave" value="Gas supply"><span>Gas supply</span></label><label class="opt"><input type="checkbox" name="musthave" value="Liquor licence possible"><span>Licence possible</span></label><label class="opt"><input type="checkbox" name="musthave" value="Outdoor seating"><span>Outdoor seating</span></label><label class="opt"><input type="checkbox" name="musthave" value="Second-generation fit-out"><span>Existing fit-out</span></label></div></fieldset>
+   </div>
+
+   <div data-branch="flex">
+    <div class="row"><div class="field"><label for="f-desks">Desks needed</label><input id="f-desks" name="desks" type="number" min="1" max="500" inputmode="numeric" placeholder="e.g. 6" data-need-for="flex"></div>
+    <div class="field"><label for="f-ftype">Type</label><select id="f-ftype" name="flex_type"><option>Private office</option><option>Dedicated desks</option><option>Hot desks</option><option>Meeting rooms on demand</option><option>Virtual office / address</option></select></div></div>
+    <div class="field"><label for="f-term">Term</label><select id="f-term" name="flex_term"><option>Month to month</option><option>3 months</option><option>6 months</option><option>12 months or more</option></select></div>
+   </div>
+
+   <div data-branch="venue">
+    <div class="row"><div class="field"><label for="f-etype">Event type</label><select id="f-etype" name="event_type"><option>Meeting or offsite</option><option>Conference</option><option>Party or celebration</option><option>Wedding</option><option>Product launch</option><option>Dinner</option><option>Workshop or class</option><option>Photo or film shoot</option></select></div>
+    <div class="field"><label for="f-guests">Guests</label><input id="f-guests" name="guests" type="number" min="2" max="20000" inputmode="numeric" placeholder="e.g. 80" data-need-for="venue"></div></div>
+    <div class="row"><div class="field"><label for="f-date">Date</label><input id="f-date" name="event_date" type="date"></div>
+    <div class="field"><label for="f-layout">Layout</label><select id="f-layout" name="layout"><option value="reception">Standing reception</option><option value="banquet">Seated dinner (rounds)</option><option value="theatre">Theatre (rows)</option><option value="classroom">Classroom (tables)</option><option value="boardroom">Boardroom</option></select></div></div>
+    <label class="check"><input type="checkbox" name="date_flexible" value="Yes"> <span>My date is flexible</span></label>
+    <div class="row"><div class="field"><label for="f-vbudget">Total budget <span class="hint">(optional)</span></label><input id="f-vbudget" name="budget_event" type="number" min="0" step="100" inputmode="numeric" placeholder="e.g. 12000"></div>
+    <div class="field"><label for="f-cater">Catering</label><select id="f-cater" name="catering"><option>Needed from the venue</option><option>We'll bring our own</option><option>Drinks only</option><option>Not sure</option></select></div></div>
+   </div>
+
+   <div class="field"><label for="f-move">When do you need it?</label><select id="f-move" name="timeline" required><option value="">Choose timing</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>6–12 months</option><option>12+ months</option><option>Just researching</option></select></div>
+   <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn violet" type="button" data-next>See my estimate</button></div>
+  </div>
+
+  <div class="step" data-step="estimate" hidden>
+   <h2>Here's where you stand</h2>
+   <div class="estimate" id="estimate" aria-live="polite"></div>
+   <ul class="summary" id="summary"></ul>
+   <p class="small muted" style="margin-top:.8rem">Rules of thumb, not quotes. Your matches will give you real numbers for your exact needs.</p>
+   <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn violet" type="button" data-next>Get real quotes</button></div>
+  </div>
+
+  <div class="step" data-step="contact" hidden>
+   <h2>Where should your introductions go?</h2>
+   <div class="row"><div class="field"><label for="f-name">First name</label><input id="f-name" name="name" type="text" autocomplete="given-name" required></div>
+   <div class="field"><label for="f-last">Last name <span class="hint">(optional)</span></label><input id="f-last" name="last_name" type="text" autocomplete="family-name"></div></div>
+   <div class="row"><div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+   <div class="field"><label for="f-phone">Phone <span class="hint">(optional, faster)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div></div>
+   <div class="field" data-show="need:office retail flex venue relocate"><label for="f-co">Company <span class="hint">(optional)</span></label><input id="f-co" name="company" type="text" autocomplete="organization"></div>
+   <fieldset class="field"><legend>Best way to reach you</legend><div class="opts"><label class="opt"><input type="radio" name="contact_pref" value="Email" checked><span>Email</span></label><label class="opt"><input type="radio" name="contact_pref" value="Phone call"><span>Phone call</span></label><label class="opt"><input type="radio" name="contact_pref" value="Text / WhatsApp"><span>Text / WhatsApp</span></label></div></fieldset>
+   <div class="field"><label for="f-notes">Anything else? <span class="hint">(optional)</span></label><textarea id="f-notes" name="notes" maxlength="800" data-count="f-notes-c" placeholder="Deal-breakers, building types, accessibility needs, dates to avoid…"></textarea><span class="counter" id="f-notes-c"></span></div>
+   <label class="check"><input type="checkbox" name="consent" value="Agreed: share with up to 3 partners" required> <span>Share my request with up to three relevant Down.Town partners so they can contact me about it. <a href="/privacy.html#leads" target="_blank">How we handle requests</a>.</span></label>
+   <label class="check"><input type="checkbox" name="marketing" value="Yes, send the Dispatch"> <span>Also send me the free Downtown Dispatch (optional).</span></label>
+   <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn amber" type="submit">Get my free matches</button></div>
+   <p class="form-status" role="status" aria-live="polite"></p>
+  </div>
+
+  <div class="step done-box" data-step="done" hidden>
+   <div class="tick" aria-hidden="true"></div>
+   <h2>Request received<span data-first-name></span>.</h2>
+   <p>An editor will review it within one business day and introduce you to up to three partners by email. Nothing is shared with anyone else.</p>
+   <h3 style="margin-top:1.2rem;font-size:1.1rem">Two quick questions to get better matches <span class="hint">(optional)</span></h3>
+   <fieldset class="field"><legend>Would you like a call?</legend><div class="opts"><label class="opt"><input type="radio" name="call" value="Yes, call me"><span>Yes, call me</span></label><label class="opt"><input type="radio" name="call" value="Email only"><span>Email only, please</span></label></div></fieldset>
+   <fieldset class="field"><legend>Good times <span class="hint">(pick up to 3)</span></legend><div class="slot-grid opts"><label class="opt"><input type="checkbox" name="slots" value="Weekday morning"><span>Weekday morning</span></label><label class="opt"><input type="checkbox" name="slots" value="Weekday lunch"><span>Weekday lunch</span></label><label class="opt"><input type="checkbox" name="slots" value="Weekday afternoon"><span>Weekday afternoon</span></label><label class="opt"><input type="checkbox" name="slots" value="Weekday evening"><span>Weekday evening</span></label><label class="opt"><input type="checkbox" name="slots" value="Saturday"><span>Saturday</span></label><label class="opt"><input type="checkbox" name="slots" value="Sunday"><span>Sunday</span></label></div></fieldset>
+   <div class="step-nav"><button class="btn" type="button" data-followup>Send</button><a class="btn ghost" href="/tools/">Explore the tools</a></div>
+   <p class="form-status" data-followup-status role="status" aria-live="polite"></p>
+  </div>
+ </form>
+ <p class="saved-note" style="margin-top:.6rem">Your answers are kept in this browser until you send them, so you can come back later.</p>
+ </div>
+
+ <div class="proof">
+  <div class="card">
+   <h2 style="font-size:1.35rem">What happens next</h2>
+   <ol class="stations line-s" style="margin-top:.6rem">
+    <li><b>We read your request</b><p>A Down.Town editor checks it within one business day. No bots auto-blasting your details.</p></li>
+    <li><b>We pick up to three partners</b><p>Tenant-side brokers, rental agents, realtors, coworking operators, venues or movers who fit your city, size and budget.</p></li>
+    <li><b>They contact you</b><p>By your preferred method. You decide whether to reply. If nobody reaches you within 48 hours of an introduction, we chase.</p></li>
+   </ol>
+  </div>
+  <div class="card lined line-s">
+   <h3>Why tenants use a broker</h3>
+   <p class="small muted">In most commercial markets the landlord pays the leasing commission, so a tenant-side broker costs you nothing extra and works for you, not the building. Read <a href="/space/tenant-rep-brokers-explained.html">tenant rep brokers explained</a>.</p>
+  </div>
+  <div class="card">
+   <h3>Run the numbers first</h3>
+   <ul class="check-list small">
+    <li><a href="/tools/office-space.html">Office space calculator</a></li>
+    <li><a href="/tools/coworking-vs-lease.html">Coworking vs lease</a></li>
+    <li><a href="/tools/venue-budget.html">Event venue budget</a></li>
+    <li><a href="/tools/rent-budget.html">Rent budget calculator</a></li>
+    <li><a href="/tools/moving-cost.html">Moving cost estimator</a></li>
+   </ul>
+  </div>
+  <div class="card" style="border-style:dashed">
+   <h3>Are you a broker, agent, venue or mover?</h3>
+   <p class="small muted">Receive pre-qualified downtown requests in your city. <a href="/partners.html">Join the partner network</a>.</p>
+  </div>
+  {% include faq.html %}
  </div>
 </div></section>
-{% endraw %}
