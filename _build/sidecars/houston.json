@@ -1,0 +1,30 @@
+{
+ "tagline": "A bayou-side energy capital of glass towers, big-stage theatre, major-league sport and food from every corner of the world.",
+ "events": [
+  {
+   "when": "January",
+   "name": "Houston Marathon",
+   "desc": "The marathon and half marathon start and finish downtown beside the George R. Brown Convention Center."
+  },
+  {
+   "when": "Late February–March",
+   "name": "Houston Livestock Show and Rodeo",
+   "desc": "Weeks of rodeo, concerts and livestock shows at NRG Park, a Red Line ride south, opened by a parade through downtown."
+  },
+  {
+   "when": "July",
+   "name": "Freedom Over Texas",
+   "desc": "The city's Fourth of July celebration, with concerts and fireworks at Eleanor Tinsley Park on Buffalo Bayou."
+  },
+  {
+   "when": "Late November",
+   "name": "Thanksgiving Day Parade",
+   "desc": "Floats, marching bands and giant balloons on downtown streets on Thanksgiving morning."
+  }
+ ],
+ "video": {
+  "id": "irLQbfeto0E",
+  "title": "Main Street in Downtown Houston, Texas Ultra HD 4K Walking Tour.",
+  "channel": "Decelerated Travel"
+ }
+}

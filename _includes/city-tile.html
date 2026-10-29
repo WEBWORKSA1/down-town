@@ -1,0 +1,10 @@
+{% assign t = include.c %}{% assign base = include.base | default: "explore" %}<div class="city-tile" data-r="{{ t.rslug }}" data-n="{{ t.name }}" data-index="{{ t.index }}" data-walk="{{ t.s.walk }}" data-business="{{ t.s.business }}" data-value="{{ t.s.value }}" data-s="{{ t.name | downcase }} {{ t.country | downcase }} {{ t.district | downcase }} {{ t.region | downcase }}">
+  <div class="sky" data-sky="{{ t.slug }}" data-tall="{{ t.tall | default: 2 }}" data-w="400" data-h="70" data-d="0.18"></div>
+  <span class="region-label">{{ t.region }}</span>
+  <div class="body">
+    <h3><a href="/{{ base }}/{{ t.slug }}.html">{% if base == "space" %}Space in {{ t.name }}{% else %}Downtown {{ t.name }}{% endif %}</a></h3>
+    <span class="where">{{ t.district }}, {{ t.country }}</span>
+    <p class="tl">{{ t.tagline }}</p>
+    <p class="meta">Down.Town Index <b>{{ t.index }}</b>/100 · Business {{ t.s.business }}/10</p>
+  </div>
+</div>

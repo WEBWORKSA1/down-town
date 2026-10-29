@@ -1,0 +1,30 @@
+{
+ "tagline": "A Joseon-dynasty capital of palaces and hanok rooftops, wired together by a spotless subway and markets that never seem to close.",
+ "events": [
+  {
+   "when": "April–May",
+   "name": "Lotus Lantern Festival",
+   "desc": "Thousands of handmade lanterns parade through Jongno to Jogyesa ahead of Buddha's Birthday."
+  },
+  {
+   "when": "May",
+   "name": "Jongmyo Daeje",
+   "desc": "The royal ancestral rite, with ritual court music and dance, performed at Jongmyo Shrine."
+  },
+  {
+   "when": "Autumn",
+   "name": "Seoul International Fireworks Festival",
+   "desc": "A huge evening display over the Han River at Yeouido, a short subway ride from downtown."
+  },
+  {
+   "when": "Winter",
+   "name": "Seoul Lantern Festival",
+   "desc": "Illuminated lantern sculptures line the Cheonggyecheon stream through the heart of the CBD."
+  }
+ ],
+ "video": {
+  "id": "Z7cQuymFYqk",
+  "title": "Seoul, KOREA - Seoul City 4K Walking Tour, Namdaemun Market, Myeongdong",
+  "channel": "Walking Expedition"
+ }
+}
