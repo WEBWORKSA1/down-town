@@ -1,0 +1,10 @@
+{
+ "tagline": "Gehry's steel curves, a century-old market hall and a street of restored movie palaces — the walkable heart of a city built for cars.",
+ "events": [
+  {"when": "January–February", "name": "Golden Dragon Parade", "desc": "Chinatown's long-running Lunar New Year parade of floats, lion dancers and firecrackers."},
+  {"when": "Spring", "name": "Blessing of the Animals", "desc": "A decades-old Olvera Street tradition in which pets and farm animals parade to receive a blessing."},
+  {"when": "August", "name": "Nisei Week Japanese Festival", "desc": "Little Tokyo's festival of parades, dance, food and cultural shows, held since the 1930s."},
+  {"when": "Late October–early November", "name": "Día de los Muertos on Olvera Street", "desc": "Altars, evening processions and music in El Pueblo honouring the dead."}
+ ],
+ "video": {"id": "NpkkSUTZLhM", "title": "Los Angeles, CA - Downtown Los Angeles 4K Walking Tour", "channel": "Walking Expedition"}
+}

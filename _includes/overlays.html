@@ -1,0 +1,36 @@
+<div class="consent" id="consent" hidden role="region" aria-label="Cookie notice">
+  <p>Down.Town uses cookies for essential features and, with your consent, for personalised ads from Google and its partners. <a href="/cookies.html">Cookie details</a>.</p>
+  <div class="acts"><button class="btn ghost sm" type="button" data-consent="essential">Essential only</button><button class="btn sm" type="button" data-consent="all">Accept all</button></div>
+</div>
+<div class="search-ov" id="search" hidden role="dialog" aria-modal="true" aria-label="Search Down.Town">
+  <div class="search-box">
+    <label class="vh" for="q">Search</label>
+    <input id="q" type="search" placeholder="Search cities, office space, guides, tools…" autocomplete="off">
+    <ul class="search-res" id="search-res"></ul>
+  </div>
+</div>
+<div class="drawer" id="saved" hidden role="dialog" aria-modal="true" aria-labelledby="saved-h">
+  <div class="drawer-box">
+    <div class="drawer-head"><h2 id="saved-h">Saved</h2><button class="icon-btn" type="button" data-saved-close aria-label="Close saved list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <ul class="saved-list" id="saved-list"></ul>
+    <p class="muted small" id="saved-empty">Nothing saved yet. Press <b>Save</b> on any city guide or tool to keep it here. Your list stays in this browser only.</p>
+    <a class="btn amber block" href="/get-matched.html">Get matched for my saved cities</a>
+  </div>
+</div>
+{% unless page.nolead %}
+<div class="xmodal" id="xmodal" hidden role="dialog" aria-modal="true" aria-labelledby="xm-h">
+  <div class="xmodal-box">
+    <button class="icon-btn xm-close" type="button" data-xm-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <span class="tag"><span class="bullet s" aria-hidden="true">S</span> Free introductions, about 60 seconds</span>
+    <h2 id="xm-h">Before you go: what are you looking for downtown?</h2>
+    <p class="muted">Tell us once and we'll introduce you to up to three vetted local pros. No cost to you.</p>
+    {% include intent-grid.html compact="1" %}
+    <p class="small muted" style="margin-top:.8rem">Or <a href="#nl-h" data-xm-close>get the free Friday Dispatch</a> instead.</p>
+  </div>
+</div>
+<div class="sticky-cta" id="sticky-cta" hidden>
+  <a class="btn amber" href="/get-matched.html{% if page.city %}?city={{ page.city }}{% endif %}">Get matched, free</a>
+  <a class="btn ghost" href="/space/{% if page.city %}{{ page.city }}.html{% endif %}">Find space</a>
+</div>
+{% endunless %}
+<button class="icon-btn to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 14 6-6 6 6"/></svg></button>

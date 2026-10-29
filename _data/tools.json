@@ -1,0 +1,12 @@
+[
+ {"slug":"office-space","name":"Office Space Calculator","short":"calculator","line":"s","desc":"Headcount and work style in, square feet or metres out — plus a budget range you can take to a broker."},
+ {"slug":"coworking-vs-lease","name":"Coworking vs Lease","short":"comparison","line":"s","desc":"See the break-even point between desks, a private suite and your own leased office."},
+ {"slug":"venue-budget","name":"Event Venue Budget","short":"estimator","line":"e","desc":"Guests, format and service level in — capacity by layout and an all-in budget out."},
+ {"slug":"moving-cost","name":"Moving Cost Estimator","short":"estimator","line":"l","desc":"Movers, deposits, overlap rent and set-up costs for a downtown move, totalled."},
+ {"slug":"rent-vs-buy","name":"Rent vs Buy Downtown","short":"calculator","line":"l","desc":"Compare the true cost of renting against owning a downtown condo over your time horizon."},
+ {"slug":"rent-budget","name":"Rent Budget Calculator","short":"calculator","line":"l","desc":"Turn income and debts into a safe monthly housing budget."},
+ {"slug":"car-free","name":"Car vs Car-Free","short":"calculator","line":"l","desc":"What owning a car downtown really costs compared with transit, cycling and rides."},
+ {"slug":"storefront-revenue","name":"Storefront Revenue Estimator","short":"estimator","line":"b","desc":"Check whether a location's foot traffic can carry the rent."},
+ {"slug":"compare","name":"Compare Downtowns","short":"comparison","line":"t","desc":"Put two or three city centres side by side on eight scores."},
+ {"slug":"downtown-match","name":"Find Your Downtown","short":"quiz","line":"t","desc":"Rank every downtown we cover against what matters to you."}
+]
